@@ -1,0 +1,157 @@
+.con{
+    width: 1200px;
+    margin: 16px auto 0;
+    overflow: hidden;
+}
+
+.leftCon{
+    width: 548px;
+    float: left;
+}
+
+
+.rightCon{
+    width: 632px;
+    float: right;
+}
+
+.jgIconWrap{
+    overflow: hidden;
+}
+
+.jgIconWrap img{
+    display: block;
+    float: left;
+    margin-right: 14px;
+}
+
+.xxgkzl{
+    width: 548px;
+    height: 449px;
+    padding-top: 58px;
+    margin-top: 22px;
+    background: url("http://gdjyj.gd.gov.cn/zwgkn/images/bg_xxgkzl.jpg") no-repeat center top;
+}
+
+.xxgkzl img{
+    display: block;
+    margin: 21px auto 0 auto;
+}
+
+.data{
+    width: 548px;
+    height: 105px;
+    margin-top: 25px;
+    background: url("../images/zwgk_data.jpg") no-repeat center top;
+}
+
+.data .itm{
+    width: 160px;
+    height: 55px;
+    margin: 24px 0 0 59px;
+    float: left;
+}
+
+.data .itm.sjfb{
+    margin-left: 123px;
+}
+
+.rightCon .newsWrap {
+    width: 100%;
+    height: 253px;
+    border: 1px solid #cee5ff;
+    float: right;
+    padding: 13px;
+    background-color: #ffffff;
+}
+
+.rightCon .newsWrap .newList{
+    height: 170px;
+    overflow: hidden;
+}
+
+.s1 .itm.it1 {
+    background: url(../images/icon_tzgg_g.jpg) no-repeat left center;
+}
+
+.s1 .itm.it1.active {
+    border-bottom: 5px solid #2976c7;
+    background: url(http://gdjyj.gd.gov.cn/zwgkn/images/icon_tzgg_b.jpg) no-repeat left center;
+}
+
+.s1 .itm.it2 {
+    background: url(../images/icon_zcjd_g.jpg) no-repeat left center;
+}
+
+.s1 .itm.it2.active {
+    border-bottom: 5px solid #2976c7;
+    background: url(../images/icon_zcjd_b.jpg) no-repeat left center;
+}
+
+.s2{
+    margin-top: 25px;
+}
+
+.s2 .itm.it1 {
+    width: 166px;
+    padding-left: 31px;
+}
+
+.s2 .itm.it1 {
+    background: url(../images/icon_zdly_g.jpg) no-repeat left center;
+}
+
+.s2 .itm.it1.active {
+    border-bottom: 5px solid #2976c7;
+    background: url(../images/icon_zdly_b.jpg) no-repeat left center;
+}
+
+.s2 .itm.it2 {
+    width: 140px;
+    padding-left: 25px;
+}
+
+.s2 .itm.it2 {
+    background: url(http://gdjyj.gd.gov.cn/zwgkn/images/icon_czys_g.jpg) no-repeat left center;
+}
+
+.s2 .itm.it2.active {
+    border-bottom: 5px solid #2976c7;
+    background: url(../images/icon_czys_b.jpg) no-repeat left center;
+}
+
+.s2 .itm.it3 {
+    background: url(http://gdjyj.gd.gov.cn/zwgkn/images/icon_fzgh_g.jpg) no-repeat left center;
+}
+
+.s2 .itm.it3.active {
+    border-bottom: 5px solid #2976c7;
+    background: url(../images/icon_fzgh_b.jpg) no-repeat left center;
+}
+
+.s3{
+    margin-top: 21px;
+}
+
+.s3 .itm.it1 {
+    width: 166px;
+    padding-left: 31px;
+}
+
+.s3 .itm.it1 {
+    background: url(../images/icon_xegccg_g.jpg) no-repeat left center;
+}
+
+.s3 .itm.it1.active {
+    border-bottom: 5px solid #2976c7;
+    background: url(http://gdjyj.gd.gov.cn/zwgkn/images/icon_xegccg_b.jpg) no-repeat left center;
+}
+
+.s3 .itm.it2 {
+    background: url(../images/icon_zfcg_g.jpg) no-repeat left center;
+}
+
+.s3 .itm.it2.active {
+    border-bottom: 5px solid #2976c7;
+    background: url(../images/icon_zfcg_b.jpg) no-repeat left center;
+}

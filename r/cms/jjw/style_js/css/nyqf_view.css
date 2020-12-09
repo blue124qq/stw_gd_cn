@@ -1,0 +1,409 @@
+.pos {
+	width: 1200px;
+	height: 30px;
+	background: url("../images/pos.jpg");
+	background-position: left top;
+	background-repeat: no-repeat;
+	padding-left: 45px;
+	font-size: 16px;
+	line-height: 30px;
+	color: #010101;
+	margin: 20px auto;
+}
+
+.leftCon {
+	width: 800px;
+	border: 1px solid #e5e5e5;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	margin-bottom: 40px;
+	box-sizing: border-box;
+}
+
+.leftCon .wrap {
+	width: 775px;
+	margin: 20px auto;
+	font-size: 18px;
+	font-weight: bold;
+	color: #337dbe;
+	padding-bottom: 15px;
+	border-bottom: solid 2px #005bac;
+}
+
+.leftCon .wrap span {
+	font-size: 18px;
+	font-weight: bold;
+	color: #337dbe;
+	padding: 0 12px;
+}
+
+/** 审查调查 **/
+.leftCon .section {
+	width: 747px;
+	margin: 0 auto;
+}
+
+.leftCon .section h4 {
+	padding-left: 8px;
+	margin: 20px 0 6px;
+	border-left: 8px solid #AF090B;
+	color: #AF090B;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.leftCon .section h4 a {
+	color: #AF090B;
+}
+
+.leftCon .section h4 img {
+	width: 16px;
+	vertical-align: middle;
+	display: inline-block;
+	margin-left: 6px;
+}
+
+.viewList li.liLast {
+	border-bottom: none;
+}
+
+.viewList {
+	width: 747px;
+	margin: 5px auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.viewList li {
+	width: 100%;
+	border-bottom: 1px dashed #c2c2c2;
+	overflow: hidden;
+}
+
+.viewList .dot {
+	width: 6px;
+	height: 6px;
+	background-color: #b2b2b2;
+	float: left;
+	margin: 27px 15px 0 5px;
+	vertical-align: middle;
+}
+
+.viewList .til {
+	width: 80%;
+	line-height: 60px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	float: left;
+}
+
+.viewList .time {
+	font-size: 16px;
+	line-height: 60px;
+	color: #a8a8a8;
+	float: right;
+}
+
+.page {
+	text-align: center;
+	margin: 20px auto;
+}
+
+.page a {
+	padding: 5px 7px 5px 7px;
+	text-align: center;
+	color: #444444;
+	margin-right: 15px;
+	border: 1px solid #d2d2d2;
+}
+
+.page a.current {
+	color: #fff;
+	background-color: #337dbe;
+}
+
+.rightPanel {
+	width: 383px;
+	float: right;
+	overflow: hidden;
+}
+
+.rightPanel .itm {
+	width: 100%;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	border: solid 1px #e5e5e5;
+	overflow: hidden;
+}
+
+.rightPanel .itm .lmtil {
+	width: 100%;
+	height: 42px;
+	background: url("../images/bg_lmtil.jpg");
+	background-position: left top;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.rightPanel .itm .lmtil p {
+	font-size: 20px;
+	font-weight: bold;
+	color: #005bac;
+	padding-left: 15px;
+	line-height: 42px;
+	float: left;
+}
+
+.rightPanel .itm .lmtil .more {
+	font-size: 14px;
+	color: #777777;
+	line-height: 42px;
+	position: absolute;
+	right: 2px;
+}
+
+.panelList {
+	width: 100%;
+	margin: 10px auto;
+	overflow: hidden;
+}
+
+.panelList li {
+	width: 100%;
+	overflow: hidden;
+}
+
+.panelList .dot {
+	width: 6px;
+	height: 6px;
+	background-color: #b2b2b2;
+	float: left;
+	margin: 13px 10px 0 6px;
+	vertical-align: middle;
+}
+
+.panelList .til {
+	width: 94%;
+	color: #444444;
+	line-height: 32px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	float: left;
+}
+
+.rp_swipe {
+	width: 100%;
+	height: 140px;
+	position: relative;
+	margin: 20px auto;
+}
+
+.rpanel-swiper {
+	width: 310px;
+	height: 140px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.rpanel-swiper .itm {
+	width: 310px;
+	height: 140px;
+}
+
+.rpanel-swiper .itm img {
+	width: 310px;
+	height: 140px;
+}
+
+#rpanel-lbtn {
+	width: 32px;
+	height: 80px;
+	background: url("../images/arr_l1.png");
+	position: absolute;
+	left: 0;
+	top: 30px;
+	cursor: pointer;
+}
+
+#rpanel-rbtn {
+	width: 32px;
+	height: 80px;
+	background: url("../images/arr_r1.png");
+	position: absolute;
+	right: 0;
+	top: 30px;
+	cursor: pointer;
+}
+
+.imgNewItm {
+	width: 166px;
+	height: 102px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	margin: 15px 5px 0 15px;
+}
+
+.imgNewItm img {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.imgNewItm .til {
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+	color: #ffffff;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+	padding-left: 10px;
+}
+
+.rp_qfsj {
+	padding-bottom: 20px;
+}
+
+.viewList_pic {
+	overflow: hidden;
+}
+
+.viewList_pic li {
+	width: 228px;
+	float: left;
+	overflow: hidden;
+	margin: 0 0 20px 20px;
+}
+
+.viewList_pic li .inWrap {
+	width: 228px;
+	height: 140px;
+	position: relative;
+}
+
+.viewList_pic li .inWrap img {
+	width: 100%;
+	height: 100%;
+}
+
+.viewList_pic li .inWrap .filter {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url("../images/video.png");
+}
+
+.viewList_pic li .til {
+	text-align: center;
+	width: 100%;
+	margin: 10px auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.leftCon .innerCon {
+	width: 756px;
+	/* margin: 30px auto; */
+	margin: 20px auto;
+}
+
+.leftCon .innerCon h3 {
+	font-size: 20px;
+	font-weight: normal;
+	color: #4d4d4d;
+	text-align: center;
+}
+
+.leftCon .innerCon h1 {
+	font-size: 28px;
+	font-weight: bold;
+	color: #000;
+	text-align: center;
+	line-height: 60px;
+}
+
+.leftCon .innerCon h2 {
+	font-size: 24px;
+	font-weight: normal;
+	color: #4d4d4d;
+	text-align: center;
+	line-height: 36px;
+}
+
+.info {
+	width: 100%;
+	margin-top: 15px;
+	border-bottom: 1px solid #bebebe;
+}
+
+.info span {
+	font-size: 14px;
+	color: #808080;
+	line-height: 50px;
+	margin: 0 10px 0 15px;
+}
+
+.bdsharebuttonbox {
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.topText {
+	width: 749px;
+	/* height: 106px; */
+	margin: 20px auto;
+	background-color: #eaeaea;
+	color: #6f6f6f;
+	padding: 25px;
+	line-height: 30px;
+	box-sizing: border-box;
+}
+
+.zw {
+	font-size: 16px;
+	color: #282828;
+	line-height: 28px;
+}
+
+.zw p {
+	margin-top: 20px;
+	text-indent: 1em;
+	line-height: 2;
+}
+
+.zw img {
+	display: block;
+	margin: 15px auto;
+}
+
+.xgxw {
+	width: 802px;
+	float: left;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+
+.xgxw .lm-til {
+	background-repeat: no-repeat;
+	border-bottom: solid 1px #000;
+	box-sizing: border-box;
+}
+
+.xgxw .new-list-1 {
+	margin: 10px 0 0 10px;
+}
+
+.outer {
+	width: 800px;
+	overflow: hidden;
+	float: left;
+}

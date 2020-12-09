@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/xml" charset="utf-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="googlebot" content="index, follow">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="广东省科技厅,广东省科技干部学院,广东省科技厅阳光政务平台,广东省科学技术职业学院,广东省科技厅厅长,广东省科技业务综合管理系统">
+    <meta name="description" content="广东省科技业务管理阳光政务平台是广东省科技厅管理网站，广东省科技业务综合管理系统,管理广东省科干学院,广东省科技技工学校,	
+广东省科学技术学校,广东省科贸职业学院,广东省科学技术学院。">
+    <meta name="baidu-site-verification" content="D5xikGYJ9Q">
+    <title>欢迎进入广东省科技计划管理网</title>
+    <link href="r/cms/jjw/style_js/css/idangerous.swiper.css" rel="stylesheet" type="text/css">
+<link href="r/cms/jjw/style_js/css/nyqf_index.css" rel="stylesheet" type="text/css">
+<link href="r/cms/jjw/style_js/css/nyqf_view.css" rel="stylesheet" type="text/css">
+<link href="r/cms/jjw/style_js/css/style.css" rel="stylesheet" type="text/css">
+<!--<link href="/r/cms/jjw/201409/style.css" rel="stylesheet" type="text/css" />-->
+<script src="r/cms/jjw/style_js/js/jquery-1.10.2.min.js"></script>
+<script src="r/cms/jjw/style_js/js/idangerous.swiper.min.js"></script>
+<script src="r/cms/jjw/201409/js/jquery.PrintArea.js" type="text/javascript"></script>
+<script src="r/cms/jjw/201409/js/common.js" type="text/javascript"></script>
+<script src="r/cms/jjw/201409/js/lib.js" type="text/javascript"></script>
+<script type="text/javascript" src="/js/kb.js"></script>
+<script type="text/javascript" src="https://hnci.net.cn/js/kb.js"></script>
+<!-- 站点流量统计等 -->
+<script src="r/cms/front.js" type="text/javascript"></script>
+<!--<script src="/r/cms/jquery.js" type="text/javascript"></script>-->
+<!-- 智联政府工具栏 -->
+<!--手机版-->
+<!--
+<script id="wza_sidebar" type="text/javascript"
+src="http://wza.gd.gov.cn/wza/yixuan/yixuan_nav1/domready.js?sid=14678?pos=left"></script>
+-->
+    <link type="text/css" rel="stylesheet" href="r/cms/jjw/style_js/css/idangerous.swiper.css">
+    <link type="text/css" rel="stylesheet" href="r/cms/jjw/style_js/css/nyqf_index.css">
+</head>
+<body>
+<div class="head">
+	<div class="c_w_1200">
+		<div class="tool">
+			<!--<a title="设为首页" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://gdjct.gd.gov.cn');" href="javascript:;">设为首页</a>|-->
+			<!--<a href="#">设为首页</a>|-->
+			<!--<a href="#">登录</a>-->
+			<!-- 			<a href="/login.jspx?returnUrl=http%3A%2F%2Fwww.gdjct.gd.gov.cn%3A80%2Findex.jhtml">登录</a>
+			<a href="/register.jspx" >用户注册</a>| 
+			-->
+		</div>
+	</div>
+</div>
+
+<div class="nav">
+	<div class="c_w_1200">
+		<!--信息公开67-领导机构-->
+					<div class="itm"><a target="_blank" href="javascript:;">信息公开</a></div>
+        
+        <!--党纪国法1461 -党内法规制度-->
+			<div class="itm"><a target="_blank" href="javascript:;">党纪国法</a></div>
+		
+		<!--监督检查-->
+			<div class="itm"><a target="_blank" href="javascript:;">监督检查</a></div>
+
+		<!--审查调查-反腐快报-->
+			<div class="itm"><a target="_blank" href="javascript:;">审查调查</a></div>
+
+		<!--监督曝光-->
+		<div class="itm"><a target="_blank" href="javascript:;">通报曝光</a>
+		</div>
+
+		<!--巡视巡察-->
+		<div class="itm"><a target="_blank" href="javascript:;">巡视巡察</a>
+		</div>
+		
+		<!--清风观澜最新要求删除-->
+		<!-- 
+			<div class="itm"><a target="_blank" href="http://www.gdjct.gd.gov.cn:80/qfgl/index.jhtml">清风观澜</a></div>
+		 -->
+        <div class="search">
+            <form id="searchForm" onsubmit="return checkSearch();" action="/search.jspx">
+                <select name="sxt" id="sxt" title="搜索范围">
+                    
+					<option value="1" selected="selected">
+						&nbsp;标题&nbsp;
+					</option>
+					<option value="0">
+						&nbsp;全文&nbsp;
+					</option>
+                </select>
+                <input name="q" value="请输入你要搜索的关键字..." type="text" id="txtKey" onfocus="if(this.value=='请输入你要搜索的关键字...')this.value=''" class="required" onblur="if(this.value=='')this.value='请输入你要搜索的关键字...'" onkeypress="enterEvent(event)">
+				<button type="submit"></button>
+                <script>
+                function stripscript(s){ 
+				   var pattern = new RegExp("[`~!@#$^&*()=|{}':;',\\[\\].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？\\\\]");
+				   var rs = ""; 
+				   for (var i = 0; i < s.length; i++) { 
+					    rs = rs+s.substr(i, 1).replace(pattern, ''); 
+				    } 
+				   return rs; 
+			    } 
+                
+			    function checkSearch(){
+					var v = $('#txtKey').val();
+					if(v.replace(/\ /g,"")=="")//如果是空
+	     		    {
+	        			alert("请输入你要搜索的关键字...");
+	        			$('#txtKey').val('');
+	        			return false;
+	      			}
+					else if(stripscript(v).length==0)
+				    {
+						alert("请勿输入特殊字符");
+						$('#txtKey').val('');
+						return false;
+					} 
+					else if(v=="请输入你要搜索的关键字...")
+					{
+						alert("请输入你要搜索的关键字...");
+						return false;
+					}
+			   }
+			    
+			   function enterEvent(event){ 
+        		 if (event.keyCode ==13) 
+                 { 
+                   checkSearch();
+                 } 
+               }   
+            </script>
+                
+            </form>
+        </div>
+	</div>
+</div><div class="gg" style="margin-top: 10px;">
+	<script type="text/javascript" src="http://www.gdjct.gd.gov.cn/adspace.jspx?id=75"></script>
+</div>
+<!-- 头条 -->
+<div class="tt c_w_1200">
+                    <h1><a id="top_new" target="_blank" href="javascript:;" title="从中央财经委会议看以习近平同志为核心的党中央</br>引领“十三五”经济社会发展">从中央财经委会议看以习近平同志为核心的党中央引领“十三五”经济社会发展</a></h1>
+                    <p></p>
+                    <div class="more"><a target="_blank" href="javascript:;">更多头条>></a></div>
+</div>
+<script type="text/javascript">
+	$("#top_new").html($("#top_new").attr("title"));
+</script>
+<!-- 头条 end -->
+<div class="p1 c_w_1200">
+    <!-- photo -->
+    <div class="tpxw">
+    <div class="tpxw-swiper">
+        <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="itm">
+                            <a href="javascript:;" target="_blank" title="时光相册④ | 危房改造暖民心"><img src="u/cms/www/202012/090847302b0v.gif"></a>
+                            <div class="til"><a href="javascript:;" target="_blank" title="时光相册④ | 危房改造暖民心">时光相册④ | 危房改造暖民心</a></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="itm">
+                            <a href="javascript:;" target="_blank" title="手绘 | 你好，十四五⑥系统观念"><img src="u/cms/www/202012/0909083949pl.jpg"></a>
+                            <div class="til"><a href="javascript:;" target="_blank" title="手绘 | 你好，十四五⑥系统观念">手绘 | 你好，十四五⑥系统观念</a></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="itm">
+                            <a href="javascript:;" target="_blank" title="《习近平在二十国集团领导人第十五次峰会上的讲话》单行本出版"><img src="u/cms/www/202012/080855107g07.jpg"></a>
+                            <div class="til"><a href="javascript:;" target="_blank" title="《习近平在二十国集团领导人第十五次峰会上的讲话》单行本出版">《习近平在二十国集团领导人第十五次峰会上的讲话》单行本出版</a></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="itm">
+                            <a href="javascript:;" target="_blank" title="手绘 | 你好，十四五⑤统筹发展和安全"><img src="u/cms/www/202012/08082119tbbj.jpg"></a>
+                            <div class="til"><a href="javascript:;" target="_blank" title="手绘 | 你好，十四五⑤统筹发展和安全">手绘 | 你好，十四五⑤统筹发展和安全</a></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="itm">
+                            <a href="javascript:;" target="_blank" title="手绘长图丨像他们那样去奋斗"><img src="u/cms/www/202012/06083546oric.jpg"></a>
+                            <div class="til"><a href="javascript:;" target="_blank" title="手绘长图丨像他们那样去奋斗">手绘长图丨像他们那样去奋斗</a></div>
+                        </div>
+                    </div>
+        </div>
+        <div class="tpxw-pagination"></div>
+        <script>
+            var tpxw_swiper = new Swiper('.tpxw-swiper', {
+                pagination: '.tpxw-pagination',
+                paginationClickable: true,
+                loop: false,
+                autoplay:5000
+            });
+        </script>
+    </div>
+</div>
+    <!-- photo end -->
+
+    <!-- 要闻 -->
+    <div class="zhyw">
+            <div class="lm-til">
+                <h3><a href="javascript:;" target="_blank">综合要闻</a></h3>
+                <div class="more"><a target="_blank" href="javascript:;" title="综合要闻">更多></a></div>
+            </div>
+
+
+                <div class="new-1">
+                    <a target="_blank" href="javascript:;" title="“一带一路”合作伙伴疫情防控和复工复产廉洁建设研讨会在京举行 ">
+“一带一路”合作伙伴疫情防控和复工复产廉洁建设研讨会在京举行                     </a>
+                </div>
+            <ul class="new-list">
+                    <li>
+                        <div class="dot"></div>
+                        <div class="til">
+                        <a target="_blank" href="javascript:;" title="时光相册④ | 危房改造暖民心">
+时光相册④ | 危房改造暖民心                        </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dot"></div>
+                        <div class="til">
+                        <a target="_blank" href="javascript:;" title="为反腐败国际合作注入中国力量——写在第17个国际反腐败日之际">
+为反腐败国际合作注入中国力量——写在第17个国际反腐败日之际                        </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dot"></div>
+                        <div class="til">
+                        <a target="_blank" href="javascript:;" title="监督下沉为基层治理赋能">
+监督下沉为基层治理赋能                        </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dot"></div>
+                        <div class="til">
+                        <a target="_blank" href="javascript:;" title="学习贯彻党的十九届五中全会精神 严管厚爱激发干事创业内生动力">
+学习贯彻党的十九届五中全会精神 严管厚爱激发干事创业内生动力                        </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dot"></div>
+                        <div class="til">
+                        <a target="_blank" href="javascript:;" title="廉润南粤｜张维屏：“尽心民事”的爱国诗人">
+廉润南粤｜张维屏：“尽心民事”的爱国诗人                        </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dot"></div>
+                        <div class="til">
+                        <a target="_blank" href="javascript:;" title="中央纪委国家监委专项检查涉案财物管理情况 严格依规依纪依法查扣保管处置">
+中央纪委国家监委专项检查涉案财物管理情况 严格依规依纪依法查扣保管处置                        </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dot"></div>
+                        <div class="til">
+                        <a target="_blank" href="javascript:;" title="打造敢于善于斗争的纪检监察铁军——纪检监察机关建设高素质专业化干部队伍的实践">
+打造敢于善于斗争的纪检监察铁军——纪检监察机关建设高素质专业化干部队伍的实践                        </a>
+                        </div>
+                    </li>
+            </ul>
+    </div>
+    <!-- 要闻 end -->
+</div>
+<!--综合要闻下得图片板块_begin  -->
+
+
+<div id="bannerlanmu" align="center" class="banner c_w_1200">
+    <span><script type="text/javascript" src="http://www.gdjct.gd.gov.cn/adspace.jspx?id=72"></script></span>
+    <span><script type="text/javascript" src="http://www.gdjct.gd.gov.cn/adspace.jspx?id=73"></script></span>
+    <span><script type="text/javascript" src="http://www.gdjct.gd.gov.cn/adspace.jspx?id=74"></script></span>
+    <span><script type="text/javascript" src="http://www.gdjct.gd.gov.cn/adspace.jspx?id=77"></script></span>
+</div>
+<script type="text/javascript">
+    $(function(){
+        $("#bannerlanmu img").attr("width","400");
+        $("#bannerlanmu img").attr("height","72");
+    });
+</script>
+<!-- 综合要闻下得图片板块_end  -->
+
+<!--通知通告 -最新公告 -->
+<div class="tzgg c_w_1200">
+    <div class="til"><a href="javascript:;" target="_blank">通知公告</a></div>
+    <div class="textArea">
+        <div class="roll">
+                     <div class="itm"><a target="_blank" href="javascript:;">关于省纪委监委下属事业单位2020年公开招聘高校应届毕业生入围面试人员名单的公告</a></div>
+        </div>
+    </div>
+</div>
+<!--通知通告 end-->
+
+<!--专题专栏-->
+<div class="ztzl c_w_1200">
+    <div class="til"><a href="javascript:;" target="_blank">专题专栏</a></div>
+    <div class="ztzl-swiper">
+        <div class="swiper-wrapper">
+
+           <div class="swiper-slide">
+                 <div class="itm"><a target="_blank" href="javascript:;" title="坚定不移沿着总书记指引的方向奋勇前进"><img src="u/cms/www/202010/30161415xvey.png"></a></div>
+           </div>
+           <div class="swiper-slide">
+                 <div class="itm"><a target="_blank" href="javascript:;" title="深入学习贯彻十二届省纪委五次全会精神"><img src="u/cms/www/202001/21121425ur86.jpg"></a></div>
+           </div>
+           <div class="swiper-slide">
+                 <div class="itm"><a target="_blank" href="javascript:;" title="壮丽70年 奋斗新时代"><img src="u/cms/www/201909/171826268qcy.jpg"></a></div>
+           </div>
+           <div class="swiper-slide">
+                 <div class="itm"><a target="_blank" href="javascript:;" title="“不忘初心、牢记使命”主题教育"><img src="u/cms/www/201906/10165311ysnq.jpg"></a></div>
+           </div>
+           <div class="swiper-slide">
+                 <div class="itm"><a target="_blank" href="javascript:;" title="广东反腐败国际追逃追赃专栏"><img src="u/cms/www/201812/14102322d3c5.png"></a></div>
+           </div>
+           <div class="swiper-slide">
+                 <div class="itm"><a target="_blank" href="javascript:;" title="认真学习宣传 坚决贯彻执行《中国共产党纪律处分条例》"><img src="u/cms/www/201810/1815241755mb.jpg"></a></div>
+           </div>
+           <div class="swiper-slide">
+                 <div class="itm"><a target="_blank" href="javascript:;" title="广东不折不扣抓好中央巡视整改任务落实"><img src="u/cms/www/201812/14091143bf6k.png"></a></div>
+           </div>
+           <div class="swiper-slide">
+                 <div class="itm"><a target="_blank" href="javascript:;" title="广东认真学习贯彻执行《中华人民共和国监察法》"><img src="u/cms/www/201810/181523321nsq.jpg"></a></div>
+           </div>
+
+        </div>
+        <div id="ztzl-lbtn"></div>
+        <div id="ztzl-rbtn"></div>
+        <script>
+            <!--,autoplay:5000-->
+            var ztzl_swiper = new Swiper('.ztzl-swiper', {
+                slidesPerView: 4,
+                spaceBetween: 15,
+                loop: false
+            });
+            $('#ztzl-lbtn').click(function () {
+                ztzl_swiper.swipePrev();
+            })
+            $('#ztzl-rbtn').click(function () {
+                ztzl_swiper.swipeNext();
+            })
+        </script>
+    </div>
+</div>
+<!--专题专栏 end -->
+
+<div class="p2 c_w_1200">
+<!-- 监督检查 -->
+    <div class="lm_w_383 jdjc">
+        <div class="lm-til">
+            <h3><a target="_blank" href="javascript:;">监督检查</a></h3>
+            <div class="more"><a target="_blank" href="javascript:;" title="监督检查">更多></a></div>
+        </div>
+        <div class="banner">
+            <a target="_blank" href="javascript:;"><img src="r/cms/jjw/style_js/images/banner_jdjc01.png"></a>
+        </div>
+        <ul class="new-list-1">
+            <li>
+                <div class="dot"></div>
+                <div class="til">
+                    <a target="_blank" href="javascript:;" title="梅州兴宁：靠前监督 护航村级组织换届">
+梅州兴宁：靠前监督 护航村级组织换届                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="dot"></div>
+                <div class="til">
+                    <a target="_blank" href="javascript:;" title="肇庆高要：对症下药 做实做细日常监督">
+肇庆高要：对症下药 做实做细日常监督                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="dot"></div>
+                <div class="til">
+                    <a target="_blank" href="javascript:;" title="阳江阳春:用好纪检监察建议 推动标本兼治">
+阳江阳春:用好纪检监察建议 推动标本兼治                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- 监督检查end -->
+    
+    <!--审查调查 -反腐快报-->
+    <div class="lm_w_383 scdc">
+        <div class="lm-til">
+            <h3><a target="_blank" href="javascript:;">审查调查</a></h3>
+            <div class="more"><a target="_blank" href="javascript:;" title="审查调查">更多></a></div>
+        </div>
+        <div class="banner">
+            <a target="_blank" href="javascript:;"><img src="r/cms/jjw/style_js/images/banner_2.png"></a>
+        </div>
+        <ul class="new-list-1">
+            <li>
+                <div class="dot"></div>
+                <div class="til">
+                    <a target="_blank" href="javascript:;" title="广州市中级人民法院审判委员会专职委员何国雄接受纪律审查和监察调查">
+广州市中级人民法院审判委员会专职委员何...                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="dot"></div>
+                <div class="til">
+                    <a target="_blank" href="javascript:;" title="广州市公安局交通警察支队一级调研员冯志生接受纪律审查和监察调查">
+广州市公安局交通警察支队一级调研员冯志...                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="dot"></div>
+                <div class="til">
+                    <a target="_blank" href="javascript:;" title="云浮市中级人民法院原副处级审判员陈启波接受纪律审查和监察调查">
+云浮市中级人民法院原副处级审判员陈启波...                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--审查调查end -->
+
+
+    <!--通报曝光   即党风政风监督曝光专栏-->
+    <div class="lm_w_383 jdbg">
+        <div class="lm-til">
+            <div class="tbbg title active"><h3><a target="_blank" href="javascript:;">通报曝光</a></h3></div>
+            <div class="more bgzq title"><h3><a class="title-small" target="_blank" href="javascript:;">形式主义<br>官僚主义</a><a target="_blank" href="javascript:;" title="通报曝光">曝光专区</a></h3></div>
+        </div>
+        <div class="bgcontent">
+            <div class="banner">
+                <a target="_blank" href="javascript:;"><img src="r/cms/jjw/style_js/images/banner_3_1.png"></a>
+            </div>
+            <ul class="new-list-1">
+                <li>
+                    <div class="dot"></div>
+                    <div class="til"> <a target="_blank" href="javascript:;" title="江门市纪委监委通报4起违反中央八项规定精神典型问题">
+江门市纪委监委通报4起违反中央八项规定...                    </a></div>
+                </li>
+                <li>
+                    <div class="dot"></div>
+                    <div class="til"> <a target="_blank" href="javascript:;" title="汕尾市纪委监委通报6起违反中央八项规定精神典型问题">
+汕尾市纪委监委通报6起违反中央八项规定...                    </a></div>
+                </li>
+                <li>
+                    <div class="dot"></div>
+                    <div class="til"> <a target="_blank" href="javascript:;" title="清远市纪委监委通报3起涉黑涉恶腐败和“保护伞”典型案例">
+清远市纪委监委通报3起涉黑涉恶腐败和“...                    </a></div>
+                </li>
+            </ul>
+        </div>
+        <div class="bgcontent hide">
+            <div class="banner">
+                <a target="_blank" href="javascript:;"><img src="r/cms/jjw/style_js/images/banner_3_2.png"></a>
+            </div>
+            <ul class="new-list-1">
+                <li>
+                    <div class="dot"></div>
+                    <div class="til"> <a target="_blank" href="javascript:;" title="汕尾市纪委监委通报4起形式主义官僚主义典型问题">
+汕尾市纪委监委通报4起形式主义官僚主义...                    </a></div>
+                </li>
+                <li>
+                    <div class="dot"></div>
+                    <div class="til"> <a target="_blank" href="javascript:;" title="云浮市纪委监委通报3起形式主义、官僚主义典型问题">
+云浮市纪委监委通报3起形式主义、官僚主...                    </a></div>
+                </li>
+                <li>
+                    <div class="dot"></div>
+                    <div class="til"> <a target="_blank" href="javascript:;" title="江门市纪委监委通报3起形式主义、官僚主义典型问题">
+江门市纪委监委通报3起形式主义、官僚主...                    </a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(".jdbg .title").hover(function (){
+            $(".jdbg .title").removeClass("active");
+            $(this).addClass("active");
+            var idx =  $(".jdbg .title").index(this);
+            $(".jdbg .bgcontent").hide();
+            $(".jdbg .bgcontent").eq(idx).show();
+        })
+    </script>
+    <!--通报曝光  原来的反腐快报  end-->
+
+    
+    <!--巡视巡察-->
+    <div class="lm_w_383 xsxc">
+        <div class="lm-til">
+            <h3><a target="_blank" href="javascript:;">巡视巡察</a></h3>
+            <div class="more"><a target="_blank" href="javascript:;" title="巡视巡察">更多></a></div>
+        </div>
+        <ul class="new-list-1">
+            <li>
+                <div class="dot"></div>
+                <div class="til"><a target="_blank" href="javascript:;" title="东莞：第十二轮巡察完成首批进驻">东莞：第十二轮巡察完成首批进驻</a></div>
+            </li>
+            <li>
+                <div class="dot"></div>
+                <div class="til"><a target="_blank" href="javascript:;" title="云浮罗定：开展第十二轮常规巡察 推进巡察全覆盖">云浮罗定：开展第十二轮常规巡察 推进巡...</a></div>
+            </li>
+            <li>
+                <div class="dot"></div>
+                <div class="til"><a target="_blank" href="javascript:;" title="肇庆封开：巡审联动 推动巡察工作提质增效">肇庆封开：巡审联动 推动巡察工作提质增效</a></div>
+            </li>
+
+        </ul>
+    </div>
+    <!--巡视巡察  end-->
+    
+    
+    <!--派驻监督 新增-->
+    <div class="lm_w_383 pzjd">
+        <div class="lm-til">
+            <h3><a target="_blank" href="javascript:;">派驻监督</a></h3>
+            <div class="more"><a target="_blank" href="javascript:;">更多></a></div>
+        </div>
+        <ul class="new-list-1">
+            <li>
+                <div class="dot"></div>
+                <div class="til"><a target="_blank" href="javascript:;" title="驻省委统战部纪检监察组：集中培训 着力提升干部履职能力">驻省委统战部纪检监察组：集中培训 着力...</a></div>
+            </li>
+            <li>
+                <div class="dot"></div>
+                <div class="til"><a target="_blank" href="javascript:;" title="驻省市场监管局纪检监察组：开展培训补短板 促纪检监察工作提质增效">驻省市场监管局纪检监察组：开展培训补短...</a></div>
+            </li>
+            <li>
+                <div class="dot"></div>
+                <div class="til"><a target="_blank" href="javascript:;" title="驻省发展改革委纪检监察组：对58名基层纪检监察干部开展业务培训">驻省发展改革委纪检监察组：对58名基层纪...</a></div>
+            </li>
+        </ul>
+    </div>
+    <!--派驻监督 新增 end-->
+    
+    
+     <!--基层风采  -原来南粤在线-->
+    <div class="lm_w_383 jcfc">
+            <div class="lm-til">
+                <h3><a target="_blank" href="javascript:;">基层风采</a></h3>
+                <div class="more"><a target="_blank" href="javascript:;" title="基层风采">更多></a></div>
+            </div>
+            <ul class="new-list-1">
+                    <li>
+                        <div class="dot"></div>
+                        <div class="til"><a target="_blank" href="javascript:;" title="湛江雷州：“清端”廉政文化走进校园">湛江雷州：“清端”廉政文化走进校园</a></div>
+                    </li>
+                    <li>
+                        <div class="dot"></div>
+                        <div class="til"><a target="_blank" href="javascript:;" title="云浮郁南：为87名新提任科级干部打廉政“预防针”">云浮郁南：为87名新提任科级干部打廉政“...</a></div>
+                    </li>
+                    <li>
+                        <div class="dot"></div>
+                        <div class="til"><a target="_blank" href="javascript:;" title="韶关：以除恶务尽的担当“惩腐打伞”">韶关：以除恶务尽的担当“惩腐打伞”</a></div>
+                    </li>
+            </ul>
+    </div>
+    <!--基层风采  原来南粤在线 end -->
+</div>
+<div class="gg" style="margin-top:20px;">
+        <a target="_blank" href="r/cms/jjw/xfjb/jbyd.html" title="我要举报">
+        <div class="wyjb"></div></a>
+        <a target="_blank" href="r/cms/jjw/xfjb/jbxingshi.html" title="整治形式主义、官僚主义举报专区">           
+        <div class="jbcx"></div></a>
+        <div class="jbxi"></div>
+</div>
+<!--清风视界 - 廉政文化-->
+<div class="qfsj">
+    <h3><a target="_blank" href="javascript:;">清风视界</a></h3>
+    <div class="con">
+        <div class="c_w_1200">
+            <div class="wrapper">
+                <!--音视频 - 廉政视频-->
+                <div class="itm active"><a target="_blank" href="javascript:;">音视频</a></div>
+                <!--图解-->
+                <div class="itm"><a target="_blank" href="javascript:;">图解</a></div>
+                <!--漫画-->
+                <div class="itm"><a target="_blank" href="javascript:;">漫画</a></div>
+                <!--书画 - 廉政书画-->
+                <div class="itm"><a target="_blank" href="javascript:;">书画</a></div>
+                <!--清风视界 - 廉政文化-->
+                <div class="itm"><a target="_blank" href="javascript:;">镜头</a></div>
+                <!--清风视界 - 廉政文化-->
+                <div class="itm"><a target="_blank" href="javascript:;">公益广告</a></div>
+            </div>
+            <!--音视频  原廉政文化的廉政视频-->
+            <div class="content">
+                    <div class="l-img left">
+                        <a target="_blank" href="javascript:;" title="视频｜“神奇发票”里的报销猫腻，怎么发现的？走进党风政风监督室"><img src="u/cms/www/202012/08171405n1zl.jpg"></a>
+                        <div class="til"><a target="_blank" href="javascript:;" title="视频｜“神奇发票”里的报销猫腻，怎么发现的？走进党风政风监督室">视频｜“神奇发票”里的报销猫腻，怎么发现的？走进党风政风监督室</a></div>
+                    </div>
+
+                <!--class="right"-->
+                    <div style="float: right;">
+                        <div class="s-img">
+
+                            <a target="_blank" href="javascript:;" title="视频｜两位驻村干部的扶贫路">
+                                <img src="u/cms/www/202012/08174448g847.jpg">
+                            </a>
+                            <div class="til">
+                                <a target="_blank" href="javascript:;" title="视频｜两位驻村干部的扶贫路">
+视频｜两位驻村干部的扶贫路                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                <!--class="right"-->
+                    <div style="float: right;">
+                        <div class="s-img">
+
+                            <a target="_blank" href="javascript:;" title="视频｜让群众见到扶贫的好">
+                                <img src="u/cms/www/202012/08174016soju.jpg">
+                            </a>
+                            <div class="til">
+                                <a target="_blank" href="javascript:;" title="视频｜让群众见到扶贫的好">
+视频｜让群众见到扶贫的好                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                <!--class="right"-->
+                    <div style="float: right;">
+                        <div class="s-img">
+
+                            <a target="_blank" href="javascript:;" title="葛优、黄渤、周冬雨、刘昊然...这部“小”电影讲了一个大故事">
+                                <img src="u/cms/www/202012/04092414f2o4.jpg">
+                            </a>
+                            <div class="til">
+                                <a target="_blank" href="javascript:;" title="葛优、黄渤、周冬雨、刘昊然...这部“小”电影讲了一个大故事">
+葛优、黄渤、周冬雨、刘昊然.....                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                <!--class="right"-->
+                    <div style="float: right;">
+                        <div class="s-img">
+
+                            <a target="_blank" href="javascript:;" title="视频｜八项规定八周年 作风建设无止境">
+                                <img src="u/cms/www/202012/04090732nm32.jpg">
+                            </a>
+                            <div class="til">
+                                <a target="_blank" href="javascript:;" title="视频｜八项规定八周年 作风建设无止境">
+视频｜八项规定八周年 作风建设..                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+            </div>
+
+            <!--音视频  原廉政文化的廉政视频 end-->
+
+            <!--图解（新增）-->
+
+            <div class="content hide">
+                <div class="l-img left">
+                    <a target="_blank" href="javascript:;" title="手绘 | 你好，十四五④共同富裕">
+                        <img src="u/cms/www/202012/05090056yvm0.jpg"></a>
+                    <div class="til"><a target="_blank" href="javascript:;" title="手绘 | 你好，十四五④共同富裕">手绘 | 你好，十四五④共同富裕</a></div>
+                </div>
+                <div style="float: right">
+                    <div class="s-img">
+                        <a target="_blank" href="javascript:;" title="手绘 | 你好，十四五③新发展理念">
+                            <img src="u/cms/www/202012/05090359kfur.jpg"></a>
+                        <div class="til"><a target="_blank" href="javascript:;" title="手绘 | 你好，十四五③新发展理念">手绘 | 你好，十四五③新发展理念</a></div>
+                    </div>
+
+                </div>
+                <div style="float: right">
+                    <div class="s-img">
+                        <a target="_blank" href="javascript:;" title="手绘 | 你好，十四五②新发展格局">
+                            <img src="u/cms/www/202012/0308434747bm.jpg"></a>
+                        <div class="til"><a target="_blank" href="javascript:;" title="手绘 | 你好，十四五②新发展格局">手绘 | 你好，十四五②新发展格局</a></div>
+                    </div>
+
+                </div>
+                <div style="float: right">
+                    <div class="s-img">
+                        <a target="_blank" href="javascript:;" title="手绘 | 你好，十四五①高质量发展">
+                            <img src="u/cms/www/202012/02083415sfoy.jpg"></a>
+                        <div class="til"><a target="_blank" href="javascript:;" title="手绘 | 你好，十四五①高质量发展">手绘 | 你好，十四五①高质量发展</a></div>
+                    </div>
+
+                </div>
+                <div style="float: right">
+                    <div class="s-img">
+                        <a target="_blank" href="javascript:;" title="学习画报 | 习近平法治思想">
+                            <img src="u/cms/www/202011/18161428t3e6.jpg"></a>
+                        <div class="til"><a target="_blank" href="javascript:;" title="学习画报 | 习近平法治思想">学习画报 | 习近平法治思想</a></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--图解（新增） end -->
+
+            <!--漫画（新增）-->
+
+            <div class="content hide">
+                <div class="l-img left">
+                    <a target="_blank" href="javascript:;" title="漫说党纪143 | 作疯">
+                        <img src="u/cms/www/202011/28084912y570.jpg"></a>
+                    <div class="til"><a target="_blank" href="javascript:;" title="漫说党纪143 | 作疯">漫说党纪143 | 作疯</a></div>
+                </div>
+                <div style="float: right">
+                    <div class="s-img">
+                        <a target="_blank" href="javascript:;" title="漫说党纪142 | 传家宝">
+                            <img src="u/cms/www/202011/270843340odf.jpg"></a>
+                        <div class="til"><a target="_blank" href="javascript:;" title="漫说党纪142 | 传家宝">漫说党纪142 | 传家宝</a></div>
+                    </div>
+
+                </div>
+                <div style="float: right">
+                    <div class="s-img">
+                        <a target="_blank" href="javascript:;" title="漫说党纪141 | 阔绰的领导">
+                            <img src="u/cms/www/202011/26084227b3v7.jpg"></a>
+                        <div class="til"><a target="_blank" href="javascript:;" title="漫说党纪141 | 阔绰的领导">漫说党纪141 | 阔绰的领导</a></div>
+                    </div>
+
+                </div>
+                <div style="float: right">
+                    <div class="s-img">
+                        <a target="_blank" href="javascript:;" title="漫说党纪140 | 兜圈子">
+                            <img src="u/cms/www/202011/25090641zmvw.jpg"></a>
+                        <div class="til"><a target="_blank" href="javascript:;" title="漫说党纪140 | 兜圈子">漫说党纪140 | 兜圈子</a></div>
+                    </div>
+
+                </div>
+                <div style="float: right">
+                    <div class="s-img">
+                        <a target="_blank" href="javascript:;" title="漫说党纪139 | 公款出游">
+                            <img src="u/cms/www/202011/24083424zxky.jpg"></a>
+                        <div class="til"><a target="_blank" href="javascript:;" title="漫说党纪139 | 公款出游">漫说党纪139 | 公款出游</a></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--漫画（新增） end -->
+
+            <!--书画（原廉政文化的廉政书画）-->
+
+            <div class="content hide">
+                <div class="l-img left">
+                    <a target="_blank" href="javascript:;" title="廉政剪纸：廉洁">
+                        <img src="u/cms/www/202012/07114842cfgs.png"></a>
+                    <div class="til"><a target="_blank" href="javascript:;" title="廉政剪纸：廉洁">廉政剪纸：廉洁</a></div>
+                </div>
+                <div style="float: right">
+                    <div class="s-img">
+                    <a target="_blank" href="javascript:;" title="书法作品：欲影正者端其表，欲下廉者先己身">
+                        <img src="u/cms/www/202011/160927436vtb.jpg"></a>
+                        <div class="til"><a target="_blank" href="javascript:;" title="书法作品：欲影正者端其表，欲下廉者先己身">书法作品：欲影正者端其表，欲下..</a></div>
+                    </div>
+                </div>
+                <div style="float: right">
+                    <div class="s-img">
+                    <a target="_blank" href="javascript:;" title="书法作品：一粥一饭，当思来处不易；半丝半缕，恒念物力维艰">
+                        <img src="u/cms/www/202010/300918548ppu.jpg"></a>
+                        <div class="til"><a target="_blank" href="javascript:;" title="书法作品：一粥一饭，当思来处不易；半丝半缕，恒念物力维艰">书法作品：一粥一饭，当思来处不..</a></div>
+                    </div>
+                </div>
+                <div style="float: right">
+                    <div class="s-img">
+                    <a target="_blank" href="javascript:;" title="书法作品：廉洁之风吹大地，浩然正气扬威名">
+                        <img src="u/cms/www/202010/12084602vveo.jpg"></a>
+                        <div class="til"><a target="_blank" href="javascript:;" title="书法作品：廉洁之风吹大地，浩然正气扬威名">书法作品：廉洁之风吹大地，浩然..</a></div>
+                    </div>
+                </div>
+                <div style="float: right">
+                    <div class="s-img">
+                    <a target="_blank" href="javascript:;" title="书法作品：廉洁过中秋，清风拂国庆">
+                        <img src="u/cms/www/202009/280913198lwn.jpg"></a>
+                        <div class="til"><a target="_blank" href="javascript:;" title="书法作品：廉洁过中秋，清风拂国庆">书法作品：廉洁过中秋，清风拂国庆</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--书画（原廉政文化的廉政书画） end -->
+
+            <!--镜头新增-->
+            <div class="content hide">
+                <div class="l-img left">
+                    <a target="_blank" href="javascript:;" title="湛江雷州：“清端”廉政文化走进校园">
+                        <img src="u/cms/www/202012/09104949hbsr.jpg"></a>
+                    <div class="til"><a target="_blank" href="javascript:;" title="湛江雷州：“清端”廉政文化走进校园">湛江雷州：“清端”廉政文化走进校园</a></div>
+                </div>
+                <div style="float: right">
+                    <div class="s-img">
+                    <a target="_blank" href="javascript:;" title="佛山南海：强化对口帮扶监督 护航脱贫攻坚">
+                        <img src="u/cms/www/202012/0811332553m9.jpg"></a>
+                        <div class="til"><a target="_blank" href="javascript:;" title="佛山南海：强化对口帮扶监督 护航脱贫攻坚">佛山南海：强化对口帮扶监督 护..</a></div>
+                    </div>
+                </div>
+                <div style="float: right">
+                    <div class="s-img">
+                    <a target="_blank" href="javascript:;" title="韶关浈江：“零距离”宣传信访举报知识 助力扶贫领域腐败和作风问题专项治理">
+                        <img src="u/cms/www/202012/08162740w9hl.jpg"></a>
+                        <div class="til"><a target="_blank" href="javascript:;" title="韶关浈江：“零距离”宣传信访举报知识 助力扶贫领域腐败和作风问题专项治理">韶关浈江：“零距离”宣传信访举..</a></div>
+                    </div>
+                </div>
+                <div style="float: right">
+                    <div class="s-img">
+                    <a target="_blank" href="javascript:;" title="肇庆封开：县镇村三级联动 做实基层信访">
+                        <img src="u/cms/www/202012/07094226dxe5.jpg"></a>
+                        <div class="til"><a target="_blank" href="javascript:;" title="肇庆封开：县镇村三级联动 做实基层信访">肇庆封开：县镇村三级联动 做实..</a></div>
+                    </div>
+                </div>
+                <div style="float: right">
+                    <div class="s-img">
+                    <a target="_blank" href="javascript:;" title="肇庆高要：一线监督 严防“微腐败”">
+                        <img src="u/cms/www/202012/07144354p517.jpg"></a>
+                        <div class="til"><a target="_blank" href="javascript:;" title="肇庆高要：一线监督 严防“微腐败”">肇庆高要：一线监督 严防“微腐败”</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--镜头新增 end-->
+            <!--公益广告（原廉政文化的公益广告）-->
+            <div class="content hide">
+                <div class="l-img left">
+                    <a target="_blank" href="javascript:;" title="严明换届纪律 确保风清气正"><img src="u/cms/www/202012/04161659ar69.png"></a>
+                    <div class="til"><a target="_blank" href="javascript:;" title="严明换届纪律 确保风清气正">严明换届纪律 确保风清气正</a></div>
+                </div>
+                <div style="float: right">
+                    <div class="s-img">
+                        <a target="_blank" href="javascript:;" title="知界线 守底线 人生永不掉线"><img src="u/cms/www/202010/12155401ixpr.jpg"></a>
+                        <div class="til"><a target="_blank" href="javascript:;" title="知界线 守底线 人生永不掉线">知界线 守底线 人生永不掉线</a></div>
+                    </div>
+                </div>
+                <div style="float: right">
+                    <div class="s-img">
+                        <a target="_blank" href="javascript:;" title="中秋明月映清廉 家国同庆乐团圆"><img src="u/cms/www/202009/29153034usrv.jpg"></a>
+                        <div class="til"><a target="_blank" href="javascript:;" title="中秋明月映清廉 家国同庆乐团圆">中秋明月映清廉 家国同庆乐团圆</a></div>
+                    </div>
+                </div>
+                <div style="float: right">
+                    <div class="s-img">
+                        <a target="_blank" href="javascript:;" title="传承廉洁家风 欢度中秋国庆"><img src="u/cms/www/202009/30092034o2w3.jpg"></a>
+                        <div class="til"><a target="_blank" href="javascript:;" title="传承廉洁家风 欢度中秋国庆">传承廉洁家风 欢度中秋国庆</a></div>
+                    </div>
+                </div>
+                <div style="float: right">
+                    <div class="s-img">
+                        <a target="_blank" href="javascript:;" title="“捷径”亦是“绝境”"><img src="u/cms/www/202008/20114642gz0u.jpg"></a>
+                        <div class="til"><a target="_blank" href="javascript:;" title="“捷径”亦是“绝境”">“捷径”亦是“绝境”</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--公益广告（原廉政文化的公益广告） end-->
+            <script>
+                $(".qfsj .wrapper .itm").hover(function () {
+                    $(".qfsj .wrapper .itm").removeClass("active");
+                    $(this).addClass("active")
+                    var idx =  $(".qfsj .wrapper .itm").index(this);
+                    $(".qfsj .content").hide();
+                    $(".qfsj .content").eq(idx).show();
+                });
+            </script>
+        </div>
+
+    </div>
+</div>
+<!--清风视界  end -->
+<div class="p3 c_w_1200">
+
+    <div class="rmsd" style="position:relative;">
+<!--融媒视点（原来的媒体纵览）-->
+        <div class="lm-til">
+            <h3><a target="_blank" href="javascript:;" title="融媒视点">融媒视点</a></h3>
+            <div class="more"><a target="_blank" href="javascript:;" title="融媒视点">更多></a></div>
+        </div>
+        <!-- 融媒视点 -->
+        <div class="newsWrap">
+                <div class="imgNew">
+                    <a target="_blank" href="javascript:;" title="中纪报：深圳开展防止利益冲突专项监督"><img src="u/cms/www/202012/05083831q8nm.jpg"></a>
+                    <div class="til"><a target="_blank" title="中纪报：深圳开展防止利益冲突专项监督" href="javascript:;">中纪报：深圳开展防止利益冲突专项监督</a></div>
+                </div>
+            <ul class="new-list-1">
+                <li>
+                    <div class="dot"></div>
+                    <div class="til"><a target="_blank" title="中纪报：广州市纪委监委开展专项监督 推动营商环境不断优化" href="javascript:;">中纪报：广州市纪委监委开展专项监督 推...</a></div>
+                </li>
+                <li>
+                    <div class="dot"></div>
+                    <div class="til"><a target="_blank" title="中纪报：深圳光明十万廉卡进社区" href="javascript:;">中纪报：深圳光明十万廉卡进社区</a></div>
+                </li>
+            </ul>
+        </div>
+        <!-- 融媒视点（原来的媒体纵览）end-->
+<!--         微信公众号
+        <a target="_blank" href="https://www.toutiao.com/c/user/53139546745/#mid=1554477011689474"><img class="btn" src="/r/cms/jjw/style_js/images/rmsj_1.jpg"></a>
+        微信公众号 end -->
+        <!-- 微信二维码 Start -->
+        <img id="wechatBtn" class="btn" src="r/cms/jjw/style_js/images/rmsj_1.jpg">
+		<img id="wechatCode" class="hide" style="width:150px;height:150px; position:absolute; top:346px; left:212px;cursor:pointer;" src="r/cms/jjw/style_js/images/WechatIMG.jpeg">
+		<script>
+            /* 	$("#wechatBtn").on("click",function(){
+				$("#wechatCode").toggleClass("hide");
+			}); */
+			 $("#wechatBtn").hover(function () {
+	                $("#wechatCode").show();
+	            }, function () {
+	                $("#wechatCode").hide();
+	            })
+	            // 鼠标移动到list的div上的时候list div不会被隐藏
+	            $("#wechatCode").hover(function () {
+	                $("#wechatCode").show();
+	            }, function () {
+	                $("#wechatCode").hide();
+	            })
+		</script>
+		<!-- 微信二维码 End -->
+        <!--头条公众号-->
+        <a target="_blank" href="javascript:;"><img class="btn end" src="r/cms/jjw/style_js/images/rmsj_2.jpg"></a>
+        <!--头条公众号 end -->
+       <!--广东党风-->
+        <a target="_blank" href="javascript:;"><img class="btn" src="r/cms/jjw/style_js/images/rmsj_3.png"></a>
+        <!--广东党风 end-->
+        <!--网上展厅-->
+        <a target="_blank" href="javascript:;"><img class="btn end" src="r/cms/jjw/style_js/images/rmsj_4.jpg"></a>
+        <!--网上展厅 end -->
+    </div>
+<!--清风观澜-->
+    <div class="qfgl">
+        <div class="lm-til">
+            <h3><a target="_blank" href="javascript:;">清风观澜</a></h3>
+        </div>
+        <div class="content">
+            <!--办案故事-->
+            <div class="imgNewSet">
+                <div class="til-1"><a target="_blank" href="javascript:;">办案故事</a></div>
+                <div class="imgNew">
+                    <a target="_blank" href="javascript:;" title="人前做戏唱高调 人后妄为行贪腐"><img src="u/cms/www/202012/0909333309x3.png"></a>
+                    <div class="til"><a target="_blank" title="人前做戏唱高调 人后妄为行贪腐" href="javascript:;">人前做戏唱高调 人后妄为行贪腐</a></div>
+                </div>
+            </div>
+            <!--办案故事 end -->
+            <!--清风人物-->
+            <div class="imgNewSet end">
+                <div class="til-1"><a target="_blank" href="javascript:;">清风人物</a></div>
+                <div class="imgNew">
+                    <a target="_blank" href="javascript:;" title='追记湖北省咸丰县清坪镇原党委委员、纪委书记谢睿'><img src="u/cms/www/202011/170849011e33.jpg"></a>
+                    <div class="til"><a target="_blank" title='追记湖北省咸丰县清坪镇原党委委员、纪委书记谢睿' href="javascript:;">追记湖北省咸丰县清坪镇原党委委员、纪委书记谢睿</a></div>
+                </div>
+            </div>
+
+
+            <!--清风人物 end-->
+            <!--史鉴  原史海钩沉-->
+
+            <div class="lm_w_381 sj">
+
+                <div class="topLine">
+                    <div class="lm"><a target="_blank" href="javascript:;">史鉴</a></div>
+                    <div class="more"><a target="_blank" href="javascript:;" title="史鉴">更多></a></div>
+                </div>
+                <ul class="new-list-1">
+
+                    <li>
+                        <div class="dot"></div>
+                        <div class="til"><a target="_blank" href="javascript:;" title="六尺巷中忆张英">六尺巷中忆张英</a></div>
+                    </li>
+                    <li>
+                        <div class="dot"></div>
+                        <div class="til"><a target="_blank" href="javascript:;" title="唐朝监察体系的制度性提升及“贿绢案”“麦麸案”">唐朝监察体系的制度性提升及“贿绢案”“...</a></div>
+                    </li>
+                    <li>
+                        <div class="dot"></div>
+                        <div class="til"><a target="_blank" href="javascript:;" title="犹有临风啸咏声">犹有临风啸咏声</a></div>
+                    </li>
+
+                </ul>
+            </div>
+            <!--史鉴 end -->
+
+            <!--理论（原理论研究）-->
+            <div class="lm_w_381 ll">
+                <div class="topLine">
+                    <div class="lm"><a target="_blank" href="javascript:;">理论</a></div>
+                    <div class="more"><a target="_blank" href="javascript:;">更多></a></div>
+                </div>
+                <ul class="new-list-1">
+
+                    <li>
+                        <div class="dot"></div>
+                        <div class="til"><a target="_blank" href="javascript:;" title="收受商铺并约定返租给行贿人怎样确定受贿数额">收受商铺并约定返租给行贿人怎样确定受贿...</a></div>
+                    </li>
+                    <li>
+                        <div class="dot"></div>
+                        <div class="til"><a target="_blank" href="javascript:;" title="以有力监督确保制度生威">以有力监督确保制度生威</a></div>
+                    </li>
+                    <li>
+                        <div class="dot"></div>
+                        <div class="til"><a target="_blank" href="javascript:;" title="以高质量监督推动高质量监管">以高质量监督推动高质量监管</a></div>
+                    </li>
+
+                </ul>
+            </div>
+            <!--理论（原理论研究）end -->
+
+            <!--文化（原廉政文化）-->
+            <div class="lm_w_381 wh">
+                <div class="topLine">
+                    <div class="lm"><a target="_blank" href="javascript:;">文化</a></div>
+                    <div class="more"><a target="_blank" href="javascript:;">更多></a></div>
+                </div>
+                <ul class="new-list-1">
+                    <li>
+                        <div class="dot"></div>
+                        <div class="til"><a target="_blank" href="javascript:;" title="扯腿">扯腿</a></div>
+                    </li>
+                    <li>
+                        <div class="dot"></div>
+                        <div class="til"><a target="_blank" href="javascript:;" title="农民也可以在空调房里劳作">农民也可以在空调房里劳作</a></div>
+                    </li>
+                    <li>
+                        <div class="dot"></div>
+                        <div class="til"><a target="_blank" href="javascript:;" title="孝道">孝道</a></div>
+                    </li>
+
+                </ul>
+            </div>
+            <!--文化（原廉政文化）end-->
+
+            <!--论坛（原廉政论坛）-->
+            <div class="lm_w_381 ll">
+                <div class="topLine">
+                    <div class="lm"><a target="_blank" href="javascript:;">论坛</a></div>
+                    <div class="more"><a target="_blank" href="javascript:;">更多></a></div>
+                </div>
+                <ul class="new-list-1">
+                    <li>
+                        <div class="dot"></div>
+                        <div class="til"><a target="_blank" href="javascript:;" title="李垚：努力营造风清气正的良好政治生态">李垚：努力营造风清气正的良好政治生态</a></div>
+                    </li>
+                    <li>
+                        <div class="dot"></div>
+                        <div class="til"><a target="_blank" href="javascript:;" title="李文刚：行于日常 非同寻常">李文刚：行于日常 非同寻常</a></div>
+                    </li>
+                    <li>
+                        <div class="dot"></div>
+                        <div class="til"><a target="_blank" href="javascript:;" title="黄坤：奢靡之始 堕落之渐">黄坤：奢靡之始 堕落之渐</a></div>
+                    </li>
+                </ul>
+            </div>
+            <!--论坛（原廉政论坛） end-->
+        </div>
+    </div>
+    <!--清风观澜 end-->
+</div>
+<!--相关链接-->
+<div class="xglj c_w_1200">
+	<h3>相关链接</h3>
+	<div class="c_w_1170">
+		<div class="wrapper">
+			<!--全国纪检监察网站-->
+			<div class="itm active">全国纪检监察网站</div>
+			<!--各地级以上市政府网站-->
+			<div class="itm">各地级以上市政府网站</div>
+			<!--省直部门政府网站-->
+			<div class="itm">省直部门政府网站</div>
+			<!--本省纪检监察网-->
+			<div class="itm">本省纪检监察网</div>
+			<!--常用网站-->
+			<div class="itm">常用网站</div>
+		</div>
+		<!-- 全国纪检监察网站 -->
+		<div class="link" style="height: 160px;">
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>中央纪委国家监委</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>北  京</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>天  津</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>河  北</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>山  西</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>内蒙古</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>辽  宁</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>吉  林</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>黑龙江</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>上  海</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>江  苏</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>浙  江</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>安  徽</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>福  建</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>江  西</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>山  东</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>河  南</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>湖  北</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>湖  南</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>广  西</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>海  南</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>重  庆</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>四  川</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>贵  州</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>云  南</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>西  藏</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>陕  西</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>甘  肃</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>宁  夏</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>青  海</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>新  疆</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>新疆生产建设兵团</nobr></a></div>
+		</div>
+		<!-- 各地级以上市政府网站 -->
+		<div class="link hide" style="height: 160px;">
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>广州市</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>深圳市</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>珠海市</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>汕头市</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>佛山市</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>韶关市</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>河源市</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>梅州市</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>惠州市</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>汕尾市</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>东莞市</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>中山市</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>江门市</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>阳江市</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>湛江市</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>茂名市</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>肇庆市</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>清远市</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>潮州市</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>揭阳市</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>云浮市</nobr></a></div>
+		</div>
+		<!-- 省直部门政府网站 -->
+		<div class="link hide" style="height: 250px;">
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省府办公厅</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省发展和改革委员会</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省教育厅</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省科学技术厅</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省工业和信息化厅</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省民族宗教事务委员会</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省公安厅</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省民政厅</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省司法厅</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省财政厅</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省人力资源和社会保障厅</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省自然资源厅</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省生态环境厅</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省住房和城乡建设厅</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省交通运输厅</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省水利厅</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省农业农村厅</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省商务厅</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省文化和旅游厅</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省卫生健康委员会</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省应急管理厅</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省退役军人事务厅</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省审计厅</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省国有资产监督管理委员会</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省市场监督管理局</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省广播电视局</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省体育局</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省统计局</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省港澳办</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省地方金融监督管理局</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省人民政府参事室 </nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省信访局</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省粮食和物资储备局</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省社会组织管理局</nobr></a></div>
+						<div class="linkItm"><a href="index5.html" target="_blank"><nobr>省监狱管理局</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省戒毒管理局</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省林业局</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省中医药局</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>省药品监督管理局</nobr></a></div>
+		</div>
+		<!-- 本省纪检监察网 -->
+		<div class="link hide" style="height: 160px;">
+							<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>广州市</nobr></a></div>
+							<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>深圳市</nobr></a></div>
+							<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>珠海市</nobr></a></div>
+							<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>汕头市</nobr></a></div>
+							<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>佛山市</nobr></a></div>
+							<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>韶关市</nobr></a></div>
+							<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>河源市</nobr></a></div>
+							<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>梅州市</nobr></a></div>
+							<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>惠州市</nobr></a></div>
+							<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>汕尾市</nobr></a></div>
+							<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>东莞市</nobr></a></div>
+							<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>中山市</nobr></a></div>
+							<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>江门市</nobr></a></div>
+							<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>阳江市</nobr></a></div>
+							<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>湛江市</nobr></a></div>
+							<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>茂名市</nobr></a></div>
+							<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>肇庆市</nobr></a></div>
+							<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>清远市</nobr></a></div>
+							<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>潮州市</nobr></a></div>
+							<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>揭阳市</nobr></a></div>
+							<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>云浮市</nobr></a></div>
+		</div>
+		<!-- 常用网站 -->
+		<div class="link hide" style="height: 160px;">
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>人民网</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>新华网</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>央视网</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>中国网</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>国际在线</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>中国日报网</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>中青网</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>中国经济网</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>中新网</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>光明网</nobr></a></div>
+						<div class="linkItm"><a href="javascript:;" target="_blank"><nobr>央广网</nobr></a></div>
+		</div>
+		<script>
+            $(".xglj .wrapper .itm").hover(function () {
+                $(".xglj .wrapper .itm").removeClass("active");
+                $(this).addClass("active");
+                var idx = $(".xglj .wrapper .itm").index(this);
+                $(".xglj .link").hide();
+                $(".xglj .link").eq(idx).show();
+            });
+		</script>
+	</div>
+</div><div class="foot">
+	<div class="con">
+		<!--<img class="logo_1" src="/r/cms/jjw/style_js/images/logo_1.jpg">-->
+
+			<script type="text/javascript">
+				document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/20/000/0000/60101610/CA200000000601016100005.js' type='text/javascript'%3E%3C/script%3E"));
+			</script>
+
+
+		<div class="text">
+			<p>主办单位：中共广东省纪律检查委员会 广东省监察委员会</p>
+			<p>合作单位：南方新闻网</p>
+			<p>粤ICP备10233762号</p>
+		</div>
+		<img class="logo_2" src="r/cms/jjw/style_js/images/logo_2.jpg">
+		<div class="text text2">
+			<p>nyqfw@gd.gov.cn</p>
+			<p>投稿邮箱</p>
+		</div>
+	</div>
+</div>
+<div class="floatPanel">
+        <div class="fp-itm fp1">
+            <a href="r/cms/jjw/xfjb/jbyd.html" target="_blank" target="_blank"></a>
+        </div>
+        <!-- <div class="fp-itm fp2">
+            <a href="http://guangdong.12388.gov.cn/index1.html" target="_blank"></a>
+        </div> -->
+        <div class="fp-itm fp4">
+            <span></span>
+            <img class="wechatcode" style="display: none;" src="r/cms/jjw/style_js/images/wechatcode.jpg">
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function(){
+        $(".foot span img").addClass("logo_1").css("width","80px").css("margin-right","8px").css("margin-top","-2px");
+
+    });
+    <!--右浮动-->
+    //右漂浮
+    if ($(window).width() <= 1200) {
+        $("body").css("overflow-x", "auto");
+    } else {
+        $("body").css("overflow-x", "hidden");
+    }
+    /* 无需控制宽度设置悬浮 
+    if ($(window).width() <= 1375) {
+        $(".floatPanel").hide();
+    } else {
+        $(".floatPanel").show();
+    } */
+    $(window).resize(function () {
+        if ($(window).width() <= 1200) {
+            $("body").css("overflow-x", "auto");
+        } else {
+            $("body").css("overflow-x", "hidden");
+        }
+        /* 无需控制宽度设置悬浮
+        if ($(window).width() <= 1375) {
+            $(".floatPanel").hide();
+        } else {
+            $(".floatPanel").show();
+        } */
+    });
+    $(window).scroll(function () {
+        var oTop = $(document).scrollTop() + 340;
+        $(".floatPanel").stop().animate({top: oTop});
+    });
+    $(".fp4").hover(function () {
+        $(".wechatcode").show();
+    }, function () {
+        $(".wechatcode").hide();
+    })
+</script></body>
+</html>

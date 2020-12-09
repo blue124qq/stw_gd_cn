@@ -1,0 +1,142 @@
+a:link, a:active, a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+a:focus {
+	outline: none;
+}
+
+.main {
+	text-align: center;
+	font-family: "KaiTi";
+}
+
+* {
+	font-family: 微软雅黑;
+	color: inherit;
+	margin: 0px;
+	padding: 0px;
+	border-width: initial;
+	border-style: none;
+	border-color: initial;
+	border-image: initial;
+}
+
+.banner {
+	background-color: #005bac;
+}
+
+.title {
+	text-align: center;
+	font-family: "simHei";
+	width: 910px;
+	height: 50px;
+	margin: 25px auto 10px;
+	font-size: 18pt;
+}
+
+.titleName {
+	text-decoration: none;
+	text-align: left;
+	float: left;
+}
+
+.box01 {
+	height: 810px;
+	width: 910px;
+	margin-right: auto;
+	margin-left: auto;
+	visibility: visible;
+}
+
+.one01 {
+	float: left;
+	overflow: hidden;
+	visibility: visible;
+	margin: 0px auto;
+	height: 800px;
+}
+
+.one01 p {
+	font-size: 13pt;
+	/*font-weight:200; */
+	line-height: 40px;
+	color: #000000;
+	text-decoration: none;
+	text-align: left;
+	float: left;
+	margin: 0px 40px 0px 30px;
+	text-indent: 2em;
+}
+
+
+
+.button{
+background: -webkit-linear-gradient(top,#005bacc2,#005bac36);
+width: 550px;
+text-align: center;
+font-weight: bold;
+color: #fff;
+text-shadow:1px 1px 1px #6face2;
+font-size:28px;
+font-family: "Microsoft Yahei";
+border-radius: 5px;
+margin: 20px auto 40px;
+height: 60px;
+position: relative;
+overflow: hidden;
+
+}
+.button.red{
+	background:url(jubaobtn.jpg) no-repeat center;
+-moz-background-size:100% 100%;
+ background-size:100% 100%;
+}
+
+.foot {
+	width: 100%;
+	height: 157px;
+	background-color: #005bac;
+	overflow: hidden;
+}
+
+.foot .con {
+	width: 715px;
+	margin: 40px auto 0 auto;
+	overflow: hidden;
+}
+
+.foot .logo_1 {
+	float: left;
+	margin-top: 10px;
+	margin-right: 35px;
+}
+
+.foot .logo_2 {
+	float: left;
+	margin-top: 12px;
+	margin-left: 45px;
+	margin-right: 20px;
+}
+
+.foot .text {
+	float: left;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.foot .text p {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.foot .text2 {
+	font-size: 16px;
+	margin-top: 15px;
+}
+
+.foot .text2 p {
+	font-size: 16px;
+}

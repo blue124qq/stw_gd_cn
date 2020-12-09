@@ -1,0 +1,280 @@
+table {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+}
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+a:hover {
+	color: #66CC33;
+	text-decoration: underline;
+}
+
+.table {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+}
+.p12w {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+.p14b {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #31AAD7;
+}
+
+.p20 {
+
+    font-size: 18px;
+	font-weight: bold;
+}
+
+
+.content {
+
+    font-size: 14px;
+	line-Height: 22px;
+}
+
+.bgleft {
+	background-attachment: fixed;
+	background-image: url(http://gdstc.gd.gov.cn/pro/images/images/bg_left.gif);
+	background-repeat: repeat-y;
+	background-position: left top;
+}
+.bg_head_main {
+	background-attachment: fixed;
+	background-image: url(http://gdstc.gd.gov.cn/pro/images/images/bg_head_main.gif);
+	background-repeat: repeat-x;
+	background-position: center top;
+}
+.pathfont1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+.pathfont2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #FF6600;
+}
+.bg_title_first_left {
+	background-attachment: fixed;
+	background-image: url(http://gdstc.gd.gov.cn/pro/images/images/bg_title_first_left.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 21px;
+}
+.bgbuttonzxtb1 {
+	background-attachment: fixed;
+	background-image: url(http://gdstc.gd.gov.cn/pro/images/images/bg_button_zxtb.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+.bgbuttonzxtb2_1 {
+	background-attachment: fixed;
+	background-image: url(http://gdstc.gd.gov.cn/pro/images/images/bg_button_zxtb_on.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 25px;
+	font-weight: bold;
+	color: #31AAD7;
+	height: 25px;
+	width: 70px;
+}
+.bgbuttonzxtb2_2 {
+	background-attachment: fixed;
+	background-image: url(http://gdstc.gd.gov.cn/pro/images/images/bg_button_zxtb_down.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 25px;
+	font-weight: bold;
+	color: #FFFFFF;
+	height: 25px;
+	width: 70px;
+}
+.bg_tdnow {
+	background-attachment: fixed;
+	background-image: url(http://gdstc.gd.gov.cn/pro/images/images/bg_left_button_over.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding: 3px;
+	color: #FF3300;
+}
+.input {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	border: 1px solid #617993;
+}
+.button {
+	background-color: #7BC9E6;
+	border: 1px solid #B5E0F0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	height: 20px;
+}
+.green {
+	color: #79FE16;
+}
+.red {
+	color: #FF0000;
+}
+.yellow {
+	color: #f6d707;
+}
+.green_l:link {
+	color: #4CB101;
+	text-decoration: underline;
+}
+.green_l:visited {
+	color: #4CB101;
+	text-decoration: underline;
+}
+.green_l:hover {
+	color: #79FE16;
+	text-decoration: none;
+}
+.green1:link {
+	color: #79FE16;
+	text-decoration: underline;
+}
+.green1:visited {
+	color: #79FE16;
+	text-decoration: underline;
+}
+.green1:hover {
+	color: #FFFF00;
+	text-decoration: none;
+}
+.yellow_l:link {
+	color: #f6d707;
+	text-decoration: underline;
+}
+.yellow_l:visited {
+	color: #f6d707;
+	text-decoration: underline;
+}
+.yellow_l:hover {
+	color: #79FE16;
+	text-decoration: none;
+}
+.mail:link {
+	color: #31AAD7;
+	text-decoration: underline;
+}
+.mail:visited {
+	color: #31AAD7;
+	text-decoration: underline;
+}
+.mail:hover {
+	color: #FF6600;
+	text-decoration: none;
+}
+.left:link {
+	color: #000000;
+	text-decoration: none;
+	background-image: url(http://gdstc.gd.gov.cn/pro/images/images/bg_left_button_over.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 20px;
+	width: 133px;
+	padding: 5px;
+}
+.left:visited {
+	color: #000000;
+	text-decoration: none;
+	background-image: url(http://gdstc.gd.gov.cn/pro/images/images/bg_left_button_over.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 20px;
+	width: 133px;
+	padding: 5px;
+}
+.left:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+	background-image: url(http://gdstc.gd.gov.cn/pro/images/images/bg_left_button_out.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 20px;
+	width: 133px;
+	padding: 5px;
+}
+.zxtb_b:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+.zxtb_b:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+.zxtb_b:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FF3300;
+	text-decoration: none;
+}
+.zxtb_w:link {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	text-decoration: none;
+}
+.zxtb_w:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	text-decoration: none;
+}
+.zxtb_w:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFF00;
+	text-decoration: none;
+}
+.button_tb {
+	background-image: url(http://gdstc.gd.gov.cn/pro/images/images/button_tb.gif);
+	height: 21px;
+	width: 109px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: left top;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.p14 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.bg_bstd {
+	background-image: url(http://gdstc.gd.gov.cn/pro/images/images/bg_bstd.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.sbfw_titlecolor {
+	color: #00456b;
+}

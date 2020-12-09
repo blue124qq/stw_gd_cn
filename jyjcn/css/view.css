@@ -1,0 +1,66 @@
+.detailCon{
+    width: 1200px;
+    margin: 20px auto 0;
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 0 20px;
+    border: 1px solid #cee5ff;
+}
+
+.pos{
+    width: 100%;
+    border-left: 3px solid #2970b7;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #313131;
+    margin: 10px 0;
+}
+
+.pos a{
+    color: #313131;
+}
+
+.detailCon .newList{
+    width: 98%;
+    margin: 20px auto;
+}
+
+.detailCon .newList li{
+    line-height: 50px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.detailCon .newList li a{
+    width: 900px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    float: left;
+}
+
+.detailCon .newList li .time{
+    float: right;
+    font-size: 16px;
+    color: #8c8c8c;
+}
+
+.page{
+    text-align: center;
+    overflow: hidden;
+    margin: 20px auto;
+    float: left;
+}
+
+.page a{
+    display: block;
+    margin: 0 8px 0 0;
+    padding: 5px 10px;
+    border: solid 1px #297eb7;
+    float: left;
+}
+
+.page a.current{
+    background-color: #297eb7;
+    color: #ffffff;
+}

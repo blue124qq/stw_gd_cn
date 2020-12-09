@@ -1,0 +1,559 @@
+.nav ul li a.index{
+    background: #44aeff;
+}
+
+ul.list li a:hover {
+    color: #076fbe;
+}
+
+/*新闻*/
+.news {
+    padding: 40px 30px 30px;
+    height: 440px;
+    
+}
+
+.news .newsPic {
+    width: 574px;
+    height: 360px;
+    position: relative;
+}
+
+.news .newsPic .swiper-container1 {
+    width: 574px;
+    height: 360px;
+}
+
+.news .newsPic .swiper-container1 a {
+    display: block;
+    position: relative;
+}
+.news .newsPic .swiper-container1 a img{
+    width: 574px;
+    height: 360px;
+}
+.news .newsPic .swiper-container1 a p {
+    position: absolute;
+    width: 574px;
+    height: 60px;
+    line-height: 60px;
+    bottom: 0;
+    font-size: 16px;
+    color: #ffffff;
+    padding-left: 16px;
+    padding-right: 120px;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background: rgba(0, 0, 0, 0.6);
+
+}
+
+.news .newsPic .pagination {
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    bottom: 20px;
+    z-index: 10;
+    width: 20%;
+}
+
+.news .newsPic .swiper-pagination-switch {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #ffffff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.news .newsPic .swiper-active-switch {
+    background: #0963b9;
+}
+
+.news .newsList {
+    width: 548px;
+}
+
+.news .newsList .newsListNav {
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 4px;
+}
+
+.news .newsList .newsListNav li {
+    display: inline-block;
+    width: 100px;
+    color: #076fbe;
+    cursor: pointer;
+    line-height: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.news .newsList .newsListNav li.active {
+    border-bottom: 4px solid #076fbe;
+    font-weight: bold;
+}
+
+.news .newsList .hide {
+    display: none;
+}
+
+.news .newsList ul.list{
+    position: relative;
+}
+
+.news .newsList ul.list li {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    text-overflow: ellipsis;
+    border-left: 4px solid #2056a0;
+    margin: 27px 0;
+    padding-left: 10px;
+    line-height: 18px;
+}
+
+.news .newsList ul.list a.more{
+    display: inline-block;
+    position: absolute;
+    color: #666666;
+    font-size: 14px;
+    right: 0;
+    top: -60px;
+    font-weight: normal;
+}
+
+.news .newsList .change {
+    position: relative;
+}
+.news .newsList .change a.more{
+    display: inline-block;
+    position: absolute;
+    color: #666666;
+    font-size: 14px;
+    right: 0;
+    top: -32px;
+    font-weight: normal;
+}
+
+.news .newsList div.list{
+    margin-top: -4px;
+    height:322px;
+    overflow:hidden;
+}
+
+.news .newsList ul.govpushinfo150203 li {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border-left: 4px solid #2056a0;
+    margin: 28px 0;
+    padding-left: 10px;
+    line-height: 16px;
+}
+
+.news .newsList ul.govpushinfo150203 li span{
+    display: none;
+}
+
+/* .news .newsList ul.list li span {
+    width: 4px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: -3px;
+    background: #2056a0;
+    margin-right: 10px;
+} */
+
+/*考试招生*/
+.exam {
+    padding: 30px 30px 20px 24px;
+    border: 1px solid #f0f1f1;
+    margin-bottom: 30px;
+    height: 390px;
+}
+
+.exam .title {
+    display: inline-block;
+    width: 48px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.exam .title h3 {
+    text-align: center;
+    width: 26px;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #076fbe;
+}
+
+.exam .title p {
+    color: #666666;
+    margin-top: 14px;
+}
+
+.exam .content {
+    width: 1062px;
+}
+
+.exam .content .examIcon {
+    
+}
+
+.exam .content .examIcon .icon {
+    display: inline-block;
+    text-align: center;
+    background: #f4f4f4;
+    height: 90px;
+    box-sizing: border-box;
+    width: 132px;
+    padding-top: 16px;
+    color: #076fbe;
+    cursor: pointer;
+}
+
+.exam .content .examIcon .icon.active {
+    background: #076fbe;
+    color: #ffffff;
+}
+
+.exam .content .examIcon .icon i {
+    font-size: 34px;
+}
+
+.exam .content .examList {
+    margin-top: 20px;
+}
+
+.exam .content .examList.hide {
+    display: none;
+}
+
+.exam .content .list {
+    margin-right: -60px;
+}
+
+.exam .content .list li {
+    line-height: 32px;
+    width: 558px;
+    display: inline-block;
+    padding-right: 60px;
+}
+.exam .content .list li a{
+    display: inline-block;
+    width: 400px; 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+}
+.exam .content .list li span.line {
+    width: 4px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: -3px;
+    background: #2056a0;
+    margin-right: 10px;
+}
+
+.exam .content .list li span.time {
+    display: inline-block;
+    text-align: right;
+    color: #777777;
+}
+.exam .content .examList .examListMore{
+    text-align: right;
+    display: block;
+    color: #076fbe;
+}
+/*政务服务*/
+.service {
+    padding: 30px 30px 14px 24px;
+    border: 1px solid #f0f1f1;
+    margin-bottom: 30px;
+}
+
+.service .title {
+    display: inline-block;
+    width: 48px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.service .title h3 {
+    text-align: center;
+    width: 26px;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #076fbe;
+}
+
+.service .title p {
+    color: #666666;
+    margin-top: 14px;
+}
+
+.service .content {
+    width: 1066px;
+}
+
+.service .content .serviceLink {
+    display: block;
+}
+
+.service .content .examination {
+    margin-top: 10px;
+    width: 440px;
+}
+
+.service .content .examination h5 {
+    font-size: 20px;
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: #076fbe;
+    line-height: 30px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.service .content .examination h5 a.examinationTitle {
+    border-bottom: 4px solid #076fbe;
+    display: inline-block;
+    padding: 0 10px 10px;
+}
+
+.service .content .examination h5 a.more {
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 8px;
+    color: #666666;
+}
+
+.service .content .examination ul {
+    margin-top: 10px;
+}
+
+.service .content .examination ul li {
+    line-height: 48px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.service .content .examination ul li span.line {
+    width: 4px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: -3px;
+    background: #2056a0;
+    margin-right: 10px;
+}
+
+.service .content .examination ul li i {
+    font-style: normal;
+}
+/*日历*/
+.service .content .calendar {
+    width: 582px;
+    background: url("../images/calendar.png") no-repeat 110px 62px;
+}
+
+.service .content .calendar h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #076fbe;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.service .content .calendar h5 a.calendarTitle {
+    border-bottom: 4px solid #076fbe;
+    display: inline-block;
+    padding: 0 10px 10px;
+}
+
+.service .content .calendar h5 a.more {
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 8px;
+    color: #666666;
+}
+
+.service .content .calendar .box {
+    padding: 10px 0;
+    /*background: url("../images/calendarBox.png") no-repeat 110px 10px;*/
+}
+
+/*日期*/
+.service .content .calendar .date {
+    display: inline-block;
+    background: url("../images/date.png");
+    width: 92px;
+    height: 81px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.service .content .calendar .date .day {
+    font-size: 36px;
+    margin: 6px 8px 0 0;
+}
+
+.service .content .calendar .date .month {
+    font-size: 15px;
+    margin-right: 8px;
+}
+
+.service .content .calendar .project {
+    width: 440px;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 14px;
+    line-height: 26px;
+    box-shadow: 0 0 5px 0 #e5e5e5;
+}
+
+.service .content .calendar .project a:hover {
+    color: #076fbe;
+}
+
+/*政务公开*/
+.open {
+    padding: 30px 30px 30px 24px;
+    border: 1px solid #f0f1f1;
+}
+
+.open .title {
+    display: inline-block;
+    width: 48px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.open .title h3 {
+    text-align: center;
+    width: 26px;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #076fbe;
+}
+
+.open .title p {
+    color: #666666;
+    margin-top: 14px;
+}
+
+.open .content {
+    width: 1066px;
+}
+
+.open .content .openIcon {
+    width: 272px;
+    margin-top: 14px;
+}
+
+.open .content .openIcon .icon {
+    display: inline-block;
+    margin: 10px 0 30px 0;
+    text-align: center;
+    width: 130px;
+}
+
+.open .content .openIcon .icon img {
+    display: block;
+    margin: 0 auto 14px;
+}
+
+.open .content .openFile {
+    width: 356px;
+}
+
+.open .content .openFile h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #076fbe;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.open .content .openFile h5 a.fileTitle {
+    border-bottom: 4px solid #076fbe;
+    display: inline-block;
+    padding: 0 10px 10px;
+}
+
+.open .content .openFile h5 a.more {
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 8px;
+    color: #666666;
+}
+
+.open .content .openFile ul.list li {
+    line-height: 38px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.open .content .openFile ul li span.line {
+    width: 4px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: -3px;
+    background: #2056a0;
+    margin-right: 10px;
+}
+
+.open .content .openFile .openData {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.open .content .openTopic {
+    width: 420px;
+}
+
+.open .content .openTopic h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #076fbe;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.open .content .openTopic h5 a.topicTitle {
+    border-bottom: 4px solid #076fbe;
+    display: inline-block;
+    padding: 0 10px 10px;
+}
+
+.open .content .openTopic h5 a.more {
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 8px;
+    color: #666666;
+}
+.openTopic .openTopicContent{
+    margin-right:-20px;
+}
+.openTopic a.topic {
+    display: inline-block;
+    margin: 10px 0;
+    padding-right: 20px;
+}
+.openTopic a.topic img{
+    width: 200px;
+    height: 118px;
+}

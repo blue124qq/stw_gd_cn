@@ -1,0 +1,1436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<meta name="title" content="科技管理|广东省科技业务管理阳光政务平台">
+<meta name="description" content="广东省科技业务管理阳光政务平台 是一站式智慧科技管理信息系统云服务(科创云), 支持科技项目申请, 同行评议, 进展结题等全过程科技业务管理, 利用科技大数据与人工智能技术, 让管理更科学.">
+<meta name="Keywords" content="广东省科技业务管理阳光政务平台,  智慧科技管理信息系统云服务, 科创云, 科技管理信息系统, 科技信息系统, 专项资金管理系统, 科研信息系统, 科技管理系统, 同行评议, 科技大数据, 人工智能, 智慧科技, 爱瑞思软件, 广东省科技厅">
+
+<!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+
+<title>科技管理|广东省科技业务管理阳光政务平台</title>
+
+
+<link href="../egrantres_app/css/common-20201208.css" rel="stylesheet" type="text/css">
+<link href="../egrantres/css/thickbox-20201208.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../egrantres/js/jquery/jquery-20201208.js"></script>
+<script type="text/javascript">var ctx="/egrantweb";var res="/egrantres";var res_app="/egrantres_app";</script>
+<script type="text/javascript" src="../egrantres_app/js/app/BrowserTool-20201208.js"></script>
+<script type="text/javascript" src="../egrantres/js/thickboxpopup-20201208.js"></script>
+<script type="text/javascript" src="../egrantres/js/public-20201208.js"></script>
+<script type="text/javascript" src="../egrantres_app/js/home/home-20201208.js"></script>
+
+<!-- 拖动-放大 插件 -->
+<script type="text/javascript" src="../egrantres/js/plugins/bg_move/bg_move-20201208.js"></script>
+<link rel="stylesheet" type="text/css" href="../egrantres/css/public-20201208.css">
+<link href="../egrantres_app/css/index-20201208.css" rel="stylesheet" type="text/css">
+<!-- add by qhh 20180912 -->
+<link rel="stylesheet" type="text/css" href="../egrantres_app/css/gdzwfw/branch-hall-20201208.css">
+<!-- qhh add 20180912 -->
+<script type="text/javascript" src="../egrantres_app/js/gdzwfw/gdzwfw-common-20201208.js"></script>
+<!-- js加密 -->
+<script type="text/javascript" src="../egrantres/js/jquery/jsencrypt.min-20201208.js"></script>
+<!-- add by qhh 20170814 解决登录模块文字换行问题 -->
+<style>
+th, td {
+    font-size: 12px;
+}
+
+input:-moz-placeholder{   
+color: #ddd;
+}
+input:-ms-input-placeholder{   
+color: #ddd;
+}   
+input::-webkit-input-placeholder{   
+color: #ddd;
+}
+
+</style>
+<script language="javascript">
+host = window.location.host;
+
+var CookieUtilPrivate = {
+		get: function(name){
+			var cookieName = encodeURIComponent(name) + "=",
+				cookieStart = document.cookie.indexOf(cookieName);
+				cookieValue = null;
+			//alert(document.cookie);
+			if(cookieStart > -1){
+				var cookieEnd = document.cookie.indexOf(";", cookieStart);
+				if(cookieEnd == -1){
+					cookieEnd = document.cookie.length;
+				}
+				cookieValue = decodeURIComponent(document.cookie.substring(cookieStart 
+						+ cookieName.length, cookieEnd));
+				return cookieValue;
+			}
+		},
+		set:function(name, value, expires, path, domain, secure){
+			var cookieText = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+			if(expires instanceof Date){
+				cookieText += "; expires=" + expires.toGMTString();
+			}
+			if(path){
+				cookieText += "; path=" + path;
+			}
+			if(domain){
+				cookieText += "; domain=" + domain;
+			}
+			if(secure){
+				cookieText += "; secure";
+			}
+			document.cookie = cookieText;
+		},
+		unset: function(name, path, domain, secure){
+			this.set(name, "", new Date(0), path, domain, secure);
+		}
+};
+
+
+$(document).ready(function() {
+	if(host.indexOf("protest") >= 0 || host.indexOf("test") >= 0 || host.indexOf("uat") >= 0 || host.indexOf("dev") >= 0) {
+		/* $(".banner").addClass("banner_cs").removeClass("banner"); */
+		$(".index-header").addClass("index-header-cs").removeClass("index-header");
+	}
+	//showNoticeList();
+	CookieUtilPrivate.set("initCookieFlag", "true", new Date(0));//删除初始化cookie标识
+	
+	var url = $("input[type=hidden][name=service]").val();
+    if(!!url && url.indexOf("wsbs") != -1){
+    	$.ajax({
+     		url:ctx + "/" + "main?" + url.split("?")[1],
+     		type: 'post',
+     		dataType : 'json',
+     		data : '',
+     		success : function (data) {},
+     		error : function(){}
+     	});
+    }
+    
+    
+    $("#consult_type_close").click(function(){
+    	$("#consult_type_qq").css("display","");
+    	$("#consult_type").css("display","none");
+    });
+    
+    $("div #consult_type_qq").click(function(){
+    	$(this).css("display","none");
+    	$("#consult_type").css("display","");
+    });
+    
+    var isShowBrowserTips=0;
+    if(isShowBrowserTips!=null && isShowBrowserTips!=undefined && isShowBrowserTips==1){
+    	$("#version-tip").css("display","");
+    }
+    
+});
+
+
+function closeBarCode() {
+	$("#barCode").css("display","none");
+}
+
+
+$(function(){
+    $(document).keypress(function(e){
+     	if(!e) e = window.event;
+     	if(13 == e.keyCode || 13 == e.which){ //ie下 ctrl+ 回车 ==  10
+			$("#indexForm").find("#submit").click(); //相当于点击提交按钮
+		    //也可以这么做
+		    //$("#form").submit();
+		}
+	});
+});
+
+
+function submitProposal(type, systemCode, code)
+{	
+	//window.frames["login_iframe"].src="";
+	document.getElementById("login_iframe").src="";
+	var url = 'main?bstd='+type+"&systemCode="+systemCode;
+	if(!!code){
+		url += "&subGrantCode="+code;
+	}
+	if(!!url){
+		noLoginRequest(url+'&roleId=XAvjlooU%2BnE%3D');
+	}
+	return false; 
+}
+
+function noLoginRequest(url){
+ 	url= ctx + "/" + url;
+ 	$.ajax({
+ 		url:url,
+ 		type: 'post',
+ 		dataType : 'json',
+ 		data : '',
+ 		success : function (data) {
+ 			ajaxSessionTimeoutHandler(data, url);
+ 		},
+ 		error : function(){
+ 		}
+ 	});
+ }
+
+function ajaxSessionTimeoutHandler(data, url){
+	loadSubPage('login_window','/egrantweb/index-login-window',url,data);
+}
+
+function loadSubPage(divId,url,targetUrl,data){
+	var systemCode = data['systemCode'];
+	//window.frames["login_iframe"].src="/egrantweb/index-login-window?systemCode="+systemCode+"&f_page=logindlg&targetUrl="+encodeURIComponent(targetUrl);
+	// 解决IE下拿不到iframe对象，无法发送请求
+	 document.getElementById("login_iframe").src="http://pro.gdstc.gd.gov.cn:80/egrantweb/index-login-window?systemCode="+systemCode+"&f_page=logindlg&targetUrl="+encodeURIComponent(targetUrl);
+	 var top = ($(window).height() - $("#"+divId).height())/2;   
+    var left = ($(window).width() - $("#"+divId).width())/2;   
+    var scrollTop = $(document).scrollTop();   
+    var scrollLeft = $(document).scrollLeft();
+
+    $("#shelter_div").addClass("shelter");    
+    $("#"+divId).css( { position : 'fixed', 'top' : '30%', left : left + scrollLeft } ).css("display","");
+
+}
+
+function forwardToAuth(){
+	var redirectUrl = "http://pro.gdstc.gd.gov.cn/egrantweb/network-client/oAuthSvtClient?flag=init&type=1";//业务系统回调地址
+	//对url进行编码，否则如果使用反向代理则会无法重定向
+	redirectUrl = escape(redirectUrl);
+	window.top.location.href= "https://tyrz.gd.gov.cn/tif/sso/connect/page/oauth2/authorize?service=initService&response_type=code&client_id=gdygzwpt&scope=all&client_secret=F36yjXEo5fPS&redirect_uri="+redirectUrl;
+}
+
+function downloadSoftWare() {
+	var openUrl = '/egrantres/html/ruanjian.html';//弹出窗口的url
+	var iWidth=800; //弹出窗口的宽度;
+	var iHeight=300; //弹出窗口的高度;
+	var iTop = (window.screen.availHeight-30-iHeight)/2; //获得窗口的垂直位置;
+	var iLeft = (window.screen.availWidth-10-iWidth)/2; //获得窗口的水平位置;
+	window.open(openUrl,"newwindow","height="+iHeight+", width="+iWidth+", top="+iTop+", left="+iLeft+"toolbar=no, menubar=no,scrollbars=no, resizable=no,location=no, status=no'");
+}
+
+</script>
+
+</head>
+<body id="homebody">
+<!-- 页面底部交流提醒 -->
+<div class="consult_type" id="consult_type">
+    <div class="consult_type_cont">
+        <a href="javascript:;" class="consult_type_close" id="consult_type_close"></a>
+        <h2>咨询方式</h2>
+        <p>技术支持电话：020-83163338（工作时间： 8:30-12:00、14:00-17:30）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Email：gdpro@gdstc.gov.cn&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            技术支持：<a href="javascript:;" target="_parent" onclick="return qqTalkBox();"><i class="qq_talk_icon"></i>&nbsp;QQ交谈</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="javascript:;" class="blue_btn">在线提问</a>
+        </p>
+    </div>
+</div>
+
+<!-- 页面右侧qq交流和二维码 -->
+<div class="code-box">
+    <div class="consult_type_qq" id="consult_type_qq" style="display: none;">
+        <i class="icon-qq"></i>
+    </div>
+    <div class="code-box-wrap">
+        <i class="icon-code"></i>
+        <div class="code-box-cont">
+            <div class="triangle-left">
+                <em></em><span></span>
+            </div>
+            <img src="../egrantres_app/images/index/code.jpg">
+        </div>
+    </div>
+</div>
+
+<!-- 页面顶部浏览器版本提醒 -->
+<div class="version-tip" id="version-tip" style="display:none;">
+    <div class="version-tip-cont">
+        尊敬的用户：广东省科技业务管理阳光政务平台升级改造中，为保障业务办理顺利进行，推荐使用Firefox(<a href="javascript:;" target="_blank" style="color:#1265cf">下载Firefox</a>)、Google Chrome(<a href="javascript:;" target="_blank" style="color:#1265cf">下载Google Chrome</a>)、IE11及以上版本，不便之处，敬请谅解。
+    </div>
+</div>
+
+<div id="shelter_div"></div>
+
+<div class="login_content" id="login_window" style="display:none;">
+	<iframe id="login_iframe" style="width:400px;height:525px;"></iframe>
+</div>
+    
+    <!-- 浮动通知公告 -->
+    <!-- <div class="floating" id="index_notice">
+	    <i class="top-left-bg"></i>
+	    <i class="bottom-right-bg"></i>
+	    <a href="javascript:;" class="close_code" onclick="closeFloat()"></a>
+	    <h1>通知公告</h1>
+	    <p id="p_title"></p>
+	    <p class="t_indent2" id="p_content"></p>
+	    <p class="tr" id="p_footer"></p>
+	    <p class="tr" id="p_date"></p>
+	</div> -->    
+    
+    	
+    		<div class="affiche-box" id="index_notice_0" style="display:none;">
+				<div class="affiche-txt" id="index_text_0">
+					
+					<div class="affiche-con">
+						<p style="font-size: 16px;text-align: center;font-weight: 550;padding-bottom: 10px;"></p>
+						<p class="t_indent2" id="p_content" style="text-indent: 28px"><img src="../egrantres/template/content/广东省科学技术厅.png" height="182px;" width="150px;"></p>
+					</div>
+					<a href="###" class="affiche-close" onclick="closeFloat(0)"></a>
+				</div>
+			</div>
+    	
+	
+    	
+    		<div class="affiche-box" id="index_notice_1" style="display:none;">
+				<div class="affiche-txt" id="index_text_1">
+					
+					<div class="affiche-con">
+						<p style="font-size: 16px;text-align: center;font-weight: 550;padding-bottom: 10px;"></p>
+						<p class="t_indent2" id="p_content" style="text-indent: 28px">各有关单位，根据《广东省科学技术厅关于进一步做好科研项目开发科研助理岗位吸纳高校毕业生就业有关工作的通知》（粤科函资字[2020]381号）要求，请于7月6日前通过广东省科技业务管理阳光政务平台报送具体落实计划，并于8月份起每月15日前报送落实进展情况。</p>
+					</div>
+					<a href="###" class="affiche-close" onclick="closeFloat(1)"></a>
+				</div>
+			</div>
+    	
+	
+    	
+    		<div class="affiche-box" id="index_notice_2" style="display:none;">
+				<div class="affiche-txt" id="index_text_2">
+					
+					<div class="affiche-con">
+						<p style="font-size: 16px;text-align: center;font-weight: 550;padding-bottom: 10px;"></p>
+						<p class="t_indent2" id="p_content" style="text-indent: 28px">广东省科学技术厅关于肺炎疫情防控期间优化对外服务方式的公告，<a href="javascript:;" style="color:#FFA500">点击查看</a>。<br><span style="float:right;font-size:14px;">广东省科学技术厅</span></p>
+					</div>
+					<a href="###" class="affiche-close" onclick="closeFloat(2)"></a>
+				</div>
+			</div>
+    	
+	
+    	
+    		<div class="affiche-box" id="index_notice_3" style="display:none;">
+				<div class="affiche-txt" id="index_text_3">
+					
+					<div class="affiche-con">
+						<p style="font-size: 16px;text-align: center;font-weight: 550;padding-bottom: 10px;"></p>
+						<p class="t_indent2" id="p_content" style="text-indent: 28px">关于在办理省科技管理业务过程中谨防上当受骗的公告，<a href="javascript:;" style="color:#FFA500">点击查看</a>。<br><span style="float:right;font-size:14px;">广东省科学技术厅</span></p>
+					</div>
+					<a href="###" class="affiche-close" onclick="closeFloat(3)"></a>
+				</div>
+			</div>
+    	
+	
+    	
+    		<div class="affiche-box" id="index_notice_4" style="display:none;">
+				<div class="affiche-txt" id="index_text_4">
+					
+					<div class="affiche-con">
+						<p style="font-size: 16px;text-align: center;font-weight: 550;padding-bottom: 10px;"></p>
+						<p class="t_indent2" id="p_content" style="text-indent: 28px">各有关单位：根据《广东省科学技术厅关于印发<广东省省级科技计划项目验收结题工作规程（试行）>的通知》（粤科监字〔2020〕77号）要求，广东省科技业务管理阳光政务平台对省级科技计划项目验收模块的功能及流程进行调整，其中，主管部门为地市科技局的项目，验收申请直接由项目管理专业机构审查。新功能11月11日正式上线，请知悉。<br><span style="float:right;font-size:14px;">广东省科学技术厅</span></广东省省级科技计划项目验收结题工作规程（试行）></p>
+					</div>
+					<a href="###" class="affiche-close" onclick="closeFloat(4)"></a>
+				</div>
+			</div>
+    	
+	
+	
+	
+	
+	
+	
+	<!-- logo -->
+	<div class="index-top">
+		<div class="index-header">
+	        <div class="index-header-cont">
+	        	<div style="float: left;"></div>
+	        	<!-- STMS-22702 首页验证码、图片无法出现 -->
+	            <a href="###" class="index-header-logo" style="background: url('../egrantres_app/images/index/index_logo.png');"></a>
+	             <div class="index-header-slogan">
+	             <a class="index-header-alogan" href="###" style="background: url('../egrantres_app/images/index/index_slogan.png');"></a>
+	             
+	             </div>
+	        </div>
+	    </div>
+		
+		    <div class="index-nav">
+		        <div class="index-nav-cont">
+						<ul>
+		                <li class="cur"><a href="###">首页</a></li>
+							<li><a href="xxgk-o3atKosKaMs3D_1.html">信息公开</a></li>
+							<!-- <li><a href="http://gdstc.gd.gov.cn/zcfg/">管理文件</a></li> -->
+							<!-- <li><a href="http://gdstc.gd.gov.cn/hdjlpt">政民互动</a></li> -->
+							<li><a href="javascript:;">咨询投诉</a></li>
+							<li><a href="javascript:;">培训平台</a></li>
+							<!-- <li><a href="http://pro.gdstc.gd.gov.cn/pro/bzxx.html">帮助信息</a></li> -->
+							<li><a href="javascript:;">常见问题</a></li> 
+						</ul>
+					</div>
+				</div>
+			
+		</div>
+	
+	<div class="index-content">
+	
+		<!-- 浏览器版本不兼容提示信息 -->
+		
+		
+    	<div class="clear20"></div>
+    	
+    	<!-- 滚动信息 -->
+    	<div id="Tab" class="index-infro fl">
+	        <iframe id="show-info-list" src="show-info-list-index-o3atKosKaMs.html" width="874" height="380" frameborder="0" scrolling="no"></iframe>
+	</div>
+	    
+	    <!-- 登录 -->
+	    <div class="index-login fr">
+	        <div class="index-login_cont">
+        				<form action="j_spring_security_check" method="post" id="indexForm" name="indexForm" onsubmit="return checkForm()">
+	        				<input type="hidden" name="f_page" value="">
+	        				<input type="hidden" id="sn_seral" name="sn_seral">
+	        				<input type="hidden" id="digest" name="digest">
+	        				<input type="hidden" id="RandomData" name="RandomData">
+	        				<input type="hidden" id="goToCA" name="goToCA" value="goToCA">
+	        				<input type="hidden" id="systemCode" name="systemCode" value="o3atKosKaMs%3D">
+       				    	<input type="hidden" id="pwdEncode" name="pwdEncode" value="true">
+		            <div class="index-login_tit"><h2><i class="login_icon"></i>系统登录</h2></div>		            
+		            <div class="index-login_wrap">
+		                
+		                	
+		                	
+		                		<div class="login_input">
+		                			<input type="text" name="username" id="username" class="login_admin_input" value="用户名/邮箱">
+					    				<div class="eidtcont" id="div_eidtcont" style="display:none;">
+				    						<div class="arrow">
+			                                 <em></em><span></span>
+			                             	</div>
+		                             	<b>温馨提示：</b>单位请采用组织机构代码（不含“-”号）或统一社会信用代码进行登录
+			                            </div>
+		                		</div>
+				                <div class="login_input">
+				                	<input type="password" id="password" placeholder="密码区分大小写" class="login_password_input">
+				                	<input type="hidden" id="passwordMd5" name="password" value="">
+				                </div>
+				                <div class="login_yzm">
+					  				
+				                    	<input name="checkcode" type="text" id="checkcode" value="验证码" autocomplete="off">
+				                    	<a href="###" class="yzm" onclick="refreshCode();">
+				                    		<img id="img_checkcode" src="validatecode.jpg" alt="验证码">
+				                    	</a>
+				                    
+								</div>
+				                <input type="submit" name="button" id="button" value="立即登录" class="index-login_btn login_btn_bg1">
+				                <input type="button" name="button" id="button3" value="省网厅登录" class="index-login_btn login_btn_bg2" onclick="forwardToAuth()">
+				                <div class="clear"></div>
+				                <p class="mt10">
+					                <a href="###" class="fl" onclick="if(parent)parent.location='/egrantweb/register/reg_index';else location='/egrantweb/register/reg_index';">注册</a>
+					                <a href="###" class="fr" onclick="if(parent){parent.location='psnactive/gainpasswordways';}else{location='psnactive/gainpasswordways';}">忘记密码</a>
+					                <div class="clear"></div>
+				                
+				                
+				                <div class="mt10">
+				                <div id="errorMessage_div" align="left" display="none"></div>
+				                    <select onchange="MM_jumpMenu(this)" style="width:267px;color: #666;">
+													<option selected="">切换至平台地市系统</option>
+													
+														<option value="http://pro.gdstc.gd.gov.cn/egrantweb/">广东省科技业务管理阳光政务平台</option>
+													
+														<option value="http://pro.gdstc.gd.gov.cn/egrantweb/ststms">汕头市科技业务管理阳光政务平台</option>
+													
+														<option value="http://pro.gdstc.gd.gov.cn/egrantweb/zqshstms">四会市科技业务管理阳光政务平台</option>
+													
+													
+														<option value="http://pro.sti.gd.cn/zqsh">四会市科技业务管理系统</option>
+													
+														<option value="http://pro.sti.gd.cn/yf">云浮市科技业务管理系统</option>
+													
+														<option value="http://pro.sti.gd.cn/qy">清远市科技业务管理系统</option>
+													
+														<option value="http://pro.sti.gd.cn/hzdyw">大亚湾科技业务管理系统</option>
+													
+														<option value="http://pro.sti.gd.cn/cz">潮州市科技业务管理系统</option>
+													
+														<option value="http://pro.sti.gd.cn/zj">湛江市科技业务管理系统</option>
+													
+														<option value="http://pro.sti.gd.cn/hzhy">惠阳区科技业务管理系统</option>
+													
+														<option value="http://pro.sti.gd.cn/mz">梅州市科技业务管理系统</option>
+													
+														<option value="http://pro.sti.gd.cn/sw">汕尾市科技业务管理系统</option>
+													
+														<option value="http://pro.sti.gd.cn/jy">揭阳市科技业务管理系统</option>
+													
+														<option value="http://pro.sti.gd.cn/zq">肇庆市科技业务管理系统</option>
+													
+														<option value="http://www.hysti.gd.cn">河源市科技业务管理系统</option>
+													
+														<option value="http://pro.sti.gd.cn/zqgxq">肇庆高新区科技业务管理系统</option>
+													
+														<option value="http://pro.sti.gd.cn/yj">阳江市科技业务管理系统</option>
+													
+														<option value="http://pro.sti.gd.cn/st">汕头市科技业务管理系统</option>
+													
+														<option value="http://pro.sti.gd.cn/mm">茂名市科技业务管理系统</option>
+													
+														<option value="http://pro.sti.gd.cn/hz">惠州市科技业务管理系统</option>
+													
+														<option value="http://pro.sti.gd.cn/sg">韶关市科技业务管理系统</option>
+													
+														<option value="http://pro.sti.gd.cn/hzbl">博罗县科技业务管理系统</option>
+													
+												</select>
+											</div>
+				                <div class="clear"></div>
+				                <div class="other mt10">
+				                    
+				                    <a href="###" class="fl" onclick="caLogin()">CA登录入口</a>
+				                    <a href="###" class="fr" onclick="javascript:window.open('/egrantweb/reg-organization/findOrgRegistered');">查看单位注册情况</a>
+				                    <div class="clear"></div>
+            			</div>
+		                
+		             
+		            </div>
+           			</form>
+        			</div>
+     			</div>
+	    <div class="clear20"></div>
+    	<!-- https://wwwtest.gdstc.gov.cn -->
+    	<!-- 通知公告 -->
+    	<div class="HNotice fl">
+    		
+         <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="专项资金管理系统，科研管理，科研项目申请，科研项目评议，科研项目管理，科研成果管理，科研之友，爱瑞思软件">
+<meta name="description" content="统支持科研项目申请，科研项目评议，科研项目管理，科研成果管理。">
+<title>广东省科技业务管理阳光政务平台，专项资金管理系统</title>
+<link href='' rel='stylesheet' type='text/css'>
+<link href='' rel='stylesheet' type='text/css'>
+<link href='' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+					<div class="HNotice_title">
+						<div class="HAnnouncement">
+							<span class="HN_icon fleft">通知公告</span>
+							<span class="HN_more">
+								<a href="../pro/tzgg/index.html" class="f666" target="_blank">更多公告>></a>
+							</span>
+							<div class="clear"></div>
+						</div>
+        			</div>
+        			<div class="HNotice_nr" style="width:884px;">
+          			<ul>
+                    
+
+    
+ 
+              
+<li><span>2020-11-27</span><a href="javascript:;" target="_blank">广东省科学技术厅关于2020年省科技创新战略专项资金（基础研...</a> </li>
+
+ 
+              
+<li><span>2020-11-25</span><a href="../pro/tzgg_if/content/post_3134505.html" target="_blank">广东省科学技术厅关于征求《广东省基础与应用基础研究基金（省自...</a> </li>
+
+ 
+              
+<li><span>2020-11-19</span><a href="../pro/tzgg_if/content/post_3130161.html" target="_blank">广东省科学技术奖评审委员会办公室关于2020年度广东省科学技...</a> </li>
+
+ 
+              
+<li><span>2020-11-06</span><a href="javascript:;" target="_blank">广东省科学技术厅关于征求《广东省重点实验室建设与运行管理办法...</a> </li>
+
+ 
+              
+<li><span>2020-11-06</span><a href="javascript:;" target="_blank">广东省科学技术厅关于组织申报2020～2021年度粤桂科技合...</a> </li>
+
+ 
+              
+<li><span>2020-11-05</span><a href="../pro/tzgg_if/content/post_3121458.html" target="_blank">广东省科学技术厅关于征求2020～2021年度广东省重点领域...</a> </li>
+
+ 
+              
+<li><span>2020-11-05</span><a href="../pro/tzgg_if/content/post_3120724.html" target="_blank">广东省科学技术厅关于组织申报2020～2021年度广东省重点...</a> </li>
+
+ 
+
+
+          			</ul>
+        			</div>     		
+</body>
+</html>
+  			</div>
+	    
+	    <!-- 帮助信息 -->
+	    <div class="help-box fr">
+	        <div class="common-title">
+	            <h2>帮助信息</h2>
+  			</div>
+	        <div class="help-box_cont">
+	            <!-- <a href="http://pro.gdstc.gd.gov.cn/pro/xtsyzn.html" target="_blank" style="margin-left: 45px;"><span><i class="icon_help01"></i></span><p>系统演示</p></a> -->
+	            <!-- <a href="http://pro.gdstc.gd.gov.cn/pro/xtyhjs.html" target="_blank"><span><i class="icon_help02"></i></span><p>使用说明</p></a> -->
+	            <!-- <a href="javascript:;" onclick="return downloadSoftWare();" target="_parent" style="margin-left: 5px;"><span><i class="icon_help03"></i></span><p>相关软件下载</p></a><br/> -->
+	            <!-- <a href="http://www.gdzwfw.gov.cn/portal/branch-hall?orgCode=006939801" target="_blank"><span><i class="icon_help04"></i></span><p>文件下载</p></a> -->
+	            <a href="javascript:;" target="_blank"><span><i class="icon_help05"></i></span><p>常见问题</p></a>
+			</div>
+			<div class="help-box-service">
+				<div class="service-title">
+					<h2>服务链接</h2>
+				</div>
+				<div class="service-link">
+					<a href="javascript:;" target="_blank">
+						外国人来华工作管理服务系统
+						<i></i>
+					</a>
+				</div>
+			</div>
+			
+	    </div>   	
+    	<div class="clear20"></div>
+		            
+	    <!-- 办事通道 -->
+	    <div class="channel-box">
+	        <div class="common-title">
+	            <h2>办事通道</h2>
+					</div>
+	        <div class="channel-box_cont">
+		          	<ul>
+	                <li><a href="###" onclick="submitProposal('YNKKexot2OE%3D');return false;"><span class="channel-bg01"><i class="icon-channel01"></i></span><p>公告</p></a></li>
+	                <li><a href="###" onclick="submitProposal('MNpDdJAp6tg%3D', 'o3atKosKaMs%3D');return false;"><span class="channel-bg02"><i class="icon-channel02"></i></span><p>申报/管理</p></a></li>
+	                <li><a href="###" onclick="submitProposal('RbDNWT2Fhlc%3D', 'o3atKosKaMs%3D');return false;"><span class="channel-bg03"><i class="icon-channel03"></i></span><p>专家评审</p></a></li>
+	                <li><a href="###" onclick="submitProposal('PStuNhjtM4Y%3D', 'o3atKosKaMs%3D');return false;"><span class="channel-bg04"><i class="icon-channel04"></i></span><p>立项审批</p></a></li>
+	                <li><a href="###" onclick="submitProposal('3lR%2FFVDkdOU%3D', 'o3atKosKaMs%3D');return false;"><span class="channel-bg05"><i class="icon-channel05"></i></span><p>合同签订/管理</p></a></li>
+	                <li><a href="###" onclick="submitProposal('Jj%2BYYP61l2o%3D', 'o3atKosKaMs%3D');return false;"><span class="channel-bg06"><i class="icon-channel06"></i></span><p>拨款管理</p></a></li>
+	                <li><a href="###" onclick="submitProposal('dQO7wUYoBUM%3D', 'o3atKosKaMs%3D');return false;"><span class="channel-bg07"><i class="icon-channel07"></i></span><p>变更管理</p></a></li>
+	                <li><a href="###" onclick="submitProposal('dDGiF4addnc%3D', 'o3atKosKaMs%3D');return false;"><span class="channel-bg08"><i class="icon-channel08"></i></span><p>执行管理</p></a></li>
+	                <li><a href="###" onclick="submitProposal('2kKzFw7Qag8%3D', 'o3atKosKaMs%3D');return false;"><span class="channel-bg09"><i class="icon-channel09"></i></span><p>结题验收</p></a></li>
+		          	</ul>
+        			</div>
+      		</div>
+	    <div class="clear20"></div>
+    	
+    	<!-- 业务类型 -->
+   		<div class="declare-box">
+   			<iframe id="show-grant-list" name="show-grant-list" src="show-grant-list-o3atKosKaMs3D.html" width="100%" frameborder="0" scrolling="no"></iframe>
+  			</div>
+		</div>
+    
+    	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- qhh add 20180912 阳光政务平台系统尾部增加 广东政务服务网 系统尾部   STMS-17925
+
+此界面存在的问题：
+1、原系统数据有异步请求返回相应数据填充界面的内容；比如：联系我们、政府网址找错 模块内容，只能写死 
+TODO  QHH 后续可考虑通过异步拉取数据填充数据 
+ -->
+<!-- footer -->
+<div class="footer" id="gdzwfw_footer_">
+  <div class="container">
+    <div class="footer-links gd-sm-hide">
+      <div class="footer-links-item">
+        <a class="footer-links-gov" target="_blank" href="javascript:;">中国政府网</a>
+      </div>
+      <div class="footer-links-split"></div>
+      <div class="footer-links-item">
+          <div class="dropdown footer-links-choose">
+            <a class="dropdown-toggle" data-toggle="dropdown">国务院部门网站<i class="icon icon-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a target="_blank" href="javascript:;">外交部</a></li>
+              <li><a target="_blank" href="javascript:;">发展改革委</a></li>
+              <li><a target="_blank" href="javascript:;">教育部</a></li>
+              <li><a target="_blank" href="javascript:;">科技部</a></li>
+              <li><a target="_blank" href="javascript:;">工业和信息化部</a></li>
+              <li><a target="_blank" href="javascript:;">国家民委</a></li>
+              <li><a target="_blank" href="javascript:;">公安部</a></li>
+              <li><a target="_blank" href="javascript:;">监察部</a></li>
+              <li><a target="_blank" href="javascript:;">民政部</a></li>
+              <li><a target="_blank" href="javascript:;">司法部</a></li>
+              <li><a target="_blank" href="javascript:;">财政部</a></li>
+              <li><a target="_blank" href="javascript:;">人力资源社会保障部</a></li>
+              <li><a target="_blank" href="javascript:;">国土资源部</a></li>
+              <li><a target="_blank" href="javascript:;">环境保护部</a></li>
+              <li><a target="_blank" href="javascript:;">住房和城乡建设部</a></li>
+              <li><a target="_blank" href="javascript:;">交通运输部</a></li>
+              <li><a target="_blank" href="javascript:;">文化和旅游部</a></li>
+              <li><a target="_blank" href="javascript:;">铁路局</a></li>
+              <li><a target="_blank" href="javascript:;">水利部</a></li>
+              <li><a target="_blank" href="javascript:;">农业部</a></li>
+              <li><a target="_blank" href="javascript:;">商务部</a></li>
+              <li><a target="_blank" href="javascript:;">卫生部</a></li>
+              <li><a target="_blank" href="javascript:;">卫生计生委</a></li>
+              <li><a target="_blank" href="javascript:;">人民银行</a></li>
+              <li><a target="_blank" href="javascript:;">审计署</a></li>
+              <li><a target="_blank" href="javascript:;">国资委</a></li>
+              <li><a target="_blank" href="javascript:;">海关总署</a></li>
+              <li><a target="_blank" href="javascript:;">税务总局</a></li>
+              <li><a target="_blank" href="javascript:;">工商总局</a></li>
+              <li><a target="_blank" href="javascript:;">质检总局</a></li>
+              <li><a target="_blank" href="javascript:;">广电总局、新闻出版总署（版权局）</a></li>
+              <li><a target="_blank" href="javascript:;">体育总局</a></li>
+              <li><a target="_blank" href="javascript:;">安全监管总局</a></li>
+              <li><a target="_blank" href="javascript:;">统计局</a></li>
+              <li><a target="_blank" href="javascript:;">林业局</a></li>
+              <li><a target="_blank" href="javascript:;">知识产权局</a></li>
+              <li><a target="_blank" href="javascript:;">宗教局</a></li>
+              <li><a target="_blank" href="javascript:;">参事室</a></li>
+              <li><a target="_blank" href="javascript:;">国管局</a></li>
+              <li><a target="_blank" href="javascript:;">侨办</a></li>
+              <li><a target="_blank" href="javascript:;">港澳办</a></li>
+              <li><a target="_blank" href="javascript:;">法制办</a></li>
+              <li><a target="_blank" href="javascript:;">新华社</a></li>
+              <li><a target="_blank" href="javascript:;">中科院</a></li>
+              <li><a target="_blank" href="javascript:;">社科院</a></li>
+              <li><a target="_blank" href="javascript:;">工程院</a></li>
+              <li><a target="_blank" href="javascript:;">发展研究中心</a></li>
+              <li><a target="_blank" href="javascript:;">行政学院</a></li>
+              <li><a target="_blank" href="javascript:;">地震局</a></li>
+              <li><a target="_blank" href="javascript:;">气象局</a></li>
+              <li><a target="_blank" href="javascript:;">银监会</a></li>
+              <li><a target="_blank" href="javascript:;">证监会</a></li>
+              <li><a target="_blank" href="javascript:;">保监会</a></li>
+              <li><a target="_blank" href="javascript:;">社保基金会</a></li>
+              <li><a target="_blank" href="javascript:;">自然科学基金会</a></li>
+              <li><a target="_blank" href="javascript:;">台办</a></li>
+              <li><a target="_blank" href="javascript:;">新闻办</a></li>
+              <li><a target="_blank" href="javascript:;">档案局</a></li>
+              <li><a target="_blank" href="javascript:;">信访局</a></li>
+              <li><a target="_blank" href="javascript:;">粮食局</a></li>
+              <li><a target="_blank" href="javascript:;">国防科工局</a></li>
+              <li><a target="_blank" href="javascript:;">烟草局</a></li>
+              <li><a target="_blank" href="javascript:;">外专局</a></li>
+              <li><a target="_blank" href="javascript:;">海洋局</a></li>
+              <li><a target="_blank" href="javascript:;">测绘局</a></li>
+              <li><a target="_blank" href="javascript:;">民航局</a></li>
+              <li><a target="_blank" href="javascript:;">邮政局</a></li>
+              <li><a target="_blank" href="javascript:;">文物局</a></li>
+              <li><a target="_blank" href="javascript:;">食品药品监管局</a></li>
+              <li><a target="_blank" href="javascript:;">中医药局</a></li>
+              <li><a target="_blank" href="javascript:;">外汇局</a></li>
+              <li><a target="_blank" href="javascript:;">煤矿安监局 </a></li>
+              <li><a target="_blank" href="javascript:;">密码局</a></li>
+              <li><a target="_blank" href="javascript:;">航天局</a></li>
+              <li><a target="_blank" href="javascript:;">原子能机构</a></li>
+              <li><a target="_blank" href="javascript:;">国家语委</a></li>
+              <li><a target="_blank" href="javascript:;">国务院扶贫办</a></li>
+              <li><a target="_blank" href="javascript:;">国务院三峡办</a></li>
+            </ul>
+          </div>
+      </div>
+      <div class="footer-links-split"></div>
+      <div class="footer-links-item">
+        <div class="dropdown footer-links-choose">
+            <a class="dropdown-toggle" data-toggle="dropdown">驻港澳机构网站<i class="icon icon-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a target="_blank" href="javascript:;">中央政府驻港联络办</a></li>
+            </ul>
+        </div>
+      </div>
+      <div class="footer-links-split"></div>
+      <div class="footer-links-item">
+        <div class="dropdown footer-links-choose">
+          <a class="dropdown-toggle" data-toggle="dropdown">省政府机构网站<i class="icon icon-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a target="_blank" href="javascript:;">省府办公厅</a></li>
+            <li><a target="_blank" href="javascript:;">省发展改革委</a></li>
+            <li><a target="_blank" href="javascript:;">省经济和信息化委</a></li>
+            <li><a target="_blank" href="javascript:;">省教育厅</a></li>
+            <li><a target="_blank" href="javascript:;">省科技厅</a></li>
+            <li><a target="_blank" href="javascript:;">省民族宗教委</a></li>
+            <li><a target="_blank" href="javascript:;">省公安厅</a></li>
+            <li><a target="_blank" href="../index.html">省监察厅</a></li>
+            <li><a target="_blank" href="javascript:;">省民政厅</a></li>
+            <li><a target="_blank" href="javascript:;">省司法厅</a></li>
+            <li><a target="_blank" href="javascript:;">省财政厅</a></li>
+            <li><a target="_blank" href="javascript:;">省人力资源社会保障厅</a></li>
+            <li><a target="_blank" href="javascript:;">省国土资源厅</a></li>
+            <li><a target="_blank" href="javascript:;">省环境保护厅</a></li>
+            <li><a target="_blank" href="javascript:;">省住房城乡建设厅</a></li>
+            <li><a target="_blank" href="javascript:;">省交通运输厅</a></li>
+            <li><a target="_blank" href="javascript:;">省水利厅</a></li>
+            <li><a target="_blank" href="javascript:;">省农业厅</a></li>
+            <li><a target="_blank" href="javascript:;">省林业厅</a></li>
+            <li><a target="_blank" href="javascript:;">省海洋渔业厅</a></li>
+            <li><a target="_blank" href="javascript:;">省商务厅</a></li>
+            <li><a target="_blank" href="javascript:;">省文化厅</a></li>
+            <li><a target="_blank" href="javascript:;">省卫生计生委</a></li>
+            <li><a target="_blank" href="javascript:;">省审计厅</a></li>
+            <li><a target="_blank" href="javascript:;">省外办</a></li>
+            <li><a target="_blank" href="javascript:;">省国资委</a></li>
+            <li><a target="_blank" href="javascript:;">广东省税务局</a></li>
+            <li><a target="_blank" href="javascript:;">省工商局</a></li>
+            <li><a target="_blank" href="javascript:;">省质监局</a></li>
+            <li><a target="_blank" href="../index1.html">省新闻出版广电局</a></li>
+            <li><a target="_blank" href="javascript:;">省体育局</a></li>
+            <li><a target="_blank" href="javascript:;">省安全监管局</a></li>
+            <li><a target="_blank" href="javascript:;">省食品药品监管局</a></li>
+            <li><a target="_blank" href="javascript:;">省统计局</a></li>
+            <li><a target="_blank" href="javascript:;">省知识产权局</a></li>
+            <li><a target="_blank" href="javascript:;">省旅游局</a></li>
+            <li><a target="_blank" href="../index2.html">省侨办</a></li>
+            <li><a target="_blank" href="javascript:;">省港澳办</a></li>
+            <li><a target="_blank" href="../index3.html">省法制办</a></li>
+            <li><a target="_blank" href="javascript:;">省金融办</a></li>
+            <li><a target="_blank" href="../index4.html">省粮食局</a></li>
+            <li><a target="_blank" href="../index5.html">省监狱局</a></li>
+            <li><a target="_blank" href="javascript:;">省戒毒局</a></li>
+            <li><a target="_blank" href="javascript:;">省外专局</a></li>
+            <li><a target="_blank" href="javascript:;">省中医药局</a></li>
+            <li><a target="_blank" href="javascript:;">省人防办</a></li>
+            <li><a target="_blank" href="javascript:;">省海防打私办</a></li>
+            <li><a target="_blank" href="javascript:;">省参事室 </a></li>
+            <!-- <li><a target="_blank" href="http://www.gd.gov.cn/govpub/jg/zhb/200606/t20060614_728.htm">省驻沪办</a></li> -->
+            <li><a target="_blank" href="javascript:;">省台办</a></li>
+            <li><a target="_blank" href="../index6.html">省保密局</a></li>
+            <li><a target="_blank" href="javascript:;">省信访局</a></li>
+            <li><a target="_blank" href="javascript:;">省编办</a></li>
+            <li><a target="_blank" href="javascript:;">省科学院</a></li>
+            <li><a target="_blank" href="javascript:;">省社科院</a></li>
+            <li><a target="_blank" href="javascript:;">省农科院</a></li>
+            <li><a target="_blank" href="javascript:;">省发展研究中心</a></li>
+            <li><a target="_blank" href="../index7.html">省档案局(馆)</a></li>
+            <li><a target="_blank" href="javascript:;">省地方志办</a></li>
+            <li><a target="_blank" href="javascript:;">省代建局</a></li>
+            <li><a target="_blank" href="javascript:;">省地质局</a></li>
+            <li><a target="_blank" href="javascript:;">省核工业地质局</a></li>
+            <li><a target="_blank" href="javascript:;">省供销社</a></li>
+            <li><a target="_blank" href="javascript:;">省信息中心</a></li>
+            <li><a target="_blank" href="../index8.html">省考试院</a></li>
+            <li><a target="_blank" href="javascript:;">省教育研究院</a></li>
+            <li><a target="_blank" href="javascript:;">省测试分析研究所</a></li>
+            <li><a target="_blank" href="javascript:;">省科学中心</a></li>
+            <li><a target="_blank" href="javascript:;">省民族宗教研究院</a></li>
+            <li><a target="_blank" href="javascript:;">省社保基金管理局</a></li>
+            <li><a target="_blank" href="javascript:;">省建筑设计院</a></li>
+            <li><a target="_blank" href="javascript:;">省公路局</a></li>
+            <li><a target="_blank" href="javascript:;">省水文局</a></li>
+            <li><a target="_blank" href="javascript:;">省北江流域管理局</a></li>
+            <li><a target="_blank" href="javascript:;">省人民医院</a></li>
+            <li><a target="_blank" href="javascript:;">省疾控中心</a></li>
+            <li><a target="_blank" href="javascript:;">省质检院</a></li>
+            <li><a target="_blank" href="javascript:;">省有色金属地质局</a></li>
+            <li><a target="_blank" href="../szsdzj/index.html">深圳市地质局</a></li>
+            <li><a target="_blank" href="javascript:;">省专用通信局</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-links-split"></div>
+      <div class="footer-links-item">
+          <div class="dropdown footer-links-choose">
+              <a class="dropdown-toggle" data-toggle="dropdown">地级以上市网站<i class="icon icon-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a target="_blank" href="javascript:;">广州</a></li>
+                <li><a target="_blank" href="javascript:;">深圳</a></li>
+                <li><a target="_blank" href="javascript:;">珠海</a></li>
+                <li><a target="_blank" href="javascript:;">汕头</a></li>
+                <li><a target="_blank" href="javascript:;">佛山</a></li>
+                <li><a target="_blank" href="javascript:;">韶关</a></li>
+                <li><a target="_blank" href="javascript:;">河源</a></li>
+                <li><a target="_blank" href="javascript:;">梅州</a></li>
+                <li><a target="_blank" href="javascript:;">惠州</a></li>
+                <li><a target="_blank" href="javascript:;">汕尾</a></li>
+                <li><a target="_blank" href="javascript:;">东莞</a></li>
+                <li><a target="_blank" href="javascript:;">中山</a></li>
+                <li><a target="_blank" href="javascript:;">江门</a></li>
+                <li><a target="_blank" href="javascript:;">阳江</a></li>
+                <li><a target="_blank" href="javascript:;">湛江</a></li>
+                <li><a target="_blank" href="javascript:;">茂名</a></li>
+                <li><a target="_blank" href="javascript:;">肇庆</a></li>
+                <li><a target="_blank" href="javascript:;">清远</a></li>
+                <li><a target="_blank" href="javascript:;">潮州</a></li>
+                <li><a target="_blank" href="javascript:;">揭阳</a></li>
+                <li><a target="_blank" href="javascript:;">云浮</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="footer-links-split"></div>
+      <div class="footer-links-item">
+        <div class="dropdown footer-links-choose">
+          <a class="dropdown-toggle" data-toggle="dropdown">各省区网站<i class="icon icon-down"></i></a>
+          <ul class="dropdown-menu">
+              <li><a target="_blank" href="javascript:;">北京</a></li>
+              <li><a target="_blank" href="javascript:;">天津</a></li>
+              <li><a target="_blank" href="javascript:;">河北</a></li>
+              <li><a target="_blank" href="javascript:;">山西</a></li>
+              <li><a target="_blank" href="javascript:;">内蒙古</a></li>
+              <li><a target="_blank" href="javascript:;">辽宁</a></li>
+              <li><a target="_blank" href="javascript:;">吉林</a></li>
+              <li><a target="_blank" href="javascript:;">黑龙江</a></li>
+              <li><a target="_blank" href="javascript:;">上海</a></li>
+              <li><a target="_blank" href="javascript:;">江苏</a></li>
+              <li><a target="_blank" href="javascript:;">浙江</a></li>
+              <li><a target="_blank" href="javascript:;">安徽</a></li>
+              <li><a target="_blank" href="javascript:;">福建</a></li>
+              <li><a target="_blank" href="javascript:;">江西</a></li>
+              <li><a target="_blank" href="javascript:;">山东</a></li>
+              <li><a target="_blank" href="javascript:;">河南</a></li>
+              <li><a target="_blank" href="javascript:;">湖北</a></li>
+              <li><a target="_blank" href="javascript:;">湖南</a></li>
+              <li><a target="_blank" href="javascript:;">广东</a></li>
+              <li><a target="_blank" href="javascript:;">广西</a></li>
+              <li><a target="_blank" href="javascript:;">海南</a></li>
+              <li><a target="_blank" href="javascript:;">重庆</a></li>
+              <li><a target="_blank" href="javascript:;">四川</a></li>
+              <li><a target="_blank" href="javascript:;">贵州</a></li>
+              <li><a target="_blank" href="javascript:;">云南</a></li>
+              <li><a target="_blank" href="javascript:;">西藏</a></li>
+              <li><a target="_blank" href="javascript:;">陕西</a></li>
+              <li><a target="_blank" href="javascript:;">甘肃</a></li>
+              <li><a target="_blank" href="javascript:;">宁夏</a></li>
+              <li><a target="_blank" href="javascript:;">青海</a></li>
+              <li><a target="_blank" href="javascript:;">新疆</a></li>
+              <li><a target="_blank" href="javascript:;">香港</a></li>
+              <li><a target="_blank" href="javascript:;">澳门</a></li>
+            <li><a class="disabled">台湾</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- <div class="footer-links-split"></div>
+      <div class="footer-links-item">
+          <div class="dropdown footer-links-choose">
+            <a class="dropdown-toggle" data-toggle="dropdown">省内专业性网站<i class="icon icon-down"></i></a>
+            <ul class="dropdown-menu dropdown-menu-right-align">
+              <li><a target="_blank" href="http://www.gdfp.gov.cn/">广东省扶贫信息网</a></li>
+              <li><a target="_blank" href="http://www.gdrsks.gov.cn/">广东省人事考试局</a></li>
+              <li><a target="_blank" href="http://www.gdscse.net/">广东省留学人员服务中心</a></li>
+              <li><a target="_blank" href="http://www.gdrc.com/">广东人才网</a></li>
+              <li><a target="_blank" href="http://www.tianditugd.com/index/page/index.html ">天地图·广东</a></li>
+              <li><a target="_blank" href="http://www.kjcg.gd.cn/">广东省科技成果推广平台</a></li>
+              <li><a target="_blank" href="http://www.stw.gd.cn/sfks/">广东司法考试网</a></li>
+              <li><a target="_blank" href="http://www.gdgpo.gov.cn/">广东省政府采购网</a></li>
+              <li><a target="_blank" href="http://www.gpic.gd.cn/">广东省知识产权研究与发展中心（广东省知识产权维权援助中心）</a></li>
+              <li><a target="_blank" href="http://www.gdzypx.org">广东远程职业培训网 </a></li>
+              <li><a target="_blank" href="http://www.gdcx.gov.cn/">公众出行交通信息服务网 </a></li>
+              <li><a target="_blank" href="http://www.gradjob.com.cn/defaults/index.jsp">大学生就业在线 </a></li>
+              <li><a target="_blank" href="http://www.gdwh.com.cn/">广东文化网</a></li>
+              <li><a target="_blank" href="http://www.cdcp.org.cn/">广东省疾病预防控制中心</a></li>
+              <li><a target="_blank" href="http://xwb.gdhed.edu.cn/">广东省学位委员会</a></li>
+            </ul>
+          </div>
+      </div> -->
+      <div class="footer-links-split"></div>
+      <div class="footer-links-item">
+          <div class="dropdown footer-links-choose">
+            <a class="dropdown-toggle" data-toggle="dropdown">推荐网站<i class="icon icon-down"></i></a>
+            <ul class="dropdown-menu dropdown-menu-right-align">
+              <li><a target="_blank" href="javascript:;">省人大常委会</a></li>
+              <li><a target="_blank" href="javascript:;">省政协</a></li>
+              <li><a target="_blank" href="javascript:;">省高级人民法院</a></li>
+              <li><a target="_blank" href="javascript:;">共青团广东省委员会</a></li>
+              <li><a target="_blank" href="javascript:;">省总工会</a></li>
+              <li><a target="_blank" href="javascript:;">省妇联</a></li>
+              <li><a target="_blank" href="javascript:;">省残联</a></li>
+              <li><a target="_blank" href="javascript:;">省红十字会</a></li>
+              <li><a target="_blank" href="javascript:;">省扶贫基金会</a></li>
+              <li><a target="_blank" href="javascript:;">省国税局 </a></li>
+              <li><a target="_blank" href="javascript:;">省气象局</a></li>
+              <li><a target="_blank" href="javascript:;">省地震局</a></li>
+              <li><a target="_blank" href="javascript:;">中国南粤古驿道网</a></li>
+              <li><a target="_blank" href="javascript:;">泛珠三角合作信息网</a></li>
+              <li><a target="_blank" href="javascript:;">南方新闻网</a></li>
+              <li><a target="_blank" href="javascript:;">南方英文网</a></li>
+              <li><a target="_blank" href="javascript:;">电子政务工程服务网</a></li>
+              <li><a target="_blank" href="javascript:;">人民网</a></li>
+              <li><a target="_blank" href="javascript:;">人民网―中国共产党新闻</a></li>
+              <li><a target="_blank" href="javascript:;">中国经济网</a></li>
+              <li><a target="_blank" href="javascript:;">广东政法网</a></li>
+              <li><a target="_blank" href="javascript:;">广东价格指数平台</a></li>
+              <li><a target="_blank" href="javascript:;">广东农村信用社</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+
+    <div class="footer-nav-wrapper gd-row gd-row-gutter-60 gd-row-md-gutter-30 gd-row-sm-gutter-0 gd-row-md-6 gd-row-sm-3">
+      <div class="gd-col gd-col-3">
+        <div class="footer-nav footer-nav-sitemap">
+          <div class="footer-nav-hd"><h3 class="footer-nav-title">网站信息</h3></div>
+          <div class="footer-nav-bd">
+            <a href="javascript:;" class="footer-nav-link" target="_blank">网站介绍</a>
+            <a href="javascript:;" class="footer-nav-link" target="_blank">服务建议</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gd-col gd-col-3">
+        <div class="footer-nav footer-nav-contact">
+          <div class="footer-nav-hd"><h3 class="footer-nav-title">联系我们</h3></div>
+          <div class="footer-nav-bd">
+            <div class="footer-contact">
+              <div class="footer-contact-tel">12345</div>
+            </div>
+            <a id="footer-lxxx-url" class="footer-nav-link" href="javascript:;">联系信息</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gd-col gd-col-3">
+        <div class="footer-mp">
+          <a href="javascript:;" class="footer-mp-item">
+            广东省人民政府门户网站
+            <span class="footer-mp-item-hover">
+            <b class="qrcode-gov"></b>
+              <i>广东省人民政府门户网站</i>
+              <i class="footer-mp-item-hover--close">&times;</i>
+            </span>
+          </a>
+          <a href="javascript:;" class="footer-mp-item">
+            网上办事微信公众号
+            <span class="footer-mp-item-hover">
+              <b class="qrcode-mp"></b>
+              <i>网上办事微信公众号</i>
+              <i class="footer-mp-item-hover--close">&times;</i>
+            </span>
+          </a>
+          <a href="javascript:;" class="footer-mp-item">
+            网上办事客户端APP
+            <span class="footer-mp-item-hover">
+              <b class="qrcode-app"></b>
+              <i>网上办事客户端APP</i>
+              <i class="footer-mp-item-hover--close">&times;</i>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="gd-col gd-col-3">
+        <div class="support">
+          <a href="javascript:;" class="footer-mp-item support-minapp">
+            粤省事小程序
+            <span class="footer-mp-item-hover">
+              <b class="qrcode-minapp"></b>
+              <i>粤省事小程序码</i>
+              <i class="footer-mp-item-hover--close">&times;</i>
+            </span>
+          </a>
+          <div class="support-bottom">
+            <!-- <a href="http://121.43.68.40/exposure/jiucuo.html?site_code=4400000084&url=http%3A%2F%2Fwww.gdbs.gov.cn%2Fportal%2Findex.do" class="support-link" target="_blank"><span>政府网站找错</span></a> -->
+            <a class="support-link" href="javascript:;" target="_blank" id="support-link-id"><span>政府网站找错</span></a>           
+            <a class="support-party" href="javascript:;" target="_blank"><span>党政机关</span></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copyright">
+    <div class="container">
+      <div class="">
+        <span class="footer-copyright--block" style="margin-right: 20px;">
+          主办：<a target="_blank" href="javascript:;">广东省人民政府办公厅</a>
+        </span>
+<!--         <span class="footer-copyright--block">
+          承办：<a target="_blank" href="http://www.digitalgd.com.cn/">数字广东网络建设有限公司</a>
+        </span> -->
+      </div>
+      <!-- FOOTER START -->
+		
+			<div>
+			  <p>友情链接：<a href="javascript:;" title="科研之友：连结人与知识" target="_blank" style="">科研之友</a>&nbsp;&nbsp;&nbsp;&nbsp;主管：广东省科学技术厅&nbsp;&nbsp;&nbsp;&nbsp;技术支持电话：020-83163338&nbsp;&nbsp;邮箱：gdpro@gdstc.gov.cn&nbsp;&nbsp;&nbsp;&nbsp;粤ICP备05018469<!-- <span style="visibility: hidden;">占占占占占占占占占z</span> --></p>
+			  <p style="padding-top: 3px;">技术支持：<a style="" href="javascript:;" target="_blank">广东省科技创新监测研究中心</a> ， <a style="" href="javascript:;" target="_blank">广东金科信息网络中心有限责任公司</a> ， <a style="" href="javascript:;" title="爱瑞思软件：连结人与人" target="_blank">爱瑞思软件（深圳）有限公司</a>
+			  
+			  </p>
+			  <span style="display: none">w3-pro-web</span>
+			</div>
+		
+		
+		
+		<div class="">
+        <span class="footer-copyright--block">
+          版权所有：<a target="_blank" href="javascript:;">广东省人民政府门户网站</a>
+        </span>
+        <span class="footer-copyright--block">
+          <a target="_blank" href="javascript:;">粤ICP备05070829号-2</a> 网站标识码4400000084
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <!-- 页脚 -->
+    
+
+	<!-- 浏览器不兼容提示信息 -->
+	<div id="browserCheck_inlineDlg" style="display:none;">
+		<div id="browserCheck_content_dlg" style="font-family:'Microsoft YaHei',Arial; font-size: 20px; color: #333;line-height: 35px; padding-right: 15px;">
+		系统不支持您所使用的浏览器，推荐使用Firefox(<a href="javascript:;" target="_blank" style="color:#1265cf">下载Firefox</a>)、Google Chrome(<a href="javascript:;" target="_blank" style="color:#1265cf">下载Google Chrome</a>)、IE11及以上版本，如有疑问，烦请联系技术支持：020-83163338
+		</div>
+	</div>
+		
+		<!-- <div class="floating" id="index_notice" style="display:none;">
+		  <a class="close_code1" href="###" onclick="closeFloat()"></a>
+        <h1><p style="text-align:center;" id="p_title"></p></h1>
+                         <p id="p_content"></p> 
+        <p style="text-align:right;" id="p_footer"></p>
+    </div> -->
+<script type="text/javascript">
+function initFun_login(){
+	$("#username").bind("focus",function(){
+		$("#div_eidtcont").show();
+	});
+	$("#username").bind("blur",function(){
+		$("#div_eidtcont").hide();
+	});
+	var loginMsg = '';
+	if(loginMsg && loginMsg != ""){
+		$('#errorMessage_div').addClass("errorMessage").show();
+		//$('#errorMessage_div').find("b").html(loginMsg);
+		$('#errorMessage_div').html(loginMsg);
+		$('#errorMessage_div').bind("click",function(){
+			$('#errorMessage_div').hide();
+		});
+		setTimeout("$('#errorMessage_div').hide(3000)",8000);
+	}
+	
+}
+
+function ContentDownDesc(template)
+{
+	location="/egrantres/template/content/"+encodeURIComponent(template);
+	return false;
+} 
+
+function checkForm(){
+	var irisRsaPubKey="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCUsUyAtR+1XBIXalh6Bp4MnSP44c5mu+QJQsGhEkfb826/N64SS0LiJxd/VFev8pL9OJc1Y/TfbWoNhYwtsKDCEyWuDS6kT1R3OKsKXHi6I9qToPhuQHJMSISX1N29202+SpRN32yVAo3vQefcVc79G/d4+/5wBMl2TYHmY/zuRwIDAQAB";
+	var pwd = $("#password").val();
+	
+ 	var encrypt = new JSEncrypt();
+    encrypt.setPublicKey(irisRsaPubKey);//"base64的公钥，或者16进制公钥"
+    var enPwd = encrypt.encrypt(pwd);
+    
+	$("#passwordMd5").val(enPwd);
+    return true;
+}
+
+$(document).ready(function(){
+	if(true == true){
+		refreshCode();//STMS-22642
+	}
+	initFun_login();
+	var onmessage = function(event){
+		if (event.origin !== "http://"+document.domain && event.origin !== "http://pro.gdstc.gd.gov.cn"){
+		    return;
+		}
+		var msg;
+		if(typeof window.JSON != 'undefined'){
+			msg = JSON.parse(event.data);
+		}else{
+			msg = eval("("+event.data+")");
+		}
+		if(msg.event_trigger && "closeSearchInfoWindow" == msg.event_trigger){
+			tb_remove2();
+		}else{
+			tb_show(decodeURI(msg.title), decodeURI(msg.url), false);
+		}
+	}; 
+    if(typeof window.addEventListener != 'undefined'){ 
+		window.addEventListener('message', onmessage, false); 
+	}else if(typeof window.attachEvent != 'undefined'){ 
+		window.attachEvent('onmessage', onmessage); 
+	}
+    
+ 	/* var interval1;
+ 	
+ 	interval1 = setInterval("heartBeat()",1);
+	$("#clearInt").bind('click',function(){clearInt();});
+	 
+	function clearInt(){
+		clearInterval(interval1);
+		$("#quick").attr("onclick","");
+		$("#quick").remove();
+	} */
+	/* var flag_notice = '1';
+	if(flag_notice && flag_notice == "1"){
+		$("#index_notice").css("display","");
+		var p_title = '';
+		var p_content = '';
+		var p_footer = '';
+		$("#p_title").html(p_title);
+		$("#p_content").html(p_content);
+		$("#p_footer").html(p_footer);
+		$("#index_notice").css("display","");
+	} else {
+		$("#index_notice").css("display","none");
+	} */
+});
+//特别提醒滚动
+function heartBeat() {
+	var div_left,scroll_top,client_height,div_off;
+	div_left = $("#quick").prev().offset().left;
+	div_left = (div_left > 196) ? div_left - 196 : 0;
+	$("#quick").css("left",div_left);
+	
+	if (document.documentElement && document.documentElement.scrollTop) {  
+		scroll_top = document.documentElement.scrollTop;  
+	}else if (document.body) {  
+		scroll_top = document.body.scrollTop;/*某些情况下Chrome不认document.documentElement.scrollTop则对于Chrome的处理。*/  
+    }
+	client_height =document.documentElement.clientHeight;
+	div_off = $("#quick")[0].offsetHeight;
+	$("#quick").css("top",scroll_top+(client_height-div_off)/2 - 170);
+}
+
+$(function(){
+	if('true' == 'true'){
+		$("#username,#password").removeAttr("disabled");
+	}else{
+		tb_show('浏览器兼容性检查', '#TB_inline?height=180px&width=720px&inlineId=browserCheck_inlineDlg', false);
+	}
+	//setNoticeWidth();//左边票窗提示 位置设置
+	setNoticeHeight();
+});
+
+
+function setNoticeHeight(){
+	var flag_notice = '1';
+	if(flag_notice && flag_notice == "1"){
+		var notes = '[{ID=18, UPDATE_PSN_CODE=0, UPDATE_TIME=2020-10-09 00:00:00.0, TITLE=null, NOTE=null, NOTECONTENT=<img src="/egrantres/template/content/广东省科学技术厅.png" height="182px;" width="150px;"/>, ENABLED=1}, {ID=19, UPDATE_PSN_CODE=0, UPDATE_TIME=2020-07-02 00:00:00.0, TITLE=null, NOTE=null, NOTECONTENT=各有关单位，根据《广东省科学技术厅关于进一步做好科研项目开发科研助理岗位吸纳高校毕业生就业有关工作的通知》（粤科函资字[2020]381号）要求，请于7月6日前通过广东省科技业务管理阳光政务平台报送具体落实计划，并于8月份起每月15日前报送落实进展情况。, ENABLED=1}, {ID=20, UPDATE_PSN_CODE=0, UPDATE_TIME=2020-02-03 00:00:00.0, TITLE=null, NOTE=null, NOTECONTENT=广东省科学技术厅关于肺炎疫情防控期间优化对外服务方式的公告，<a href="http://gdstc.gd.gov.cn/zwgk_n/tzgg/content/post_2881997.html" style="color:#FFA500">点击查看</a>。<br/><span style="float:right;font-size:14px;">广东省科学技术厅</span>, ENABLED=1}, {ID=22, UPDATE_PSN_CODE=0, UPDATE_TIME=2019-03-27 00:00:00.0, TITLE=null, NOTE=null, NOTECONTENT=关于在办理省科技管理业务过程中谨防上当受骗的公告，<a href="http://gdstc.gd.gov.cn/zwgk_n/tzgg/content/post_2687495.html" style="color:#FFA500">点击查看</a>。<br/><span style="float:right;font-size:14px;">广东省科学技术厅</span>, ENABLED=1}, {ID=23, UPDATE_PSN_CODE=0, UPDATE_TIME=2020-11-11 00:00:00.0, TITLE=null, NOTE=null, NOTECONTENT=各有关单位：根据《广东省科学技术厅关于印发<广东省省级科技计划项目验收结题工作规程（试行）>的通知》（粤科监字〔2020〕77号）要求，广东省科技业务管理阳光政务平台对省级科技计划项目验收模块的功能及流程进行调整，其中，主管部门为地市科技局的项目，验收申请直接由项目管理专业机构审查。新功能11月11日正式上线，请知悉。<br/><span style="float:right;font-size:14px;">广东省科学技术厅</span>, ENABLED=1}]';
+		var fHeight=240;
+		
+		$("#index_notice_"+0).css("display","");
+		$("#index_notice_"+0).css("top",fHeight);
+		$("#index_notice_"+0).css("min-height",$("#index_notice_"+0).height());
+		$("#index_text_"+0).css("min-height",$("#index_notice_"+0).height());
+		var noticeHeight = $("#index_notice_"+0).height();
+		fHeight =fHeight+ noticeHeight+30;
+		
+		$("#index_notice_"+1).css("display","");
+		$("#index_notice_"+1).css("top",fHeight);
+		$("#index_notice_"+1).css("min-height",$("#index_notice_"+1).height());
+		$("#index_text_"+1).css("min-height",$("#index_notice_"+1).height());
+		var noticeHeight = $("#index_notice_"+1).height();
+		fHeight =fHeight+ noticeHeight+30;
+		
+		$("#index_notice_"+2).css("display","");
+		$("#index_notice_"+2).css("top",fHeight);
+		$("#index_notice_"+2).css("min-height",$("#index_notice_"+2).height());
+		$("#index_text_"+2).css("min-height",$("#index_notice_"+2).height());
+		var noticeHeight = $("#index_notice_"+2).height();
+		fHeight =fHeight+ noticeHeight+30;
+		
+		$("#index_notice_"+3).css("display","");
+		$("#index_notice_"+3).css("top",fHeight);
+		$("#index_notice_"+3).css("min-height",$("#index_notice_"+3).height());
+		$("#index_text_"+3).css("min-height",$("#index_notice_"+3).height());
+		var noticeHeight = $("#index_notice_"+3).height();
+		fHeight =fHeight+ noticeHeight+30;
+		
+		$("#index_notice_"+4).css("display","");
+		$("#index_notice_"+4).css("top",fHeight);
+		$("#index_notice_"+4).css("min-height",$("#index_notice_"+4).height());
+		$("#index_text_"+4).css("min-height",$("#index_notice_"+4).height());
+		var noticeHeight = $("#index_notice_"+4).height();
+		fHeight =fHeight+ noticeHeight+30;
+		
+	} else {
+		$("#index_notice").css("display","none");
+	}
+	
+	
+	
+	
+}
+
+function setNoticeWidth(){
+	var widwidth=$(window).width();
+	var noticeWidth=$("#index_notice").width()+21;
+	var leftwidth=(widwidth-980)*0.5-noticeWidth;
+	$("#index_notice").css("left",leftwidth);
+	if(leftwidth<0){
+		$("#index_notice").css("left",0);
+		$("#index_notice").css("position","fixed");
+	}
+}
+
+/**
+ * 下载下载文件
+ */
+function ContentDownDesc2(template) {
+	window.open("/egrantres_app/template/content/"
+			+ encodeURIComponent(template));
+}
+
+//省网厅登录窗口
+function networkLoginWindow(){
+	var redirectUrl = "http://pro.gdstc.gd.gov.cn/egrantweb/network-client/oAuthSvtClient?flag=init&type=1";//业务系统回调地址
+	//对url进行编码，否则如果使用反向代理则会无法重定向
+	redirectUrl = escape(redirectUrl);
+	tb_show("网上办事大厅登录", "https://tyrz.gd.gov.cn/tif/sso/connect/page/oauth2/authorize?service=initService&response_type=code&client_id=gdygzwpt&scope=all&client_secret=F36yjXEo5fPS&redirect_uri="+redirectUrl+"&option=batch&TB_iframe=true&height=570&width=1000", true);
+}
+
+function closeFloat(index){
+	$("#index_notice_"+index).hide();
+	var notes = '[{ID=18, UPDATE_PSN_CODE=0, UPDATE_TIME=2020-10-09 00:00:00.0, TITLE=null, NOTE=null, NOTECONTENT=<img src="/egrantres/template/content/广东省科学技术厅.png" height="182px;" width="150px;"/>, ENABLED=1}, {ID=19, UPDATE_PSN_CODE=0, UPDATE_TIME=2020-07-02 00:00:00.0, TITLE=null, NOTE=null, NOTECONTENT=各有关单位，根据《广东省科学技术厅关于进一步做好科研项目开发科研助理岗位吸纳高校毕业生就业有关工作的通知》（粤科函资字[2020]381号）要求，请于7月6日前通过广东省科技业务管理阳光政务平台报送具体落实计划，并于8月份起每月15日前报送落实进展情况。, ENABLED=1}, {ID=20, UPDATE_PSN_CODE=0, UPDATE_TIME=2020-02-03 00:00:00.0, TITLE=null, NOTE=null, NOTECONTENT=广东省科学技术厅关于肺炎疫情防控期间优化对外服务方式的公告，<a href="http://gdstc.gd.gov.cn/zwgk_n/tzgg/content/post_2881997.html" style="color:#FFA500">点击查看</a>。<br/><span style="float:right;font-size:14px;">广东省科学技术厅</span>, ENABLED=1}, {ID=22, UPDATE_PSN_CODE=0, UPDATE_TIME=2019-03-27 00:00:00.0, TITLE=null, NOTE=null, NOTECONTENT=关于在办理省科技管理业务过程中谨防上当受骗的公告，<a href="http://gdstc.gd.gov.cn/zwgk_n/tzgg/content/post_2687495.html" style="color:#FFA500">点击查看</a>。<br/><span style="float:right;font-size:14px;">广东省科学技术厅</span>, ENABLED=1}, {ID=23, UPDATE_PSN_CODE=0, UPDATE_TIME=2020-11-11 00:00:00.0, TITLE=null, NOTE=null, NOTECONTENT=各有关单位：根据《广东省科学技术厅关于印发<广东省省级科技计划项目验收结题工作规程（试行）>的通知》（粤科监字〔2020〕77号）要求，广东省科技业务管理阳光政务平台对省级科技计划项目验收模块的功能及流程进行调整，其中，主管部门为地市科技局的项目，验收申请直接由项目管理专业机构审查。新功能11月11日正式上线，请知悉。<br/><span style="float:right;font-size:14px;">广东省科学技术厅</span>, ENABLED=1}]';
+	var fHeight=240;
+	
+	$("#index_notice_"+0).css("top",fHeight);
+	var noticeHeight = $("#index_notice_"+0).height();
+	if(index==0 || noticeHeight==null){
+		$("#index_notice_"+0).remove();
+		noticeHeight=0;
+		fHeight =fHeight+ noticeHeight;
+	}else{
+		fHeight =fHeight+ noticeHeight+30;
+	}
+	
+	$("#index_notice_"+1).css("top",fHeight);
+	var noticeHeight = $("#index_notice_"+1).height();
+	if(index==1 || noticeHeight==null){
+		$("#index_notice_"+1).remove();
+		noticeHeight=0;
+		fHeight =fHeight+ noticeHeight;
+	}else{
+		fHeight =fHeight+ noticeHeight+30;
+	}
+	
+	$("#index_notice_"+2).css("top",fHeight);
+	var noticeHeight = $("#index_notice_"+2).height();
+	if(index==2 || noticeHeight==null){
+		$("#index_notice_"+2).remove();
+		noticeHeight=0;
+		fHeight =fHeight+ noticeHeight;
+	}else{
+		fHeight =fHeight+ noticeHeight+30;
+	}
+	
+	$("#index_notice_"+3).css("top",fHeight);
+	var noticeHeight = $("#index_notice_"+3).height();
+	if(index==3 || noticeHeight==null){
+		$("#index_notice_"+3).remove();
+		noticeHeight=0;
+		fHeight =fHeight+ noticeHeight;
+	}else{
+		fHeight =fHeight+ noticeHeight+30;
+	}
+	
+	$("#index_notice_"+4).css("top",fHeight);
+	var noticeHeight = $("#index_notice_"+4).height();
+	if(index==4 || noticeHeight==null){
+		$("#index_notice_"+4).remove();
+		noticeHeight=0;
+		fHeight =fHeight+ noticeHeight;
+	}else{
+		fHeight =fHeight+ noticeHeight+30;
+	}
+	
+	
+}
+
+$(window).resize(function () {//当浏览器大小变化时
+	setNoticeWidth();
+});
+
+function caLogin(){
+	var reqUrl=window.location.href;
+	var scheme="";
+	if(reqUrl.indexOf("https") > -1){
+		scheme="https";
+	}else{
+		scheme="http";
+	}
+	window.location.href='/egrantweb/caLogin?scheme='+scheme;
+       
+}
+</script>
+
+</body>
+
+<script type="text/javascript">
+	try {
+		var s=document.getElementById("username");
+		s.onfocus=function(){if(this.value==this.defaultValue){this.value='';this.style.color='#333';}}
+		s.onblur=function (){if(/^\s*$/.test(this.value)){this.value=this.defaultValue;this.style.color='#ddd';this.setAttribute("class","login_admin_input");}else{this.style.color='#333';this.setAttribute("class","login_admin_input_focus");}}
+		s.onkeydown=function(){this.style.color='#333'}
+		
+		var s1=document.getElementById("password");
+		s1.onfocus=function(){if(this.value==this.defaultValue){this.value='';this.style.color='#333';}};
+		s1.onblur=function (){if(/^\s*$/.test(this.value)){this.value='';this.style.color='#ddd';this.setAttribute("class","login_password_input");}else{this.style.color='#333';this.setAttribute("class","login_password_input_focus");}}
+		s1.onkeydown=function(){this.style.color='#333'}
+		s1.onchange=function(){this.style.color='#333'}
+		
+	    var s2=document.getElementById("checkcode");
+	    if(s2!=null && s2!=undefined){
+		    s2.onfocus=function(){if(this.value==this.defaultValue)this.value=''};
+		    s2.onblur=function (){if(/^\s*$/.test(this.value)){this.value=this.defaultValue;this.style.color='#ddd'}}
+		    s2.onkeydown=function(){this.style.color='#333'};
+	    }
+	} catch (e) {
+	}
+	
+</script>
+
+</html>

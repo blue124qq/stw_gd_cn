@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="googlebot" content="index, follow">
+<meta name="robots" content="index, follow">
+<title>欢迎进入广东省科技计划管理网</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+
+<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="js/jquery.SuperSlide.2.1.js" type="text/javascript"></script>
+<base target="_blank">
+<!--标题切换-->
+<script type="text/javascript">
+function ShowTag(TagName,TagClass,num,count,more) {
+	for(var i=0;i<count;i++) {
+		var tag = document.getElementById(TagName+"_tab_"+i);
+		var cont = document.getElementById(TagName+"_cont_"+i);
+		var mores;
+		if(more) {
+			mores = document.getElementById(TagName+"_more_"+i);
+		} 
+		if(i==num) {
+			tag.className = TagClass+"On";
+			cont.style.display = "block";
+			if(more) {
+			mores.style.display = "block";
+			} 
+		} else {
+			tag.className = TagClass;
+			cont.style.display = "none";
+			if(more) {
+			mores.style.display = "none";
+			} 
+		}
+	}
+}
+</script>
+
+</head>
+
+<body>
+<!--页头开始2-->
+<div class="head">
+    <div class="innerCon">
+        <div class="logo">
+            <a href="#"><img src="images/icon_1.png"></a>
+        </div>
+        <div class="b-right right">
+            <div class="btn_set1">
+                <div class="b-btn1">
+                    <a href="javascript:;"><img src="images/icon_7.jpg"></a>
+                </div>
+                <div id="wb" class="b-btn1" style="position:relative;">
+                    <a href="#"><img src="images/icon_8.jpg"></a>
+                    <img class="wbCode" style="width: 150px; height: 150px; position: absolute; top: 31px; display: none;" src="upload/20180605/qbewm.jpg">
+                </div>
+                <script>
+                	$("#wb").hover(function(){
+                    	$(".wbCode").show();
+                    },function(){
+                    	$(".wbCode").hide();
+                    });
+                </script>
+                <div class="b-btn2">
+                    <a href="#"><img src="images/icon_3.png"></a>
+                </div>
+                <div class="b-btn2">
+                    <a href="#"><img src="images/icon_4.png"></a>
+                </div>
+                <div class="b-btn2">
+                    <a href="#"><img src="images/icon_5.png"></a>
+                </div>
+                <div class="b-btn2">
+                    <a href="#"><img src="images/icon_6.png"></a>
+                </div>
+                <div class="b-btn2">
+                    <a href="#">繁体中文</a>
+                </div>
+            </div>
+            <div class="sousuo">
+                <form class="form-wrapper cf" action="https://sitesearch.southcn.com/znjs/5/">
+                    <input type="text" placeholder="" name="text">
+                    <input type="hidden" name="c" value="index">
+                    <input type="hidden" name="a" value="local">
+                    <button type="submit"></button>
+                </form>
+            </div>
+            <img class="logo-2" src="images/icon_2.png">
+        </div>
+        <div class="clear"></div>
+    </div>
+
+</div>
+
+
+<!--下拉菜单-->
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<div class="nav_menu">
+	<div class="nav">
+    <div class="home"><ul><li><a href="" target="_blank">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li></ul></div>
+<div class="list" id="navlist">
+			<ul class="clearfix" id="navfouce">
+			 <li><span>要闻动态</span></li>
+             <li><span>政务公开</span></li>
+             <li><span>政务服务</span></li>
+             <li><span>互动交流</span></li>
+             <li><span>侨乡侨社</span></li>
+			</ul>
+		</div>
+		<div class="box" id="navbox" style="height:0px;opacity:0;overflow:hidden;z-index:999;">
+			<div class="cont" style="display:none; z-index:999;">	
+            <ul class="sublist clearfix">
+					<li style=" margin-left:165px;"><a href="qwdt/index.html" target="_blank">侨务动态</a></li>
+                    <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+					<li><a href="zscd/index.html" target="_blank">政声传递</a></li>					
+			  </ul>
+            </div>
+			<div class="cont" style="display:none;">
+				<ul class="sublist clearfix">
+					<li style=" margin-left:20px;"><a href="gkzn/index.html" target="_blank">公开指南</a></li>	
+                    <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>	
+                    <li><a href="javascript:;" target="_blank">公开目录</a></li>
+					<li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+    				<li><a href="gknb/index.html" target="_blank">公开年报</a></li>	
+                    <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+                    <li><a href="javascript:;" target="_blank">依申请公开</a></li>
+                    <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+					<li><a href="zcfg/index.html" target="_blank">政策法规</a></li>	
+                    <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>	
+                    <li><a href="zcjd/index.html" target="_blank">政策解读</a></li>
+                    <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+					<li><a href="gggs/index.html" target="_blank">公告公示</a></li>	
+                    <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+                    <li><a href="rsxx/index.html" target="_blank">人事信息</a></li>
+				</ul>
+			</div>
+			<div class="cont" style="display:none;">
+				<ul class="sublist clearfix">
+					
+					<li style=" margin-left:430px;"><a href="bszy/index.html" target="_blank">办事指引</a></li>	
+                    <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>	
+                    <li><a href="javascript:;" target="_blank">我要咨询</a></li>
+					<li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+    				<li><a href="zwyx/index.html" target="_blank">主任邮箱</a></li>	
+                    <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+                    <li><a href="xzfw/index.html" target="_blank">下载服务</a></li>
+                    
+				</ul>
+			</div>
+			<div class="cont" style="display:none;">
+				<ul class="sublist clearfix">
+					<li style=" margin-left:490px;"><a href="jgfk/index.html" target="_blank">结果反馈</a></li>
+                    <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+					<li><a href="hfxd/index.html" target="_blank">回复选登</a></li>		
+                    <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+                    <li><a href="qwft/index.html" target="_blank">侨务访谈</a></li>
+                    <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+					<li><a href="wsdc/index.html" target="_blank">网上调查</a></li>	
+                    <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+					<li><a href="myzj/index.html" target="_blank">民意征集</a></li>	
+				</ul>
+				</div>
+			<div class="cont" style="display:none;">
+				<ul class="sublist clearfix">
+					<li style=" margin-left:35px;"><a href="javascript:;" target="_blank">魅力广东</a></li>	
+                    <li>|</li>	
+                    <li><a href="javascript:;" target="_blank">投资广东</a></li>
+					<li>|</li>	
+    				<li><a href="javascript:;" target="_blank">开放广东</a></li>	
+                    <li>|</li>	
+                    <li><a href="dfqw/index.html" target="_blank">地方侨务</a></li>
+                    <li>|</li>	
+					<li><a href="jrqx/index.html" target="_blank">今日侨乡</a></li>	
+                    <li>|</li>		
+                    <li><a href="csgy/index.html" target="_blank">慈善公益</a></li>
+                   <li>|</li>	
+					<li><a href="qsxw/index.html" target="_blank">侨社新闻</a></li>	
+                   <li>|</li>		
+                    <li><a href="whjy/index.html" target="_blank">文化教育</a></li>
+                   <li>|</li>	
+                    <li><a href="xgbd/index.html" target="_blank">寻根报道</a></li>
+				</ul>
+                </div>
+			
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+(function(){
+
+	var time = null;
+	var list = $("#navlist");
+	var box = $("#navbox");
+	var lista = list.find("span");
+	
+	for(var i=0,j=lista.length;i<j;i++){
+		if(lista[i].className == "now"){
+			var olda = i;
+		}
+	}
+	
+	var box_show = function(hei){
+		box.stop().animate({
+			height:hei,
+			opacity:1
+		},400);
+	}
+	
+	var box_hide = function(){
+		box.stop().animate({
+			height:0,
+			opacity:0
+		},400);
+	}
+	
+	lista.hover(function(){
+		lista.removeClass("now");
+		$(this).addClass("now");
+		clearTimeout(time);
+		var index = list.find("span").index($(this));
+		box.find(".cont").hide().eq(index).show();
+		var _height = box.find(".cont").eq(index).height()+64;
+		box_show(_height)
+	},function(){
+		time = setTimeout(function(){	
+			box.find(".cont").hide();
+			box_hide();
+		},60);
+		lista.removeClass("now");
+		lista.eq(olda).addClass("now");
+	});
+	
+	box.find(".cont").hover(function(){
+		var _index = box.find(".cont").index($(this));
+		lista.removeClass("now");
+		lista.eq(_index).addClass("now");
+		clearTimeout(time);
+		$(this).show();
+		var _height = $(this).height()+64;
+		box_show(_height);
+	},function(){
+		time = setTimeout(function(){		
+			$(this).hide();
+			box_hide();
+		},60);
+		lista.removeClass("now");
+		lista.eq(olda).addClass("now");
+	});
+
+})();
+</script>
+<!--页头结束-->
+    <script>window.NFCMS_SITE_ID=5;window.NFCMS_PUB_TYPE="page";</script><script src="scripts/s-1607501154.js"></script>
+<!--广告位1-->
+    
+    <div class="ggw hide"><a href="javascript:;"><img src="img/0/61/61323/274763.jpg"></a></div>
+    <div class="ggw hide"><a href="javascript:;"><img src="img/0/63/63724/301565.jpg"></a></div>
+    <div class="ggw hide"><a href="javascript:;"><img src="img/0/63/63732/301564.jpg"></a></div>
+    <div class="ggw hide"><a href="javascript:;"><img src="img/0/63/63733/301563.jpg"></a></div>
+    <div class="ggw hide"><a href="javascript:;"><img src="img/0/63/63727/301562.jpg"></a></div>
+    <div class="ggw hide"><a href="javascript:;"><img src="img/0/63/63728/301561.jpg"></a></div>
+    <div class="ggw hide"><a href="javascript:;"><img src="img/0/63/63729/301560.jpg"></a></div>
+<script>
+    var ggwIdx = 0;
+    $(".ggw").eq(0).show();
+    setInterval(function(){
+        $(".ggw").hide();
+        $(".ggw").eq(ggwIdx).show();
+        ggwIdx++;
+        if(ggwIdx>=($(".ggw").length)){
+        	ggwIdx = 0;
+        }
+    },4000);
+</script>
+    
+<!--part01开始-->
+<div class="con01">
+
+<!--侨务动态开始-->
+<div class="qwdt leftcon">
+
+<!--1知开始-->
+<div class="newscon left w_03">
+	<div class="titcon titbg01 bor_b">
+		<ul class="tit_ul ">
+            
+			<li class="navnews1On" id="navnewscont1_tab_0" onmouseover="ShowTag('navnewscont1','navnews1',0,2);"><span><h3><a href="qwdt/index.html" target="_blank">要闻动态</a></h3></span></li>
+            
+            
+			<li class="navnews1" id="navnewscont1_tab_1" onmouseover="ShowTag('navnewscont1','navnews1',1,2);"><span><h3><a href="zscd/index.html" target="_blank">政声传递</a></h3></span></li>
+    </ul>
+		
+	</div>
+	<div class="news">
+		<ul style="display:block;" id="navnewscont1_cont_0">
+            
+<li><a href="qwdt/content/post_303885.html" target="_blank">华侨华人点赞中国“十三五”：实干兴国，实利惠民</a></li>
+<li><a href="qwdt/content/post_303884.html" target="_blank">汕头华侨试验区多元探索凝侨心聚侨力护侨益</a></li>
+<li><a href="qwdt/content/post_303882.html" target="_blank">南方+华侨试验区频道正式上线</a></li>
+<li><a href="qwdt/content/post_302809.html" target="_blank">潮州古城观新潮：历史与现代交织 城市文脉延续传承</a></li>
+<li><a href="qwdt/content/post_302808.html" target="_blank">暨大携手深圳前海，打造四大平台助港澳台侨圆梦</a></li>
+<li><a href="qwdt/content/post_302544.html" target="_blank">广东基本形成涉侨法规政策体系 保护归侨侨眷权益</a></li>
+<li><a href="qwdt/content/post_302396.html" target="_blank">港澳同胞、海外侨胞、留学归国人员畅谈如何融入“双区”建设 到大湾区创新创业渐成风潮</a></li>
+<li><a href="qwdt/content/post_302398.html" target="_blank">《侨务政策法规问答》和《侨务工作知识问答》出版</a></li>
+<li><a href="qwdt/content/post_302112.html" target="_blank">为脱贫攻坚贡献侨力量</a></li>
+<li><a href="qwdt/content/post_302111.html" target="_blank">侨文化在“侨”文章中的分量有多重？</a></li>
+<li><a href="qwdt/content/post_301381.html" target="_blank">外交部：截至11月10日已从92个国家接回7万多名中国公民</a></li>
+		</ul>
+		<ul style="display:block;" id="navnewscont1_cont_1">
+            
+<li><a href="javascript:;" target="_blank">李克强主持召开国家科技领导小组会议</a></li>
+<li><a href="xxts/content/post_3144610.html" target="_blank">省委常委会召开会议 认真学习贯彻习近平总书记在全国劳动模范和先进工作者表彰大会上的重要讲话精神 李希主持会议</a></li>
+<li><a href="javascript:;" target="_blank">李希到汕尾调研 全力推动新发展阶段汕尾高质量发展 努力建设沿海经济带的靓丽明珠</a></li>
+<li><a href="xxts/content/post_3144616.html" target="_blank">中共广东省委十二届十二次全会12月13日至14日在广州召开</a></li>
+<li><a href="javascript:;" target="_blank">王毅同美中贸易全国委员会董事会代表团举行视频交流</a></li>
+<li><a href="javascript:;" target="_blank">赵克志在国家反诈中心调研</a></li>
+<li><a href="javascript:;" target="_blank">国务院关于同意将辽宁省辽阳市列为国家历史文化名城的批复</a></li>
+<li><a href="javascript:;" target="_blank">韩正将与新加坡副总理王瑞杰共同主持召开中新双边合作机制会议</a></li>
+<li><a href="javascript:;" target="_blank">省精神文明建设委员会召开全体会议 以更高政治站位更有力工作举措 推动精神文明建设在新起点上实现更大发展 李希主持会议并讲话</a></li>
+<li><a href="xxts/content/post_3143584.html" target="_blank">广东省与中央企业合作发展座谈会暨战略合作框架协议签约活动在广州举行 全力抓好合作协议落地落实推动广东与央企战略合作再上新水平 李希出席会议并讲话 马兴瑞主持会议</a></li>
+<li><a href="javascript:;" target="_blank">广东江西两省举行工作座谈共商合作发展 李希刘奇马兴瑞王伟中参加有关活动</a></li>
+            
+		</ul>
+	</div>
+</div>
+<!--1结束-->
+
+</div>
+<!--侨务动态结束-->
+
+<!--焦点图开始-->
+<div class="focuspic rightcon">
+<div id="fsD1" class="focus">  
+    <div id="D1pic1" class="fPic"> 
+        
+<div class="fcon" style="display: none;">
+            <a target="_blank" href="pic/content/post_301382.html"><img src="img/0/63/63423/301382.jpg" style="opacity: 1; "></a>
+            <span class="shadow"><a target="_blank" href="pic/content/post_301382.html">浦东开发开放30周年庆祝大会隆重举行 习近平发表重要讲话</a></span>
+        </div>
+<div class="fcon" style="display: none;">
+            <a target="_blank" href="pic/content/post_276459.html"><img src="img/0/62/62674/276459.jpg" style="opacity: 1; "></a>
+            <span class="shadow"><a target="_blank" href="pic/content/post_276459.html">习近平在第三届中国国际进口博览会开幕式上发表主旨演讲</a></span>
+        </div>
+<div class="fcon" style="display: none;">
+            <a target="_blank" href="pic/content/post_275987.html"><img src="img/0/62/62244/275987.jpg" style="opacity: 1; "></a>
+            <span class="shadow"><a target="_blank" href="pic/content/post_275987.html">中国共产党第十九届中央委员会第五次全体会议公报</a></span>
+        </div>
+<div class="fcon" style="display: none;">
+            <a target="_blank" href="pic/content/post_274289.html"><img src="img/0/60/60606/274289.jpg" style="opacity: 1; "></a>
+            <span class="shadow"><a target="_blank" href="pic/content/post_274289.html">习近平在广东考察时强调 以更大魄力在更高起点上推进改革开放 在全面建设社会主义现代化国家新征程中走在全国前列创造新的辉煌</a></span>
+        </div>
+   
+    </div>
+    <div class="fbg">  
+    <div class="D1fBt" id="D1fBt">  
+        <a href="javascript:void(0)" hidefocus="true" target="_self" class="current"><i>1</i></a>  
+        <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>2</i></a>  
+        <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>3</i></a>  
+        <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>4</i></a>  
+    </div>  
+    </div>  
+    <span class="prev"></span>   
+    <span class="next"></span>    
+</div>
+</div>
+<script type="text/javascript" src="js/koala.min.1.5.js"></script>
+<script type="text/javascript">
+	Qfast.add('widgets', { path: "js/terminator2.2.min.js", type: "js", requires: ['fx'] });  
+	Qfast(false, 'widgets', function () {
+		K.tabs({
+			id: 'fsD1',   //焦点图包裹id  
+			conId: "D1pic1",  //** 大图域包裹id  
+			tabId:"D1fBt",  
+			tabTn:"a",
+			conCn: '.fcon', //** 大图域配置class       
+			auto: 1,   //自动播放 1或0
+			effect: 'fade',   //效果配置
+			eType: 'click', //** 鼠标事件
+			pageBt:true,//是否有按钮切换页码
+			bns: ['.prev', '.next'],//** 前后按钮配置class                          
+			interval: 3000  //** 停顿时间  
+		}) 
+	})  
+</script>
+<!-- 代码 结束 -->
+
+<!--焦点图结束-->
+
+</div>
+<!--part01结束-->
+
+<!--广告位2-->
+    
+    <div class="ggw2 hide"><a href="javascript:;"><img src="img/0/37/37897/230147.jpg"></a></div>
+    <div class="ggw2 hide"><a href="javascript:;"><img src="img/0/7/7323/129338.jpg"></a></div>
+<script>
+    var ggw2Idx = 0;
+    $(".ggw2").eq(0).show();
+    setInterval(function(){
+        $(".ggw2").hide();
+        $(".ggw2").eq(ggw2Idx).show();
+        ggw2Idx++;
+        if(ggw2Idx>=($(".ggw2").length)){
+        	ggw2Idx = 0;
+        }
+    },4000);
+</script>
+    
+    
+<!--part02开始-->
+<div class="con02">
+<div class="part2_tit">
+<h3>政务公开</h3>
+    
+
+
+<h4>
+<a href="gkzn/index.html" target="_blank">公开指南</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" target="_blank">公开目录</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <a href="gknb/index.html" target="_blank">公开年报</a>
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" target="_blank">依申请公开</a></h4>
+</div>
+
+<div class=" clearall"></div>
+
+<!--2开始-->
+<div class="newscon left w_04">
+	<div class="titcon titbg01 bor_b">
+		<ul class="tit_ul">
+            
+		<li class="navnews2On" id="navnewscont2_tab_0" onmouseover="ShowTag('navnewscont2','navnews2',0,2);"><span><h3><a href="zcfg/index.html" target="_blank">政策法规</a></h3></span></li>
+
+  
+            	<li class="navnews2" id="navnewscont2_tab_1" onmouseover="ShowTag('navnewscont2','navnews2',1,2);"><span><h3><a href="zcjd/index.html" target="_blank">政策解读</a></h3></span></li>
+
+               
+		</ul>
+			
+	</div>
+	<div class="news">
+		<ul style="display:block;" id="navnewscont2_cont_0">
+			<li><a href="zcfg/content/post_272258.html" target="_blank">关于华侨回国定居办理工作的实施办法</a></li>
+<li><a href="javascript:;" target="_blank">侨法颁布30周年丨涉侨法律政策指南</a></li>
+<li><a href="zcfg/content/post_162181.html" target="_blank">关于报考普通高校入学考试的“三侨生”证明办理规定</a></li>
+<li><a href="zcfg/content/post_66001.html" target="_blank">关于调整华侨华人和港澳同胞申办私人小汽车入出内地行驶牌证有关手续的通知</a></li>
+<li><a href="zcfg/content/post_162182.html" target="_blank">关于开展外籍和港澳台高层次人才认定工作的通知</a></li>
+<li><a href="zcfg/content/post_65997.html" target="_blank">关于华侨学生在我省接受高中阶段教育的实施办法</a></li>
+<li><a href="zcfg/content/post_65996.html" target="_blank">广东省华侨捐赠兴办公益事业管理条例</a></li>
+<li><a href="zcfg/content/post_65995.html" target="_blank">广东省华侨权益保护条例</a></li>
+		</ul>
+		<ul style="display:none;" id="navnewscont2_cont_1">
+			<li><a href="zcjd/content/post_302833.html" target="_blank">12月起，这些新规将影响华侨华人的生活</a></li>
+<li><a href="zcjd/content/post_276072.html" target="_blank">11月新规来了！影响侨胞们的生活和出行</a></li>
+<li><a href="zcjd/content/post_275915.html" target="_blank">华侨华人能继承农村宅基地使用权吗？</a></li>
+<li><a href="zcjd/content/post_274828.html" target="_blank">归侨侨眷权益保护法颁布三十周年，这部法律你知多少？</a></li>
+<li><a href="zcjd/content/post_272910.html" target="_blank">归侨侨眷、留学人员回国就业？这些便利别错过！</a></li>
+<li><a href="zcjd/content/post_271956.html" target="_blank">一图看懂：归侨侨眷出境探亲，可以享受这些待遇！</a></li>
+<li><a href="zcjd/content/post_271802.html" target="_blank">侨务法学专家：侨务领域立法应与时俱进，更接地气</a></li>
+<li><a href="zcjd/content/post_271801.html" target="_blank">侨法30年图解系列丨超全面的侨胞婚姻指南！</a></li>
+		</ul>
+	</div>
+</div>
+<!--2结束-->
+
+<!--3开始-->
+<div class="newscon left w_04 mrg01">
+	<div class="titcon titbg01 bor_b">
+		<ul class="tit_ul">
+            	
+                <li class="navnews3On" id="navnewscont3_tab_0" onmouseover="ShowTag('navnewscont3','navnews3',0,2);"><span><h3><a href="gggs/index.html" target="_blank">公告公示</a></h3></span></li>
+			 
+
+                              <li class="navnews3" id="navnewscont3_tab_1" onmouseover="ShowTag('navnewscont3','navnews3',1,2);"><span><h3><a href="rsxx/index.html" target="_blank">人事信息</a></h3></span></li>
+		 
+            
+        </ul>
+			
+	</div>
+	<div class="news">
+		<ul style="display:block;" id="navnewscont3_cont_0">
+			<li><a href="gggs/content/post_303531.html" target="_blank">关于征求《关于报考普通高校入学考试“三侨生”身份确认工作规定（征求意见稿）》意见的通知</a></li>
+<li><a href="gggs/content/post_228872.html" target="_blank">《广东华侨史》编修工作领导小组办公室拟聘用人员名单公示</a></li>
+<li><a href="gggs/content/post_227631.html" target="_blank">广东华侨博物馆2019年公开招聘合同制人员公告</a></li>
+<li><a href="gggs/content/post_215331.html" target="_blank">《广东华侨史》委托项目协议书公示</a></li>
+<li><a href="javascript:;" target="_blank">“同心七十年”统战知识有奖竞答活动（第五期）获奖名单</a></li>
+<li><a href="gggs/content/post_168763.html" target="_blank">广东华侨博物馆2019年“5·18国际博物馆日” 活动预告</a></li>
+<li><a href="gggs/content/post_167457.html" target="_blank">关于广东华侨博物馆馆徽征集投票的通告</a></li>
+<li><a href="gggs/content/post_160162.html" target="_blank">《广东华侨史》委托项目协议书公示</a></li>
+		</ul>
+		<ul style="display:none;" id="navnewscont3_cont_1">
+			<li><a href="006940212/201807/t20180710_772978.html" target="_blank">关于庞国梅、雷彪同志职务任免的通知</a></li>
+<li><a href="006940212/201807/t20180710_772977.html" target="_blank">关于黎静同志免职的通知</a></li>
+<li><a href="006940212/201807/t20180706_772710.html" target="_blank">关于雷彪同志任职的通知</a></li>
+<li><a href="006940212/201807/t20180706_772711.html" target="_blank">关于李心同志免职的通知</a></li>
+<li><a href="006940212/201807/t20180706_772712.html" target="_blank">关于陈锋同志任职的通知</a></li>
+<li><a href="rsxx/content/post_106872.html" target="_blank">雷彪同志任广东省侨办党组书记、副主任</a></li>
+		</ul>
+	</div>
+</div>
+<!--3结束-->
+
+<!--网上办事大厅开始-->
+<div class="w_05 right">
+  <a href="javascript:;" target="_blank"><img src="images/index_qb_14.jpg"></a>
+  <a href="ldzc/index.html" target="_blank"><img src="images/index_qb_17.jpg" class="mrg02"></a>   
+  <a href="ywzn/index.html" target="_blank"><img src="images/index_qb_19.jpg" class="mrg02"></a>  
+  <a href="qzqd/index.html" target="_blank"><img src="images/index_qb_23.jpg" class="mrg02"></a>   
+  <a href="zzjg/index.html" target="_blank"><img src="images/index_qb_24.jpg" class="mrg02"></a>  
+  <a href="rsxx/index.html" target="_blank"><img src="images/index_qb_27.jpg" class="mrg02"></a>  
+  <a href="tjsj/index.html" target="_blank"><img src="images/index_qb_28.jpg" class="mrg02"></a> 
+  
+  <a href="djdl/index.html" target="_blank"><img src="images/index_qb_31.jpg" class="mrg02"></a>   
+  <a href="javascript:;" target="_blank"><img src="images/index_qb_32.jpg" class="mrg02"></a>
+   </div>
+<!--网上办事大厅结束-->
+
+</div>
+<!--part02结束-->
+
+
+<!--part03开始-->
+<div class="con02">
+<div class="part3_tit">
+<h3>服务·互动</h3>
+    <h4>
+<a href="wyly/index.html" target="_blank">我要咨询</a>
+
+
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+<a href="zwyx/index.html" target="_blank">主任邮箱</a>
+
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    <a href="xzfw/index.html" target="_blank">下载服务</a>
+    </h4>
+</div>
+
+<div class=" clearall"></div>
+
+<!--4开始-->
+<div class="newscon left w_06">
+	<div class="titcon titbg01 bor_b">
+		<ul class="tit_ul">
+			<li class="navnews4On"><span><h3>
+                
+ <a href="bszy/index.html" target="_blank">办事指引</a>
+
+               
+                
+                </h3></span></li>
+			
+		</ul>
+
+	</div>
+	<div class="news">
+		<ul>
+			<li><a href="bszy/content/post_65974.html" target="_blank">华侨回国定居办理</a></li>
+<li><a href="bszy/content/post_112059.html" target="_blank">报考普通高校入学考试的“三侨生”证明办理</a></li>
+<li><a href="bszy/content/post_124141.html" target="_blank">归侨、侨眷身份证明办理</a></li>
+		</ul>
+	</div>
+    
+    <div class="button01">
+    <div class="button01_text">
+    <ul>
+    <li><a href="yygg/content/post_260900.html" target="_blank">关于提供为侨法律服务的公告</a></li>
+    <li><a href="yygg/content/post_260900.html" target="_blank">2020年7月至12月</a></li>
+    </ul>
+    </div>
+    <div class="clearall"></div>
+    <a href="wyyy/index.html" target="_blank"><div class="button01_yy"></div></a>
+
+    </div>
+    
+</div>
+<!--4结束-->
+
+
+<div class="w_07 left">
+
+<!--4开始-->
+<div class="newscon right w_08">
+	<div class="titcon titbg01 bor_b">
+		<ul class="tit_ul">
+            
+   <li class="navnews4On" id="navnewscont4_tab_0" onmouseover="ShowTag('navnewscont4','navnews4',0,2);"><span><h3><a href="jgfk/index.html" target="_blank">结果反馈</a></h3></span></li>
+			
+            
+   			<li class="navnews4" id="navnewscont4_tab_1" onmouseover="ShowTag('navnewscont4','navnews4',1,2);"><span><h3><a href="hfxd/index.html" target="_blank">回复选登</a></h3></span></li>
+
+		</ul>
+			
+	</div>
+	<div class="news">
+		<ul style="display:block;" id="navnewscont4_cont_0">
+			<li><a href="jgfk/content/post_273860.html" target="_blank">林*香关于三侨生问题的咨询（2022号）已回复，请查收。</a></li>
+<li><a href="jgfk/content/post_273039.html" target="_blank">伍*丽关于办理三侨生证的咨询（2021号）已回复，请查收。</a></li>
+<li><a href="jgfk/content/post_269621.html" target="_blank">钟小姐关于办理三侨生证的咨询（2020号）已回复，请查收。</a></li>
+<li><a href="jgfk/content/post_266387.html" target="_blank">谭女士关于三侨生证明的咨询（2019号）已回复，请查收。</a></li>
+		</ul>
+		<ul style="display:none;" id="navnewscont4_cont_1">
+			<li><a href="hfxd/content/post_273851.html" target="_blank">三侨生</a></li>
+<li><a href="hfxd/content/post_273038.html" target="_blank">有关办理三侨生的咨询</a></li>
+<li><a href="hfxd/content/post_269616.html" target="_blank">办理三侨生证</a></li>
+<li><a href="hfxd/content/post_266386.html" target="_blank">归侨的外孙可以开三侨生证明吗？</a></li>
+		</ul>
+	</div>
+</div>
+<!--4结束-->
+
+
+<!--5开始-->
+<div class="newscon w_02">
+	<div class="titcon titbg01 bor_b">
+		<ul class="tit_ul">
+            
+<li class="navnews5On" id="navnewscont5_tab_0" onmouseover="ShowTag('navnewscont5','navnews5',0,2);"><span><h3><a href="qwft/index.html" target="_blank">侨务访谈</a></h3></span></li>
+
+			<li class="navnews5" id="navnewscont5_tab_1" onmouseover="ShowTag('navnewscont5','navnews5',1,2);"><span><h3><a href="wsdc/index.html" target="_blank">网上调查</a></h3></span></li>
+
+</ul>
+			
+	</div>
+	<div class="news">
+		<ul style="display:block;" id="navnewscont5_cont_0">
+			<div class="ftcon">
+                
+<img src="img/0/9/9116/157478.jpg"><h4><a href="qwft/content/post_157478.html" target="_blank">省侨办主任庞国梅接受广东侨网访谈</a> </h4><p>就海外侨胞、港澳同胞与广东改革开放40年、新时代广东侨务工作发展等问题接受了广东侨网访谈。</p>
+
+            <div class="clearall"></div>
+            <!--ul>
+            <li><a href="http://www.qb.gd.gov.cn/qwft/content/post_64759.html" target="_blank">省侨办党组书记雷彪就省侨心慈善基金会工作接受专访</a></li>
+<li><a href="http://www.qb.gd.gov.cn/qwft/content/post_64961.html" target="_blank">专访广东省侨办主任李心：侨务大省的新时代新担当</a></li>
+          </ul-->            </div>
+            
+		</ul>
+		<ul style="display:none;" id="navnewscont5_cont_1">
+			<div class="dccon">
+             <ul>
+            <li><a href="javascript:;" target="_blank">您认为下一步我省侨捐工作要重点做好哪些方面工作？</a></li>
+<li><a href="javascript:;" target="_blank">广东侨网将进行改版，您认为要加强哪些版块？</a></li>
+<li><a href="javascript:;" target="_blank">您认为广东侨务外宣要多介绍哪些情况？ </a></li>
+<li><a href="javascript:;" target="_blank">您最希望通过广东侨网了解哪些内容</a></li>
+<li><a href="javascript:;" target="_blank">加强华侨权益保护，您最关心的是哪些方面？ </a></li>
+<li><a href="javascript:;" target="_blank">2014年广东侨务十件大事网上评选</a></li>
+          </ul>  
+            </div>
+		</ul>
+	</div>
+</div>
+<!--5结束-->
+
+
+</div>
+
+<!--logo链接开始-->
+<div class="w_09 right">
+  <a href="javascript:;" target="_blank"><img src="images/index_qb_38.jpg" width="239" height="53"></a>
+   <a href="javascript:;" target="_blank"><img src="images/index_qb_41.jpg" width="239" height="53"></a>
+   <!--a href="http://www.qb.gd.gov.cn/ztzl2010/qwzl2010/hwjlxh/" target="_blank"><img src="images/index_qb_43.jpg" width="239" height="53" /></a-->
+   <a href="javascript:;" target="_blank"><img src="images/index_qb_45.jpg" width="239" height="53"></a>
+   <a href="javascript:;" target="_blank"><img src="images/index_qb_47.jpg" width="239" height="53"></a>
+   <a href="javascript:;" target="_blank"><img src="images/index_qb_52.jpg" width="239" height="53"></a>
+   <a href="javascript:;" target="_blank"><img src="images/index_qb_54.jpg" width="239" height="53"></a>
+  </div>
+<!--LOGO链接结束-->
+</div>
+<!--part03结束-->
+
+
+<!--part04开始-->
+<div class="con02">
+<div class="part3_tit">
+<h3>侨乡·侨社</h3>
+<h4>
+    
+
+<a href="javascript:;" target="_blank">魅力广东</a>
+
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="javascript:;" target="_blank">投资广东</a>
+ 
+    
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="javascript:;" target="_blank">开放广东</a>
+   
+    </h4>
+</div>
+
+<div class=" clearall"></div>
+
+<!--6开始-->
+<div class="newscon left w_10">
+	<div class="titcon titbg01 bor_b">
+		<ul class="tit_ul">
+            
+			<li class="navnews6On" id="navnewscont6_tab_0" onmouseover="ShowTag('navnewscont6','navnews6',0,3);"><span><h3><a href="dfqw/index.html" target="_blank">地方侨务</a></h3></span></li>
+
+            <li class="navnews6" id="navnewscont6_tab_1" onmouseover="ShowTag('navnewscont6','navnews6',1,3);"><span><h3><a href="jrqx/index.html" target="_blank">今日侨乡</a></h3></span></li>
+            
+ <li class="navnews6" id="navnewscont6_tab_2" onmouseover="ShowTag('navnewscont6','navnews6',2,3);"><span><h3><a href="csgy/index.html" target="_blank">慈善公益</a></h3></span></li>
+		
+</ul>
+	
+	</div>
+	<div class="news">
+		<ul style="display:block;" id="navnewscont6_cont_0">
+            
+ <div class="qxqsconnews">
+     <a href="dfqw/content/post_303905.html" target="_blank"> <img src="img/0/67/67748/303905.jpg"></a>
+        <h4><a href="dfqw/content/post_303905.html" target="_blank">【惠州】广东惠州建成225个基层侨联组织与19个“侨胞之家”</a></h4>
+        </div>
+
+       
+			<li><a href="dfqw/content/post_303888.html" target="_blank">【汕头】创业中华·“十四五”中国发展与华侨华人投资创业峰会蓄势待发</a></li>
+<li><a href="dfqw/content/post_303736.html" target="_blank">【佛山】佛山南海区凝聚港澳台侨力量助力高质量发展</a></li>
+<li><a href="dfqw/content/post_303553.html" target="_blank">【汕头】潮汕华侨历史博物馆计划2021年建成开放</a></li>
+<li><a href="dfqw/content/post_302636.html" target="_blank">【河源】助力“万绿河源”走向世界——访北美河源同乡会共同会长郑国祥</a></li>
+<li><a href="dfqw/content/post_302634.html" target="_blank">【河源】“青年同心·改变未来”市侨联协助香港观澜同乡会开展爱心助学</a></li>
+<li><a href="dfqw/content/post_302633.html" target="_blank">【河源】多国侨领和外国朋友到访我市</a></li>
+		</ul>
+		<ul style="display:none;" id="navnewscont6_cont_1">
+         <div class="qxqsconnews">
+     <a href="jrqx/content/post_303914.html" target="_blank"> <img src="img/0/67/67752/303914.jpg"></a>
+        <h4><a href="jrqx/content/post_303914.html" target="_blank">粤港澳近200位艺术家合演“粤剧教科书”</a></h4>
+        </div>
+			<li><a href="jrqx/content/post_303913.html" target="_blank">深圳前海深港青年梦工场二期项目12月7日正式启用</a></li>
+<li><a href="jrqx/content/post_303910.html" target="_blank">佛山桑园围入选世界灌溉工程遗产名录</a></li>
+<li><a href="jrqx/content/post_303909.html" target="_blank">佛山“粤菜师傅”助力家乡味道走出国门</a></li>
+<li><a href="jrqx/content/post_303907.html" target="_blank">广州花都华侨农场:流溪河畔侨心暖</a></li>
+<li><a href="jrqx/content/post_303906.html" target="_blank">江门五丰村：写好美丽乡村“侨文章”</a></li>
+<li><a href="jrqx/content/post_303745.html" target="_blank">粤东唯一！潮州这个地方获评广东首批家教家风实践基地</a></li>
+		</ul>
+        <ul style="display:none;" id="navnewscont6_cont_2">
+         <div class="qxqsconnews">
+     <a href="csgy/content/post_265948.html" target="_blank"> <img src="img/0/53/53838/265948.jpg"></a>
+        <h4><a href="csgy/content/post_265948.html" target="_blank">香港慈善家2020年继续在内地开展侨心救护车捐赠项目</a></h4>
+        </div>
+			<li><a href="csgy/content/post_272962.html" target="_blank">河源市向马来西亚亚庇市捐助一批防疫物资</a></li>
+<li><a href="csgy/content/post_272957.html" target="_blank">乡贤谭育良主持贷学金发放仪式时勉励学子　学有所成报效华人社团及乡亲</a></li>
+<li><a href="csgy/content/post_272953.html" target="_blank">4商会助力梅州籍学子圆梦 26名优秀学子得到奖励</a></li>
+<li><a href="csgy/content/post_265283.html" target="_blank">古润金：助力扶贫让海外华商与祖（籍）国心贴得更近</a></li>
+<li><a href="csgy/content/post_261986.html" target="_blank">广东省侨心慈善基金会第四届理事会换届大会圆满召开</a></li>
+<li><a href="csgy/content/post_255176.html" target="_blank">广东知名侨企向马来西亚政府捐赠100万只口罩</a></li>
+		</ul>
+	</div>
+</div>
+<!--6结束-->
+
+<!--7开始-->
+<div class="newscon left w_10 mrg01">
+	<div class="titcon titbg01 bor_b">
+		<ul class="tit_ul">
+            
+			<li class="navnews7On" id="navnewscont7_tab_0" onmouseover="ShowTag('navnewscont7','navnews7',0,3);"><span><h3><a href="qsxw/index.html" target="_blank">侨社新闻</a></h3></span></li>
+
+            
+			<li class="navnews7" id="navnewscont7_tab_1" onmouseover="ShowTag('navnewscont7','navnews7',1,3);"><span><h3><a href="whjy/index.html" target="_blank">文化教育</a></h3></span></li>
+
+                        
+            <li class="navnews7" id="navnewscont7_tab_2" onmouseover="ShowTag('navnewscont7','navnews7',2,3);"><span><h3><a href="xgbd/index.html" target="_blank">寻根报道</a></h3></span></li>
+
+		</ul>
+			
+	</div>
+	<div class="news">
+		<ul style="display:block;" id="navnewscont7_cont_0">
+         <div class="qxqsconnews">
+     <a href="qsxw/content/post_303920.html" target="_blank"> <img src="img/0/67/67760/303920.jpg"></a>
+        <h4><a href="qsxw/content/post_303920.html" target="_blank">一年将过，疫情未走，各国唐人街都怎么样了？</a></h4>
+        </div>
+			<li><a href="qsxw/content/post_303919.html" target="_blank">加拿大多伦多知名侨领林立辞世</a></li>
+<li><a href="qsxw/content/post_303918.html" target="_blank">驻毛里塔尼亚使馆召开在毛侨胞防疫工作视频会议</a></li>
+<li><a href="qsxw/content/post_303917.html" target="_blank">美国加州实施居家避疫 华人业者:担忧生意 有苦难言</a></li>
+<li><a href="qsxw/content/post_303916.html" target="_blank">旧金山苏诺玛首位华裔市议员上任 将扶持小商业恢复</a></li>
+<li><a href="qsxw/content/post_303915.html" target="_blank">马来西亚华人公会马江区会向贫困学生派发购物券</a></li>
+<li><a href="qsxw/content/post_303750.html" target="_blank">美国旧金山实施新居家令 当地华埠餐饮业再受重击</a></li>
+		</ul>
+		<ul style="display:none;" id="navnewscont7_cont_1">
+       <div class="qxqsconnews">
+     <a href="whjy/content/post_273235.html" target="_blank"> <img src="img/0/59/59446/273235.jpg"></a>
+        <h4><a href="whjy/content/post_273235.html" target="_blank">马六甲中国公学获广东省侨办赠书 设广东书屋</a></h4>
+        </div>
+			<li><a href="whjy/content/post_302830.html" target="_blank">凝聚亲情传承文化 美华裔家庭网上分享中餐菜谱爆红</a></li>
+<li><a href="whjy/content/post_302829.html" target="_blank">中马多机构将协力举办首届国际武术文化视频大赛</a></li>
+<li><a href="whjy/content/post_302676.html" target="_blank">印尼高校线上“孔子学院日”献礼中印尼建交70周年</a></li>
+<li><a href="whjy/content/post_302139.html" target="_blank">柬埔寨华文学子：当开启2020年的“月光宝盒”</a></li>
+<li><a href="whjy/content/post_302138.html" target="_blank">中国驻文莱大使考察当地华校</a></li>
+<li><a href="whjy/content/post_276445.html" target="_blank">爨体书法在广东惠州出现学习热 倍受海内外墨客关注</a></li>
+		</ul>
+        <ul style="display:none;" id="navnewscont7_cont_2">
+        <div class="qxqsconnews">
+     <a href="xgbd/content/post_167349.html" target="_blank"> <img src="img/0/18/18440/167349.jpg"></a>
+        <h4><a href="xgbd/content/post_167349.html" target="_blank">斯坦福大学学生寻根 祖先是太平洋铁路华工</a></h4>
+        </div>
+			<li><a href="xgbd/content/post_265561.html" target="_blank">线上夏令营开启新体验 海外华校师生盼明年线下之约</a></li>
+<li><a href="xgbd/content/post_231766.html" target="_blank">30位马来青少年感受河源客家文化</a></li>
+<li><a href="xgbd/content/post_164116.html" target="_blank">感受湛江魅力 寻根中华文化</a></li>
+<li><a href="xgbd/content/post_164382.html" target="_blank">海外华裔青年江门寻根 惊叹：中国功夫不止在电影中</a></li>
+<li><a href="xgbd/content/post_163469.html" target="_blank">韩国荣州市青少年交流团来韶开展第七届冬令营活动</a></li>
+<li><a href="xgbd/content/post_163373.html" target="_blank">海外华裔青少年“中国寻根之旅”冬令营——湛江营开营</a></li>
+		</ul>
+	</div>
+</div>
+<!--7结束-->
+
+<!--专题、视频、数字报开始-->
+<div class="w_11 right">
+<div class="ztnewscon">
+<div class="ztnewscon_tit"><h3>
+    
+<a href="ztzl/index.html" target="_blank">专&nbsp;&nbsp;&nbsp;&nbsp;题</a>
+
+    </h3>
+</div>
+<ul>
+<li><a href="ztzl/content/post_276693.html" target="_blank">王荣赴汕头调研 凝聚力量做好新时代“侨”的文章</a></li>
+<li><a href="javascript:;" target="_blank">习近平总书记视察广东</a></li>
+<li><a href="javascript:;" target="_blank">众志成城，抗击疫情</a></li>
+<li><a href="javascript:;" target="_blank">首届华侨华人粤港澳大湾区大会</a></li>
+<li><a href="javascript:;" target="_blank">华侨华人合作交流系列活动</a></li>
+<li><a href="javascript:;" target="_blank">广东省侨办深入学习宣传贯彻党的十九大精神</a></li>
+</ul>
+</div>
+
+<div class="ztnewscon">
+<div class="ztnewscon_tit"><h3>
+    
+    <a href="spyp/index.html" target="_blank">视&nbsp;&nbsp;&nbsp;&nbsp;频</a>
+
+
+    </h3>
+</div>
+<ul>
+<li><a href="spyp/content/post_274020.html" target="_blank">习近平肯定华侨贡献</a></li>
+<li><a href="spyp/content/post_274302.html" target="_blank">习近平汕头讲话在海内外侨界引起强烈反响</a></li>
+<li><a href="spyp/content/post_260606.html" target="_blank">视频：【同心抗疫】广东视频连线慰问亚洲美洲同胞</a></li>
+<li><a href="spyp/content/post_165283.html" target="_blank">广东省省长马兴瑞向海外侨胞和港澳台同胞致以新春祝福</a></li>
+</ul>
+</div>
+
+<div class="ztnewscon_icon">
+            <a href="qxgdszb/index.html" target="_blank"><img src="images/index_qb_71.jpg"></a>
+    </div>
+
+</div>
+<!--专题、视频、数字报结束-->
+
+
+</div>
+<!--part04结束-->
+
+
+<!--part05开始-->
+<div class="linkcon">
+<ul>
+<li><a href="javascript:;" target="_blank">中共中央统战部</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" target="_blank">国务院侨务办公室</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" target="_blank">广东省人民政府</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" target="_blank">中共广东省委统战部</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" target="_blank">广东省人大华侨民族宗教委员会</a></li>
+<li><a href="javascript:;" target="_blank">广东省政协外事侨务委员会</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" target="_blank">致公党广东省委</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" target="_blank">广东省侨联</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" target="_blank">中国侨网</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" target="_blank">南方网</a></li> 
+    </ul>
+
+<ul class="mrg03">
+
+<div class="link">
+ <select name="select1" size="1" class="linktext left" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0" id="Select1">
+                <option>省政府机构网站</option>     
+     
+
+                                                        <option value="http://www.gd.gov.cn">省府办公厅</option>
+                                    <option value="http://www.gddrc.gov.cn">省发展改革委</option>
+                                    <option value="http://hrss.gd.gov.cn/">省人力资源社会保障厅</option>
+                                    <option value="http://gdii.gd.gov.cn/">省工业和信息化厅</option>
+                                    <option value="http://czt.gd.gov.cn">省财政厅</option>
+                                    <option value="http://www.gdbb.gov.cn">省编办</option>
+                                    <option value="http://edu.gd.gov.cn/">省教育厅</option>
+                                    <option value="http://gdstc.gd.gov.cn">省科技厅</option>
+                                    <option value="http://gdga.gd.gov.cn/">省公安厅</option>
+                                    <option value="http://www.gdjct.gd.gov.cn">省监察厅</option>
+                                    <option value="http://sft.gd.gov.cn">省司法厅</option>
+                                    <option value="http://mzzjw.gd.gov.cn">省民族宗教委</option>
+                                    <option value="http://td.gd.gov.cn/">省交通运输厅</option>
+                                    <option value="http://slt.gd.gov.cn/">省水利厅</option>
+                                    <option value="http://www.gdcic.gov.cn/default.html">省住房城乡建设厅</option>
+                                    <option value="http://nr.gd.gov.cn/">省自然资源资源厅</option>
+                                    <option value="http://gdee.gd.gov.cn">省生态环境厅</option>
+                                    <option value="http://zfsg.gd.gov.cn">省政务服务数据管理局</option>
+                                    <option value="http://whly.gd.gov.cn/">省文化和旅游厅</option>
+                                    <option value="http://www.gdltax.gov.cn">广东省税务局</option>
+                                    <option value="http://smzt.gd.gov.cn">省民政厅</option>
+                                    <option value="http://swj.gd.gov.cn/">省水文局</option>
+                                    <option value="http://eea.gd.gov.cn/">省教育考试院</option>
+                                    <option value="http://www.hmo.gd.gov.cn">省港澳办</option>
+                                    <option value="http://www.gdcom.gov.cn">省商务厅</option>
+                                    <option value="http://www.gdcss.gd.gov.cn">省参事室 </option>
+                                    <option value="http://stw.gd.cn/">省广播电视局</option>
+                                    <option value="http://www.gdaudit.gov.cn">省审计厅</option>
+                                    <option value="http://gdhgy.gd.gov.cn/">省核工业地质局</option>
+                                    <option value="http://dzj.gd.gov.cn/">省地质局</option>
+                                    <option value="http://djj.gd.gov.cn/">省代建局</option>
+                                    <option value="http://dfz.gd.gov.cn/">省地方志办</option>
+                                    <option value="http://www.da.gd.gov.cn">省档案局(馆)</option>
+                                    <option value="http://gdwsxf.gd.gov.cn/">省信访局</option>
+                                    <option value="http://www.bmj.gd.gov.cn">省保密局</option>
+                                    <option value="http://dva.gd.gov.cn/">省退役军人事务厅</option>
+                                    <option value="http://www.gdccad.gov.cn/ ">省人防办</option>
+                                    <option value="http://mpa.gd.gov.cn/">省药品监督管理局</option>
+                                    <option value="http://coop.gd.gov.cn/">省供销社</option>
+                                    <option value="http://gdjdj.gd.gov.cn/">省戒毒局</option>
+                                    <option value="http://gdjyj.gd.gov.cn/">省监狱局</option>
+                                    <option value="http://gdgrain.gd.gov.cn/">省粮食和物资储备局</option>
+                                    <option value="http://gdjr.gd.gov.cn/">省地方金融监督管理局</option>
+                                    <option value="http://www.gdstats.gov.cn">省统计局</option>
+                                    <option value="http://yjgl.gd.gov.cn/">省应急管理厅</option>
+                                    <option value="http://tyj.gd.gov.cn/">省体育局</option>
+                                    <option value="http://www.gdqts.gov.cn">省市场监督管理局（知识产权局）</option>
+                                    <option value="http://www.gdass.gov.cn">省社科院</option>
+                                    <option value="http://gzw.gd.gov.cn/">省国资委</option>
+                                    <option value="http://dara.gd.gov.cn/">省农业农村厅</option>
+                                    <option value="http://bjly.gd.gov.cn/">省北江流域管理局</option>
+                                    <option value="http://www.gdysdz.com">省有色金属地质局</option>
+                                    <option value="http://gdyjzx.gd.gov.cn/">省发展研究中心</option>
+                                    <option value="http://www.szdj.com.cn/subproject.html">深圳市地质局</option>
+                                    <option value="http://www.gdaas.cn">省农科院</option>
+                                    <option value="http://www.gdghospital.org.cn">省人民医院</option>
+                                    <option value="http://www.gdadri.com">省建筑设计院</option>
+                                    <option value="http://www.mzzjyjy.com">省民族宗教研究院</option>
+                                    <option value="http://www.gdas.gd.cn">省科学院</option>
+                                    <option value="http://www.gqi.org.cn">省质检院</option>
+                                    <option value="http://www.gdhed.edu.cn/publicfiles//business/htmlfiles/gdjyyjy/index.html">省教育研究院</option>
+                                    <option value="http://www.fenxi.com.cn/client/centintro/centintro_list.jsp">省测试分析研究所</option>
+                                    <option value="http://www.gdsc.cn">省科学中心</option>
+                                    <option value="http://cdcp.gd.gov.cn/">省疾控中心</option>
+                                            </select>
+</div>
+
+<div class="link">
+ <select name="select2" size="1" class="linktext left" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0" id="Select1">
+                <option>地级以上市侨务部门网站</option>                
+                                                       <option value="http://www.gzqw.gov.cn/">广州</option>
+                                    <option value="http://www.tzb.sz.gov.cn/">深圳</option>
+                                    <option value="http://www.zhswtzb.gov.cn/qwql/gzdt_50704/">珠海</option>
+                                    <option value="http://wsqwj.sg.gov.cn/">韶关</option>
+                                    <option value="http://www.mzwqj.gov.cn/">梅州</option>
+                                    <option value="http://www.swwqj.gov.cn/">汕尾</option>
+                                    <option value="http://wsqwj.huizhou.gov.cn/pages/cms/hzswsqwj/html/index.html">惠州</option>
+                                    <option value="http://dgfao.dg.gov.cn/">东莞</option>
+                                    <option value="http://www.zs.gov.cn/wqj/index.action">中山</option>
+                                    <option value="http://www.foshan.gov.cn/gzjg/fsfao/">佛山</option>
+                                    <option value="http://www.yjlwqq.gov.cn/">阳江</option>
+                                    <option value="http://jmwqj.jiangmen.gov.cn/">江门</option>
+                                    <option value="http://www.zjwq.gov.cn/">湛江</option>
+                                    <option value="http://mmwqj.maoming.gov.cn/">茂名</option>
+                                    <option value="http://swqj.zhaoqing.gov.cn/">肇庆</option>
+                                    <option value="http://zwgk.gdqy.gov.cn/0121/index.shtml?show=gkzn">清远</option>
+                                    <option value="http://www.chaozhou.gov.cn/qbpd/index.jhtml">潮州</option>
+                                    <option value="http://www.wsqwj.gov.cn/">揭阳</option>
+                                    <option value="http://www.yunfu.gov.cn/website/admin/models/index6.jsp?topid=009001005">云浮</option>
+                                    <option value="http://www.shunde.gov.cn/sdshgz/">顺德</option>
+                                            </select>
+</div>
+
+<div class="link">
+ <select name="select3" size="1" class="linktext left" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0" id="Select1">
+                <option>各省区市侨务部门网站</option>                
+                                                       <option value="http://www.bjqb.gov.cn/">北京</option>
+                                    <option value="http://qw.tj.gov.cn/">天津</option>
+                                    <option value="http://www.hebwb.gov.cn/index.jsp">河北</option>
+                                    <option value="http://www.lnfao.gov.cn/">辽宁</option>
+                                    <option value="http://wb.jl.gov.cn/">吉林</option>
+                                    <option value="http://www.hljfao.gov.cn/">黑龙江</option>
+                                    <option value="http://www.sdqb.gov.cn/">山东</option>
+                                    <option value="http://www.sxfoa.gov.cn/">山西</option>
+                                    <option value="http://www.hnfo.gov.cn/">河南</option>
+                                    <option value="http://www.ahfao.gov.cn/">安徽</option>
+                                    <option value="http://qb.fujian.gov.cn/">福建</option>
+                                    <option value="http://www.jxwqb.gov.cn/wqb/">江西</option>
+                                    <option value="http://www.hn.chinanews.com/hnfao.html">湖南</option>
+                                    <option value="http://www.fohb.gov.cn/">湖北</option>
+                                    <option value="http://www.sxfao.gov.cn/">陕西</option>
+                                    <option value="http://www.gsfao.gov.cn/">甘肃</option>
+                                    <option value="http://www.nxfao.gov.cn/index.html">宁夏</option>
+                                    <option value="http://wqb.xinjiang.gov.cn/">新疆</option>
+                                    <option value="http://www.nmgfao.gov.cn/web/default.asp">内蒙古</option>
+                                    <option value="http://www.qhws.gov.cn/default.html">青海</option>
+                                    <option value="http://www.ynqb.net.cn/">云南</option>
+                                    <option value="http://www.scwqb.gov.cn/">四川</option>
+                                    <option value="http://www.cqfao.gov.cn/">重庆</option>
+                                    <option value="http://www.faogz.gov.cn/">贵州</option>
+                                            </select>
+</div>
+
+</ul>
+</div>
+<!--part05结束-->
+
+<!--页脚开始-->
+<div class="filter" style="display:none; z-index:1000; position: fixed; _position: absolute;  pointer-events: auto; background-color:#000; opacity:0.7; filter:alpha(opacity=70);top: 0; left: 0;  width: 100%;  height: 100%;"></div>
+<div class="aTips" style="display:none;">
+	<div class="text">您访问的链接即将离开“广东侨网”</div>
+    <div id="showurl" class="text">正在前往外部链接：<span></span></div>
+	<div class="layui-layer-btn">
+		<div date-url="" class="layui-layer-btn0">继续访问</div>
+		<div class="layui-layer-btn1">放弃</div>
+	</div>
+</div>
+<style>
+.aTips{
+    position: fixed;
+    _position: absolute;
+	z-index: 1001;
+    width: 480px;
+    height: 170px;
+    top: 50%;
+	margin-top: -85px;
+    left: 50%;
+	margin-left:-240px;
+	background-color: #fff;
+}
+
+.aTips .text {
+    position: relative;
+	font-size: 16px;
+    padding: 20px;
+    line-height: 24px;
+    word-break: break-all;
+    overflow: hidden;
+    font-size: 14px;
+    overflow-x: hidden;
+    overflow-y: auto;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.layui-layer-btn {
+    text-align: right;
+    padding: 0 10px 12px;
+    pointer-events: auto;
+    user-select: none;
+    -webkit-user-select: none;
+	margin-top:30px;
+   	display:none;
+}
+
+.layui-layer-btn div {
+    height: 28px;
+    line-height: 28px;
+    margin: 6px 6px 0;
+    padding: 0 15px;
+    border: 1px solid #dedede;
+    background-color: #f1f1f1;
+    color: #333;
+    border-radius: 2px;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+	display: inline-block;
+}
+
+.layui-layer-btn .layui-layer-btn0 {
+    border-color: #4898d5;
+    background-color: #2056a0;
+    color: #fff;
+}
+    
+    #showurl{
+        margin-top: 0;
+        padding-top: 0;
+    }
+    
+    #showurl span{
+        color:#116aae;
+    }
+</style>
+<!--页脚开始-->
+<div class="footer">
+<div class="footer_text">
+<p><a href="javascript:;" target="_blank">网站地图</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    
+<a href="gywm/index.html" target="_blank">关于我们</a>
+    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="javascript:;" target="_blank">邮件订阅</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="RRS/index.html" target="_blank">RSS订阅</a>
+</p>
+<div class="footer_logo"><a href="javascript:;" target="_blank"><img src="images/red.png" style="float:right;"></a>
+    <!--<a href="http://114.55.181.28/errorInfo/jcInfo/45d29187-9a5d-4108-97a0-45ebc2e66354-1783253137" target="_blank"><img src="images/jiucuo20171215.png" / style="float:right; margin-top:10px;"></a>-->
+    </div>
+<div class="footer_t01">
+<p>版权所有：广东侨网&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" target="_blank">粤ICP备05070829</a></p>
+<p>主办：欢迎进入广东省科技计划管理网    广东南方网络信息科技有限公司 负责制作维护</p>
+<p>本网站用IE6.0以上浏览器、1024*768分辨率获最佳效果。</p>
+</div>
+</div>
+
+</div>
+
+<!--<script>
+
+$("body a").click(function(){
+	var url = $(this).attr("href");
+    if(url.indexOf("javascript:void(0)")>-1){
+    	return true;
+    }else if(url.indexOf("qb.gd.gov.cn")>-1 || $.trim(url).substr(0,2).indexOf("./")>-1){
+		return true;
+	}else{
+		checkUrl(url);
+		return false;
+	}
+});
+
+$(".layui-layer-btn0").click(function(){
+	var url = $(".layui-layer-btn0").attr("data-url");
+	window.location.href = url;
+});
+
+$(".layui-layer-btn1").click(function(){
+	$(".filter").hide();
+	$(".aTips").hide();
+});
+
+function checkUrl(url){
+	$(".filter").show();
+	$(".aTips").show();
+    $("#showurl span").text(url)
+	$(".layui-layer-btn0").attr("data-url",url);
+    setTimeout(function(){
+    	window.open(url);
+        $(".filter").hide();
+        $(".aTips").hide();
+    },2000);
+   
+}
+</script>-->
+
+<script>window.NFCMS_SITE_ID=5;window.NFCMS_PUB_TYPE="page";</script><script src="scripts/s-1607501154.js"></script>
+
+<!--页脚结束-->
+<!--页脚结束-->
+ 
+<!--工具栏-->
+<!--NFC_INCLUDE id="2221"-->   
+</body>
+</html>

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.foot{
+    width: 100%;
+    margin-top: 22px;
+    background-color: #245795;
+    overflow: hidden;
+}
+
+.foot .con{
+    width: 1200px;
+    margin: 60px auto 30px;
+    position: relative;
+}
+
+.info{
+    margin: 0 auto;
+}
+
+.info p{
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 32px;
+    text-align: center;
+}
+
+.info p a{
+    color: #ffffff;
+}
+
+.foot_plus{
+    left: 30px;
+    top: 30px;
+    position: absolute;
+}
+
+.foot_plusr {
+    position: absolute;
+    right: 25px;
+    top: 40px;
+}

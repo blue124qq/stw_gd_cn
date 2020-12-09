@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xml:lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <title>广东省档案馆网站</title>
+    <script language="javascript" type="text/javascript" src="portal_home/templates/default/js/jquery-1.9.1.min.js"></script>
+    <!--<script language="javascript" type="text/javascript" src="/portal_home/templates/default/js/jquery-1.10.1.min.js"></script>-->
+    <script language="javascript" type="text/javascript" src="portal_home/templates/default/js/common.js"></script>
+    <!--<script language="javascript" type="text/javascript" src="/portal_home/templates/default/js/swiper.min.js"></script>-->
+    <script language="javascript" type="text/javascript" src="portal_home/templates/default/js/idangerous.swiper.js"></script>
+    <script language="javascript" type="text/javascript" src="portal_home/static/js/layui/layui.all.js"></script>
+    <link rel="stylesheet" href="portal_home/templates/default/css/reset.css">
+    <link rel="stylesheet" href="portal_home/templates/default/css/style.css">
+    <link rel="stylesheet" href="portal_home/templates/default/css/nav.css">
+    <!--<link rel="stylesheet" href="/portal_home/templates/default/css/swiper.min.css" />-->
+    <link rel="stylesheet" href="portal_home/templates/default/css/idangerous.swiper.css">
+    <link rel="stylesheet" href="portal_home/templates/default/css/index.css">
+
+    <link type="text/css" rel="stylesheet" href="portal_home/templates/default/js/ueditor/third-party/video-js/video-js.css">
+
+    <script language="javascript" type="text/javascript" src="portal_home/templates/default/js/ueditor/third-party/video-js/video.js"></script>
+    <!--<link type="text/css" rel="stylesheet" href="/portal_home/templates/default/js/ueditor/videojs/video-js.min.css"/>-->
+
+    <!--<script language="javascript" type="text/javascript" src="/portal_home/templates/default/js/ueditor/videojs/video.min.js"></script>-->
+    
+    <script>
+        var swiper1;
+    </script>
+    <style>
+        .vjs-default-skin .vjs-big-play-button
+        {
+            display: none\9;
+        }
+        /*.vjs-styles-defaults*/
+        /*{*/
+            /*width: inherit !important;*/
+            /*height:inherit !important;*/
+            /*margin: 0 auto;*/
+        /*}*/
+    </style>
+</head><body>
+<div class="wap">
+
+<style>
+    .gotowap
+    {
+        padding-left: 20px;
+        display: none;
+        position: relative;
+        top: -1px;
+    }
+</style>
+<div class="top_nav">
+    <div class="top_nav_nei">
+        <p class="left_p">
+            <script language="Javascript" type="text/Javascript">
+                var day="";
+                var month="";
+                var ampm="";
+                var ampmhour="";
+                var myweekday="";
+                var year="";
+                mydate=new Date();
+                mymonth=mydate.getMonth()+1;
+                myday= mydate.getDate();
+                myyear= mydate.getYear();
+                year=(myyear > 200) ? myyear : 1900 + myyear;
+
+                document.write(year+"年"+mymonth+"月"+myday+"日 ");
+            </script>
+            <a class="gotowap" href="javascript:;" target="_self">[切换手机版]</a>
+        </p>
+
+        <!--<p class="right_p">-->
+            <!--&lt;!&ndash;<span style="padding-right: 20px;">联系我们</span>&ndash;&gt;-->
+            <!---->
+                <!--<span style=""><a href="javascript:;" title="登录" data-reveal-id="myModal" id="loginBtn" onclick="login_fun('chongzhi')">登录</a> | <a href="javascript:;" title="注册" data-reveal-id="myModal" onclick="login_fun('dashang')">注册</a></span>-->
+            <!---->
+
+        <!--</p>-->
+
+    </div>
+    <!--登录注册弹出-->
+    <!--<script language="javascript" type="text/javascript" src="/portal_home/templates/default/js/jquery.reveal.js"></script>-->
+    <!--<div id="myModal" class="reveal-modal">-->
+        <!--<div align="center" style="margin: 0">-->
+
+
+            <!--<div class="login wap">-->
+                <!--<div class="denglulogo"></div>-->
+                <!--<div class="dz">-->
+                    <!--<div class="zijin">-->
+                        <!--<ul>-->
+                            <!--<li class="chongzhi active">登录</li>-->
+                            <!--<li class="dashang">注册</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                    <!--<div class="vipR_Con clearfix">-->
+                        <!--<div class="count1">-->
+                            <!--<div class="chongzhi1">-->
+                                <!--<form id="loginForm" class="layui-form">-->
+                                    <!--<div class="register" style="margin-top: 30px;">-->
+                                        <!--<ul>-->
+                                            <!--<li>-->
+                                                <!--<input type="text" name="code" placeholder="请输入用户名" class="inputbg2" />-->
+                                                <!--<div class=" by1"></div>-->
+                                            <!--</li>-->
+                                            <!--<li>-->
+                                                <!--<input type="password" name="password" placeholder="请输入6-16位密码" class="inputbg2"/>-->
+                                                <!--<div class="by4"></div>-->
+                                            <!--</li>-->
+                                            <!--<li>-->
+                                                <!--<input type="text" name="vcode" placeholder="请输入验证码" style="width: 125px;"  id="phonecode" >-->
+                                                <!--<div class="by5"></div>-->
+                                                <!--<img title="点击刷新"   id="loginCaptcha" style="width: 120px;height: 61px;" src="/portal_home/getLoginCode" onclick="updateLoginCaptcha()" />-->
+                                            <!--</li>-->
+                                        <!--</ul>-->
+                                    <!--</div>-->
+                                    <!--<div class="login_zc">-->
+                                       <!--&lt;!&ndash; <p style="float: right"><a href="javascript:;">忘记密码</a></p>&ndash;&gt;-->
+                                    <!--</div>-->
+                                    <!--<div class="login_an" style="">-->
+                                        <!--<input type="hidden" name="formUrl" id="formUrl" value="/portal_home/">-->
+                                        <!--<button type="submit" class="btn-submit"  lay-submit="" lay-filter="login" value="">登录</button>-->
+                                    <!--</div>-->
+                                <!--</form>-->
+                            <!--</div>-->
+                            <!--<div class="dashang1" style="display:none">-->
+                                <!--<form id="regForm" class="layui-form">-->
+                                    <!--<div class="register">-->
+                                        <!--<ul>-->
+                                            <!--<li>-->
+                                                <!--<input type="text" name="code" lay-verify="required" placeholder="用户名" class="inputbg2" />-->
+                                                <!--<div class="by1"></div>-->
+                                            <!--</li>-->
+                                            <!--<li>-->
+                                                <!--<input type="text" name="mobile" lay-verify="required|phone"  placeholder="手机号码" class="inputbg2" />-->
+                                                <!--<div class="by2"></div>-->
+                                            <!--</li>-->
+                                            <!--<li>-->
+                                                <!--<input type="text" name="email" lay-verify="required|email" placeholder="邮箱" class="inputbg2"/>-->
+                                                <!--<div class="by3"></div>-->
+                                            <!--</li>-->
+                                            <!--<li>-->
+                                                <!--<input type="password" name="password" lay-verify="required" placeholder="密码" class="inputbg2"/>-->
+                                                <!--<div class="by4"></div>-->
+                                            <!--</li>-->
+                                            <!--<li>-->
+                                                <!--<input type="password" name="repassword" lay-verify="required"  placeholder="确认密码" class="inputbg2"/>-->
+                                                <!--<div class="by4"></div>-->
+                                            <!--</li>-->
+                                            <!--<li>-->
+                                                <!--<input type="text" placeholder="验证码"  lay-verify="required"  name="vcode" style="width: 125px;" id="phonecode"  >-->
+                                                <!--<div class="by5"></div>-->
+                                                <!--<img title="点击刷新"  id="regCaptcha" style="width: 120px;height: 61px;" src="/portal_home/getRegCode" onclick="updateRegCaptcha()" />-->
+                                            <!--</li>-->
+                                        <!--</ul>-->
+                                    <!--</div>-->
+                                    <!--<div class="login_an" style="padding-top: 20px;">-->
+                                        <!--<button type="button" id="regBth" class="btn-submit"   lay-submit="" lay-filter="register" >立即注册</button>-->
+                                    <!--</div>-->
+                                <!--</form>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<script>-->
+                        <!--$('.chongzhi').click(function(){-->
+                            <!--$(this).addClass('active');-->
+                            <!--$(this).siblings('li').removeClass('active');-->
+                            <!--$('.chongzhi1').css('display','block');-->
+                            <!--$('.dashang1').css('display','none');-->
+                        <!--});-->
+                        <!--$('.dashang').click(function(){-->
+                            <!--$(this).addClass('active');-->
+                            <!--$(this).siblings('li').removeClass('active');-->
+                            <!--$('.chongzhi1').css('display','none');-->
+                            <!--$('.dashang1').css('display','block');-->
+                        <!--});-->
+
+
+                        <!--$(function () {-->
+                            <!--var mobile_flag = isMobile(); // false为PC端，true为手机端-->
+                            <!--if(mobile_flag&&(sessionStorage?sessionStorage.getItem("gotowap")!="1":true)){-->
+                                <!--$(".gotowap").show();-->
+                                <!--var r=confirm("您使用的设备为移动端设备，是否切换至【手机版】进行浏览？");-->
+                                <!--sessionStorage?sessionStorage.setItem("gotowap","1"):"";-->
+                                <!--if (r==true)-->
+                                <!--{-->
+<!--//                                    $(".gotowap")[0].attr("target","_self");-->
+                                    <!--$(".gotowap")[0].click();-->
+                                <!--}-->
+                                <!--else-->
+                                <!--{-->
+
+                                <!--}-->
+                            <!--}-->
+                            <!--else-->
+                            <!--{-->
+
+                            <!--}-->
+                            <!--var form = layui.form;-->
+
+                            <!--form.on('submit(login)', function(data){-->
+                                <!--$.ajax({-->
+                                    <!--url:'/portal_home/doLogin',-->
+                                    <!--type:'POST', //GET-->
+                                    <!--async:true,    //或false,是否异步-->
+                                    <!--data: data.field,-->
+                                    <!--dataType:'json',    //返回的数据格式：json/xml/html/script/jsonp/text-->
+                                    <!--success:function(data){-->
+                                        <!--if(data.state=='fail'){-->
+                                            <!--layer.msg(data.msg);-->
+                                        <!--}else{-->
+                                            <!--layer.msg(data.msg);-->
+                                            <!--$("#myModal").trigger('reveal:close');-->
+                                            <!--if(data.formUrl==''){-->
+
+                                            <!--}else{-->
+                                                <!--window.location.href = '/portal_home';-->
+                                            <!--}-->
+                                        <!--}-->
+
+                                    <!--},-->
+                                    <!--error:function(xhr,textStatus){-->
+
+                                    <!--}-->
+                                <!--});-->
+                                <!--return false; //阻止表单跳转。如果需要表单跳转，去掉这段即可。-->
+                            <!--});-->
+
+
+
+                            <!--form.on('submit(register)', function(data){-->
+                                <!--$.ajax({-->
+                                    <!--url:'/portal_home/saveRegister',-->
+                                    <!--type:'POST', //GET-->
+                                    <!--async:true,    //或false,是否异步-->
+                                    <!--data: data.field,-->
+                                    <!--dataType:'json',    //返回的数据格式：json/xml/html/script/jsonp/text-->
+                                    <!--success:function(data){-->
+                                        <!--if(data.state=='fail'){-->
+                                            <!--layer.msg(data.msg);-->
+                                        <!--}-->
+                                    <!--},-->
+                                    <!--error:function(xhr,textStatus){-->
+
+                                    <!--}-->
+                                <!--});-->
+                                <!--return false; //阻止表单跳转。如果需要表单跳转，去掉这段即可。-->
+                            <!--});-->
+                        <!--});-->
+
+                        <!--/**-->
+                         <!--* 重发登录验证码-->
+                         <!--*/-->
+                        <!--function updateLoginCaptcha() {-->
+                            <!--$("#loginCaptcha").attr("src","/portal_home/getLoginCode?v=" + Math.random());-->
+                        <!--}-->
+
+                        <!--/**-->
+                         <!--* 重发注册验证码-->
+                         <!--*/-->
+                        <!--function updateRegCaptcha() {-->
+                            <!--$("#regCaptcha").attr("src","/portal_home/getRegCode?v=" + Math.random());-->
+                        <!--}-->
+                        <!--function isMobile() {-->
+                            <!--var userAgentInfo = navigator.userAgent;-->
+
+                            <!--var mobileAgents = [ "Android", "iPhone", "SymbianOS", "Windows Phone", "iPad","iPod"];-->
+
+                            <!--var mobile_flag = false;-->
+
+                            <!--//根据userAgent判断是否是手机-->
+                            <!--for (var v = 0; v < mobileAgents.length; v++) {-->
+                                <!--if (userAgentInfo.indexOf(mobileAgents[v]) > 0) {-->
+                                    <!--mobile_flag = true;-->
+                                    <!--break;-->
+                                <!--}-->
+                            <!--}-->
+
+                            <!--var screen_width = window.screen.width;-->
+                            <!--var screen_height = window.screen.height;-->
+
+                            <!--//根据屏幕分辨率判断是否是手机-->
+                            <!--if(screen_width < 500 && screen_height < 800){-->
+                                <!--mobile_flag = true;-->
+                            <!--}-->
+
+                            <!--return mobile_flag;-->
+                        <!--}-->
+                    <!--</script>-->
+                <!--</div>-->
+            <!--</div>-->
+
+
+        <!--</div>-->
+    <!--</div>-->
+    <!--登录注册弹出-->
+</div>
+<div class="top">
+    <div class="logo">
+        <img src="portal_home/templates/default/images/logo.png" alt="">
+    </div>
+    <div class="sousuo">
+        <form name="formsearch" action="/portal_home/search">
+            <div class="form">
+                <input name="keyword" class="search-keyword" id="" value="请输入关键词" onfocus="if(this.value=='请输入关键词'){this.value='';}" onblur="if(this.value==''){this.value='请输入关键词';}" type="text">
+                <button type="submit" class="search-submit"></button>
+            </div>
+        </form>
+    </div>
+</div>
+<!--导航-->
+<div class="nav">
+    <ul>
+
+        <li> <a href="javascript:;" class="aNow skip">首页</a></li>
+
+                <li> <a href="javascript:;" class="sNavA skip">要闻动态</a></li>
+                <li> <a href="javascript:;" class="sNavA skip">信息公开</a></li>
+                <li> <a href="javascript:;" class="sNavA skip">公共服务</a></li>
+                <li> <a href="javascript:;" class="sNavA skip">档案文化</a></li>
+                <li> <a href="javascript:;" class="sNavA skip">公众参与</a></li>
+
+    </ul>
+
+        <!--<div class="nav-slider">-->
+            <!--<div class="model">-->
+                <!--<input id="checkbox_d1" class="chk_4 hide" type="checkbox">-->
+                <!--<label for="checkbox_d1" class="moshi01">-->
+                    <!--&lt;!&ndash;<img alt="" src="/portal_home/templates/default/images/up_img.png" />&ndash;&gt;-->
+                <!--</label>-->
+            <!--</div>-->
+        <!--</div>-->
+</div>
+
+
+
+<!--要闻动态 -->
+<div class="sNav" style="display: none;">
+    <div class="wzdt wap">
+            <div class="wapleft">
+                <div class="title tab">
+                    <ul>
+                                <li class="liNow"><a href="javascript:;">新闻动态</a></li>
+                                <li><a href="javascript:;">政声传递</a></li>
+
+                    </ul>
+                </div>
+                <div class="tabContentDiv">
+
+
+                            <div class="tabContent" style="display: block">
+                                <!---->
+                                <!--<div class="news_big_title"><a href="/portal_home/content/3943" class="blue">兰亭村迎来美院师生 艺术墙绘助力美丽乡村建设</a></div>-->
+                                <!--<div class="content">-->
+                                    <!--<div class="news_big_content">为深入学习贯彻习近平新时代中国特色社会主义思想和党的十九大精神，贯彻落实习近平总书记关于脱贫攻坚的系列重要讲话和指示批示精神，巩固脱贫攻坚成果，引领乡村振兴，推进美丽新农村建设，广东省档案馆驻兰亭村扶贫工作队在积极协助村委进行“三清三拆三整治”工作的基础上，以村文化广场和主要村道等点为靓丽工程建设重点，于10月23-25日，联系广州美术学院团委组织师生24人前来大坪镇兰亭村开展新农村墙绘活动。经...</div>-->
+                                    <!--<div style="padding-top: 10px;">信息来源：广东省档案馆　　发表时间：</div>-->
+                                <!--</div>-->
+                                <!---->
+                                <div class="list news">
+                                    <ul>
+                                        <li><a href="javascript:;" title="兰亭村迎来美院师生 艺术墙绘助力美丽乡村建设">兰亭村迎来美院师生 艺术墙绘助力美丽乡村建设</a><span>2020-11-05</span></li>
+                                        <li><a href="javascript:;" title="广东省档案馆公布一批民国时期农田水利建设专题档案目录">广东省档案馆公布一批民国时期农田水利建设专题档...</a><span>2020-11-04</span></li>
+                                        <li><a href="javascript:;" title="广东省档案馆集中学习研讨《习近平谈治国理政》">广东省档案馆集中学习研讨《习近平谈治国理政》</a><span>2020-10-21</span></li>
+                                        <li><a href="javascript:;" title="让历史档案活起来，为广东经济高质量发展提供新动力">让历史档案活起来，为广东经济高质量发展提供新动...</a><span>2020-09-10</span></li>
+                                        <li><a href="javascript:;" title="广东省档案馆举办民法典专题培训">广东省档案馆举办民法典专题培训</a><span>2020-08-20</span></li>
+                                    </ul>
+                                </div>
+
+
+                                <div class="title">
+                                    <ul>
+                                            <li><a href="javascript:;">通知公告</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="list">
+                                    <ul>
+                                        <li><a href="javascript:;" title="广东省档案馆电位滴定仪、酸度计（pH计）采购公告">广东省档案馆电位滴定仪、酸度计（pH计）采购公...</a><span>2020-10-26</span></li>
+                                        <li><a href="javascript:;" title="“广东省档案馆馆史展”项目公告">“广东省档案馆馆史展”项目公告</a><span>2020-09-21</span></li>
+                                        <li><a href="javascript:;" title="广东省档案馆电位滴定仪、pH计（酸度计）设备采购公告">广东省档案馆电位滴定仪、pH计（酸度计）设备采...</a><span>2020-09-09</span></li>
+                                        <li><a href="javascript:;" title="广东省档案馆省级公共机构节水型单位建设项目公告">广东省档案馆省级公共机构节水型单位建设项目公告</a><span>2020-08-10</span></li>
+                                        <li><a href="javascript:;" title="广东省档案馆关于采购备份设备的公告">广东省档案馆关于采购备份设备的公告</a><span>2020-06-18</span></li>
+                                    </ul>
+                                </div>
+                                <!--<div class="list news">-->
+                                    <!--<h6><a href="/portal_home/channel/82">本省新闻</a></h6>-->
+                                    <!--<ul>-->
+                                        <!---->
+                                    <!--</ul>-->
+                                <!--</div>-->
+                                <!--<hr/>-->
+                                <!--<div class="list news">-->
+                                    <!--<h6><a href="/portal_home/channel/81">国内新闻</a></h6>-->
+                                    <!--<ul>-->
+                                        <!---->
+                                    <!--</ul>-->
+                                <!--</div>-->
+                                <!--<hr/>-->
+                                <!--<div class="list news">-->
+                                    <!--<h6><a href="/portal_home/channel/121">国际新闻</a></h6>-->
+                                    <!--<ul>-->
+                                        <!---->
+                                    <!--</ul>-->
+                                <!--</div>-->
+
+                            </div>
+                        <div class="tabContent" style="display: none">
+				                <div class="list">
+				                	<ul id="zscd2"></ul>
+                                </div>
+                                <div class="title">
+                                    <ul>
+                                        <li><a href="javascript:;">通知公告</a></li>
+                                    </ul>
+                                </div>
+                                <div class="list">
+                                    <ul>
+                                        <li><a href="javascript:;" title="广东省档案馆电位滴定仪、酸度计（pH计）采购公告">广东省档案馆电位滴定仪、酸度计（pH计）采购公...</a><span>2020-10-26</span></li>
+                                        <li><a href="javascript:;" title="“广东省档案馆馆史展”项目公告">“广东省档案馆馆史展”项目公告</a><span>2020-09-21</span></li>
+                                        <li><a href="javascript:;" title="广东省档案馆电位滴定仪、pH计（酸度计）设备采购公告">广东省档案馆电位滴定仪、pH计（酸度计）设备采...</a><span>2020-09-09</span></li>
+                                        <li><a href="javascript:;" title="广东省档案馆省级公共机构节水型单位建设项目公告">广东省档案馆省级公共机构节水型单位建设项目公告</a><span>2020-08-10</span></li>
+                                        <li><a href="javascript:;" title="广东省档案馆关于采购备份设备的公告">广东省档案馆关于采购备份设备的公告</a><span>2020-06-18</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="tabContent" style="display: none">
+                                <div class="news_big_title"><a href="javascript:;" class="blue">李克强对深入学习贯彻党的十九大精神做好新时代工商和市场监管工作座谈会作出重要批示</a></div>
+                                <div class="content">
+                                    <div class="news_big_content"> 李克强对深入学习贯彻党的十九大精神做好新时代工商和市场监管工作座谈会作出重要批示…
+                                        <a href="javascript:;" title=" 李克强对深入学习贯彻党的十九大精神做好新时代工商和市场监管工作座谈会作出重要批示" class="blue">&nbsp;&nbsp;&nbsp;&nbsp;[详细内容]</a>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <ul>
+                                        <li><a href="javascript:;" title="李克强对深入学习贯彻党的十九大精神做好新时代工商和市场监管工作座谈会作出重要批示">李克强对深入学习贯彻党的十九大精神做好新时代工...</a><span>2017-12-30</span></li>
+                                        <li><a href="javascript:;" title="七类专项整治行动">七类专项整治行动</a><span>2017-12-30</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                </div>
+            </div>
+            <div class="wapright">
+                <div class="title1 tab">
+                    <ul>
+                        <li class="liNow"><a href="javascript:;">新闻图片</a></li>
+                    </ul>
+                </div>
+                <div class="tupian">
+                    <div class="tupianshang">
+                        <div class="tupianzuo">
+                            <a href="javascript:;" target="_blank">
+                                <img src="portal_home/file/getById-205801.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="tupianyou">
+                            <p style="font-size: 15px;color: #000000;line-height: 24px;"><a href="javascript:;">...</a></p>
+                            <p style="font-size: 12px;color: #999999;line-height: 19px;padding-top: 25px;">信息来源：省档案馆</p>
+                            <p style="font-size: 12px;color: #999999;line-height: 19px;padding-top: 10px;">发表时间：2019-01-23</p>
+                        </div>
+                    </div>
+                    <div class="tupianxia">
+                        <ul>
+                                <a href="javascript:;" target="_blank">
+                                    <li>
+                                        <img src="portal_home/file/getById-205801.jpg" alt="">
+                                        <div class="small_img_list_title">
+                                            <a href="javascript:;" style="color: #ffffff">...</a>
+                                        </div>
+                                    </li>
+                                 </a>
+                                <a href="javascript:;" target="_blank">
+                                    <li>
+                                        <img src="portal_home/file/getById-205781.jpg" alt="">
+                                        <div class="small_img_list_title">
+                                            <a href="javascript:;" style="color: #ffffff">...</a>
+                                        </div>
+                                    </li>
+                                 </a>
+                                <a href="javascript:;" target="_blank">
+                                    <li>
+                                        <img src="portal_home/file/getById-111782.jpg" alt="">
+                                        <div class="small_img_list_title">
+                                            <a href="javascript:;" style="color: #ffffff">...</a>
+                                        </div>
+                                    </li>
+                                 </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<!--政务公开 -->
+<div class="sNav" style="display: none;">
+    <div class="wzdt wap">
+        <div class="zwleft">
+            <div class="title1 tab">
+                <ul>
+                    <li class="liNow"><a href="javascript:;">机构职能</a></li>
+                    <li><a href="javascript:;">领导信息</a></li>
+                </ul>
+            </div>
+            <div class="tabContentDiv">
+                <div class="tabContent" style="display: block">
+                    <div class="juguan">
+
+                        <div class="juguanwen" style="width:100%;">
+                            <p> 根据中共广东省委、广东省人民政府《关于印发〈广东省事业单位分类改革的意见〉的通知》（粤发〔2010〕6号），广东省档案局（馆）是省人民政府管理的事业单位。   [主要职责] （一）贯彻执行有关档案工作的法律、法规、规章和方针政策；拟定全省档案事业发展规划、档案工作规范和行业标准，并组织实施。 （二）监督和指导各级机关、团体、企事业单位和其他组织的档案工作，依法查处档案违法行为。 （三）统筹规划并指导实施档案信息化、档案信息网络建设与管理；指导和协调归档电子文件管理工作；组织和指导档案理论与档案科学技术的研究、鉴定和推广应用。 （四）接收、征集、整理和集中统一管理省级党政机关、群众团体、省直属单位及部分企事业单位的重要档案资料和有关广东历史的文件及电子档案资料。 （五）依法向社会开放档案信息资源，开展档案展览、...
+                                <a href="javascript:;">&nbsp;&nbsp;&nbsp;&nbsp;[详细内容]</a></p>
+                        </div>
+                        <!--<div class="juguanul click-block">-->
+                            <!--<ul>-->
+                                <!--<li style="border-left: 1px solid #cccccc">-->
+                                    <!---->
+                                    <!--<p style="text-align: center;height: 43px;padding-top: 30px"><img src="/portal_home/file/getById?fileId=610" alt=""/></p>-->
+                                    <!--<p style="line-height: 50px;text-align: center;font-size: 16px;"><a href="http://zwgk.gd.gov.cn/00694108X/">政府信息公开目录</a></p>-->
+                                    <!---->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!---->
+                                    <!--<p style="text-align: center;height: 43px;padding-top: 30px"><img src="/portal_home/file/getById?fileId=1725" alt=""/></p>-->
+                                    <!--<p style="line-height: 50px;text-align: center;font-size: 16px;"><a href="/portal_home/special/41">数据发布</a></p>-->
+                                    <!---->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!---->
+                                    <!--<p style="text-align: center;height: 43px;padding-top: 30px"><img src="/portal_home/file/getById?fileId=611" alt=""/></p>-->
+                                    <!--<p style="line-height: 50px;text-align: center;font-size: 16px;"><a href="/portal_home/download/202">公共下载区</a></p>-->
+                                    <!---->
+                                <!--</li>-->
+                                <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<p style="text-align: center;height: 43px;padding-top: 30px"><img src="/portal_home/file/getById?fileId=612" alt=""/></p>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<p style="line-height: 50px;text-align: center;font-size: 16px;"><a href="/portal_home/content/130">机构职能</a></p>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;&ndash;&gt;-->
+                                <!--&lt;!&ndash;</li>&ndash;&gt;-->
+
+                            <!--</ul>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+                <div class="tabContent" style="display: none;">
+                    <!-- todo 领导信息-->
+                    <ul class="employee_nav_ul">
+                        <a href="javascript:;">
+                            <li class="employee_nav_li">
+                                <img alt="" src="portal_home/file/getById-589.jpg">
+                                <div class="employee_nav_name">陈华江</div>
+                            </li>
+                        </a>
+                        <a href="javascript:;">
+                            <li class="employee_nav_li">
+                                <img alt="" src="portal_home/file/getById-590.jpg">
+                                <div class="employee_nav_name">孟凡华</div>
+                            </li>
+                        </a>
+                        <a href="javascript:;">
+                            <li class="employee_nav_li">
+                                <img alt="" src="portal_home/file/getById-591.jpg">
+                                <div class="employee_nav_name">黄菊艳</div>
+                            </li>
+                        </a>
+                        <a href="javascript:;">
+                            <li class="employee_nav_li">
+                                <img alt="" src="portal_home/file/getById-593.jpg">
+                                <div class="employee_nav_name">陈竞亚</div>
+                            </li>
+                        </a>
+                        <a href="javascript:;">
+                            <li class="employee_nav_li">
+                                <img alt="" src="portal_home/file/getById-592.jpg">
+                                <div class="employee_nav_name">张进思</div>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="zwright">
+            <div class="title1 tab">
+                <ul>
+                    <li class="liNow"><a href="javascript:;">本馆介绍</a></li>
+                </ul>
+            </div>
+            <div class="juguan">
+                <div class="juguantu">
+                    <img src="portal_home/file/getById-586.jpg" alt="">
+                </div>
+                <div class="juguanwen">
+                    <p> 广东省档案馆成立于1958年11月，广东省档案局于1959年3月成立后，与省档案馆合署办公。1995年1月，经省政府批准，省档案局和省档案馆实行局馆合一体制，为省政府直属事业单位，履行档案行政管理和档案保管利用两种职能。2011年3月，经省机构编制委员会批准，省档案局（馆）为省政府直属正厅级事业单位。2018年10月，根据《广东省机构改革方案》，省委办公厅加挂省档案局牌子，不再保留与原省档案馆合并设立的省档案局。省档案馆作为省委...
+                        <a href="javascript:;">&nbsp;&nbsp;&nbsp;&nbsp;[详细内容]</a></p>
+                </div>
+                <!--<div class="juguanul click-block">-->
+                    <!--<ul>-->
+                        <!--<li style="border-left: 1px solid #cccccc">-->
+                            <!---->
+                            <!--<p style="text-align: center;height: 43px;padding-top: 30px"><img src="/portal_home/file/getById?fileId=1728" alt=""/></p>-->
+                            <!--<p style="line-height: 50px;text-align: center;font-size: 16px;"><a href="/portal_home/employee">领导信息</a></p>-->
+                            <!---->
+
+
+                        <!--</li>-->
+
+                        <!--<li>-->
+                            <!---->
+                            <!--<p style="text-align: center;height: 43px;padding-top: 30px"><img src="/portal_home/file/getById?fileId=1729" alt=""/></p>-->
+                            <!--<p style="line-height: 50px;text-align: center;font-size: 16px;"><a href="/portal_home/channel/54">政策解读</a></p>-->
+                            <!---->
+
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!---->
+                            <!--<p style="text-align: center;height: 43px;padding-top: 30px"><img src="/portal_home/file/getById?fileId=983" alt=""/></p>-->
+                            <!--<p style="line-height: 50px;text-align: center;font-size: 16px;"><a href="/portal_home/onlineask/67">在线访谈</a></p>-->
+                            <!---->
+                        <!--</li>-->
+
+
+                    <!--</ul>-->
+                <!--</div>-->
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--todo 公共服务-->
+<!-- 公共服务-->
+<div class="sNav" style="display: none;">
+    <div class="wzdt wap">
+
+        <div style="overflow: hidden">
+            <div class="zwright">
+                <div class="title1 tab">
+                    <ul>
+                        <li class="liNow"><a href="javascript:;">查档服务</a></li>
+                    </ul>
+                </div>
+                <div class="juguan">
+                        <div class="juguanwen" style="width:100%;height: auto; margin-bottom: 30px;">
+                        <p>      广东省档案馆查阅指南     欢迎您光临广东省档案馆查阅利用档案文件！■馆址：广东省广州市天河区龙口中路128号广东省档案馆。■邮政编号：510630        ■查档服务热线：（020）38749056,38749035■传真号码：38749017■电子邮箱：gdda@gd.gov.cn■查阅服务时间：周一至周五：8：30—12：00，14：00—17：00。节假日可预约查询。星期三、四 ，12:00－14:00，省直机关志愿服务岗■展览参观时间：周一至周五：9：00—12：00，14：00—17：00。重要展览节假日展出时间另行公告。■公众开放日对外接待时间：每月第二个星期...
+                            <a href="javascript:;">&nbsp;&nbsp;&nbsp;&nbsp;[详细内容]</a></p>
+                        </div>
+                    <div>
+                        <div><a href="javascript:;"><img style="max-width: 445px" src="portal_home/templates/default/images/di_22.png" alt=""></a></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="ggfwlift">
+                <div class="ggfwtitle title1 tab">
+                    <p><a href="javascript:;">公共下载</a> <span><a href="javascript:;">更多》</a></span></p>
+                </div>
+                <ul>
+                    <li>
+                        <a target="_blank" href="javascript:;">
+                            <span class="left-text">电子档案在线移交接口规范等文件</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="javascript:;">
+                            <span class="left-text">广东省档案文献遗产管理暂行办法（含申报表）.doc</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="javascript:;">
+                            <span class="left-text">广东省各级国家档案馆工作目标管理申报表</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="javascript:;">
+                            <span class="left-text">国家重点档案抢救和保护补助费项目管理信息系统</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="javascript:;">
+                            <span class="left-text">附件二：大专院校学习实践基地调查表.doc</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="javascript:;">
+                            <span class="left-text">附件三：中小学档案教育社会实践基地调查表</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--<div class="ggfw_icon_list click-block">
+
+            <ul>
+                <li style="border-left: 1px solid #cccccc">
+                    <p style="text-align: center;height: 43px;padding-top: 30px"><img src="/portal_home/file/getById?fileId=1583" alt=""/></p>
+                    <p style="line-height: 50px;text-align: center;font-size: 16px;"><a href="/portal_home/content/150">查档服务</a></p>
+
+
+                </li>
+                <li>
+                    <p style="text-align: center;height: 43px;padding-top: 30px"><img src="/portal_home/file/getById?fileId=611" alt=""/></p>
+                    <p style="line-height: 50px;text-align: center;font-size: 16px;"><a href="/portal_home/download/202">公共下载区</a></p>
+
+                </li>
+                <li>
+                    <p style="text-align: center;height: 43px;padding-top: 30px"><img src="/portal_home/file/getById?fileId=1582" alt=""/></p>
+                    <p style="line-height: 50px;text-align: center;font-size: 16px;"><a href="/portal_home/channel/55">法规标准</a></p>
+                </li>
+
+                <li>
+                    <p style="text-align: center;height: 43px;padding-top: 30px"><img src="/portal_home/file/getById?fileId=1581" alt=""/></p>
+                    <p style="line-height: 50px;text-align: center;font-size: 16px;"><a href="http://www.da.gd.gov.cn/daj_home">培训报名</a></p>
+                </li>
+
+            </ul>
+
+        </div> -->
+        </div>
+    <!--</div>-->
+</div>
+
+
+
+<!-- 档案文化-->
+<div class="sNav" style="display: none;">
+        <div class="wzdt wap">
+            <div class="wszt">
+                <div class="title1">
+                    <ul>
+                        <li class="liNow"><a href="javascript:;">网上展厅</a></li>
+                    </ul>
+                </div>
+                <div class="wsztimg">
+                    <ul>
+                            <li>
+                                <a href="javascript:;" target="_blank">
+                                    <div style="position: relative;z-index: 1"><img src="portal_home/file/getById-13328.jpg" alt=""></div>
+                                    <div style="position: relative;z-index: 2;margin-top: -33px;" class="xiaobei">南粤丰碑——中共广东党组织档案史料展</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank">
+                                    <div style="position: relative;z-index: 1"><img src="portal_home/file/getById-13181.jpg" alt=""></div>
+                                    <div style="position: relative;z-index: 2;margin-top: -33px;" class="xiaobei">永远的情怀——纪念改革开放30周年暨知识青年上山下乡40周年展览</div>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chengguo">
+
+
+                <div class="title tab">
+                    <ul>
+
+
+
+                                <li><a href="javascript:;">编研成果</a></li>
+
+                                <li><a href="javascript:;">名人档案</a></li>
+
+                                <li><a href="javascript:;">声像档案</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="tabContentDiv">
+
+
+
+
+                    <!--1-->
+                        <div class="tabContent" style="display: block">
+
+
+
+
+                            <div class="news_big_title"><a href="javascript:;" class="blue">《父辈的抗战往事》</a></div>
+                            <div class="content" style="border: none">
+                                <p style="text-indent: 2rem;">        为缅怀革命先辈，弘扬伟大的抗战精神，表达每个中华儿女的心声和愿望，在隆重纪念中国人民抗日战争暨世界反法西斯战争胜利70周年之际，广东省档案馆与木棉联谊会共同编辑出版了《父辈的抗战往事》。　　本书共汇编了51篇文章，均为在广东的部分革命老前辈子女所撰写。他们力图通过对父辈们抗战经历的回忆，用心灵的笔触、独特的视角，从不同侧面真实生动地讲述不同战场但同样担当、不同经历但同样难忘的抗战...</p>
+                                <p style="padding-top: 10px;">信息来源：本站　　发表时间：2018-06-01</p>
+                            </div>
+
+                        <div class="list">
+                            <ul>
+                                <li style="height: 33px;line-height: 33px;border-bottom: 1px solid #cccccc"><a href="javascript:;">《父辈的抗战往事》</a><span>2018-06-01</span></li>
+                                <li style="height: 33px;line-height: 33px;border-bottom: 1px solid #cccccc"><a href="javascript:;">《区广安艺术档案图录》</a><span>2018-05-30</span></li>
+                                <li style="height: 33px;line-height: 33px;border-bottom: 1px solid #cccccc"><a href="javascript:;">《抗日战争时期广东经济损失档案史料选编》</a><span>2018-04-10</span></li>
+                                <li style="height: 33px;line-height: 33px;border-bottom: 1px solid #cccccc"><a href="javascript:;">《不能忘却的记忆——广东抗战档案史料图录》</a><span>2018-04-10</span></li>
+                                <li style="height: 33px;line-height: 33px;border-bottom: 1px solid #cccccc"><a href="javascript:;">《侨批故事》</a><span>2018-01-15</span></li>
+                                <li style="height: 33px;line-height: 33px;border-bottom: 1px solid #cccccc"><a href="javascript:;">《广东华侨档案目录（1907-1952）》</a><span>2018-01-15</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--1 结束-->
+
+
+
+
+
+                    <!--1-->
+                        <div class="tabContent" style="display: none;">
+
+
+
+
+                            <div class="news_big_title"><a href="javascript:;" class="blue">丘逢甲与广州教育（一）</a></div>
+                            <div class="content" style="border: none">
+                                <p style="text-indent: 2rem;">　　丘逢甲（1864－1912），我国近代杰出的爱国志士、伟大的爱国诗人、卓越的教育家。祖籍广东蕉岭。名秉渊，字仙根、吉甫，号蛰仙、仲阏、华严子。辛亥革命后，更慕博浪椎击秦义士，改号“仓海”，学者称他为“仓海先生”。诗文中常自署“南武山人”、“东海遗民”、“台湾遗民”等。　　清同治三年（1864）十二月二十六日，丘逢甲诞生于台湾苗栗县铜锣湾李氏家塾（其父龙章先生执教处）。逢甲于25岁（1888）...</p>
+                                <p style="padding-top: 10px;">信息来源：《广州文史第五十二辑》　　发表时间：2018-06-01</p>
+                            </div>
+
+                        <div class="list">
+                            <ul>
+                                <li style="height: 33px;line-height: 33px;border-bottom: 1px solid #cccccc"><a href="javascript:;">丘逢甲与广州教育（一）</a><span>2018-06-01</span></li>
+                                <li style="height: 33px;line-height: 33px;border-bottom: 1px solid #cccccc"><a href="javascript:;">朱光市长与广州的爱国卫生运动</a><span>2017-12-30</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--1 结束-->
+
+
+
+
+
+                    <!--1-->
+                        <div class="tabContent" style="display: none;">
+
+
+
+
+                            <div class="news_big_title"><a href="javascript:;" class="blue">海邦剩馥 侨批档案（广东省档案局馆 南方杂志社联合出品）</a></div>
+                            <div class="content" style="border: none">
+                                <p style="text-indent: 2rem;">...</p>
+                                <p style="padding-top: 10px;">信息来源：本站　　发表时间：2018-08-08</p>
+                            </div>
+
+                        <div class="list">
+                            <ul>
+                                <li style="height: 33px;line-height: 33px;border-bottom: 1px solid #cccccc"><a href="javascript:;">海邦剩馥 侨批档案（广东省档案局馆 南方杂志社联合出品）</a><span>2018-08-08</span></li>
+                                <li style="height: 33px;line-height: 33px;border-bottom: 1px solid #cccccc"><a href="javascript:;">电视栏目《解密档案》纪念广东省档案馆建馆50周年专辑——档案馆秘史</a><span>2017-03-06</span></li>
+                                <li style="height: 33px;line-height: 33px;border-bottom: 1px solid #cccccc"><a href="javascript:;">侨批档案——海外华侨银信</a><span>2017-02-08</span></li>
+                                <li style="height: 33px;line-height: 33px;border-bottom: 1px solid #cccccc"><a href="javascript:;">广东省档案馆新馆开馆仪式专题片《兰台宝藏 岭南春秋》</a><span>2017-01-05</span></li>
+                                <li style="height: 33px;line-height: 33px;border-bottom: 1px solid #cccccc"><a href="javascript:;">岭南风云——新中国成立前后广东档案秘闻</a><span>2017-01-02</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--1 结束-->
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- 公众参与-->
+<div class="sNav" style="display: none;">
+    <div class="wzdt wap">
+                <div class="jiushi">
+                    <!--
+                    <div class="zxfttop">
+                        <div class="title1">
+                                <p><a href="/portal_home/onlineask/67">在线访谈</a><span><a href="/portal_home/onlineask/67">更多》</a></span></p>
+                        </div>
+                        <div class="aitu">
+                            <div class="aitua">
+                                <div class="aituazuo">
+                                    <img src="/portal_home/file/getById?fileId=5521" alt=""/>
+                                </div>
+                                <div class="aituayou">
+                                    <p style="font-size: 15px;color: #010101;/*line-height: 30px;*/"> 政府工作话你知——专访省档案局（馆）党组成员张进思</p>
+                                    <p style="font-size: 12px;line-height: 22px;padding-top: 5px;color: #666666">
+                                        时间： 2018年6月29日<br/>
+                                        嘉宾： 省档案局（馆）党组成员张进思 <br/>
+                                        内容： 本期访谈中，省档案局（馆）党组成员张进思向大家介绍档案开放利用的有关情况。 档案工作是维护党和国家...
+                                    </p>
+                                </div>
+                                <ul class="zxft_list">
+                                    <a href=" /portal_home/onlineask/detail/112?channelId=67" >
+                                        <li>
+                                            政府工作话你知——专访省档案局（馆）党组成员张进思
+                                        </li>
+                                    </a>
+                                    <a href=" /portal_home/onlineask/detail/59?channelId=67" >
+                                        <li>
+                                            中央档案馆新闻发言人郭嗣平谈“党的档案事业发展”
+                                        </li>
+                                    </a>
+                                    <a href=" /portal_home/onlineask/detail/21?channelId=67" >
+                                        <li>
+                                            【关注】民政档案调研工作须保证“原汁原味”
+                                        </li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zxftxia click-block">
+                        <ul>
+                            <li>
+                                <p style="text-align: center;padding-top: 12px;"><img src="/portal_home/file/getById?fileId=2261" alt=""/></p>
+                                <p style="line-height: 36px;font-size: 16px;text-align: center"><a href="/portal_home/channel/66">征集调查</a></p>
+                            </li>
+                            <li>
+                                <p style="text-align: center;padding-top: 12px;"><img src="/portal_home/file/getById?fileId=2281" alt=""/></p>
+                                <p style="line-height: 36px;font-size: 16px;text-align: center"><a href="/portal_home/interaction">智能互动</a></p>
+                            </li>
+                            <li style="border: none">>
+                                <p style="text-align: center;padding-top: 12px;"><img src="/portal_home/file/getById?fileId=2282" alt=""/></p>
+                                <p style="line-height: 36px;font-size: 16px;text-align: center"><a href="/portal_home/question/69">网上咨询</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                    -->
+                    <div class="ggfwtitle title1" style="padding-left: 30px;">
+                        <p><a href="javascript:;">征集调查</a> <span><a href="javascript:;">更多》</a></span></p>
+                    </div>
+                    <!--todo 征集调查列表-->
+                    <div class="jiushilie">
+                        <ul>
+                            <li><a href="javascript:;" title="广东省档案局馆网站改版满意度征集（2018年6月9日-9月30日）">广东省档案局馆网站改版满意度征集（2018年6月9日-9月30日）</a></li>
+                            <li><a href="javascript:;" title="公众对档案关注度网上调查（2018下半年）">公众对档案关注度网上调查（2018下半年）</a></li>
+                            <li><a href="javascript:;" title="查档人员查档情况的调查问卷（固定调查，长期有效）">查档人员查档情况的调查问卷（固定调查，长期有效）</a></li>
+                            <li><a href="javascript:;" title="测试文章（仅供测试）">测试文章（仅供测试）</a></li>
+                        </ul>
+                    </div>
+                    <div class="wanyi">
+                        <ul>
+                            <li style="margin-left: 110px;"><a href="javascript:;"><img src="portal_home/templates/default/images/zhinenghudong.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="jiushi">
+                    <!--<div class="title1">-->
+                        <!--<ul>-->
+                            <!--<li class="liNow"><a href="/portal_home/question/69">咨询列表</a></li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                    <div class="ggfwtitle title1" style="padding-left: 30px;">
+                        <p><a href="javascript:;">咨询列表</a> <span><a href="javascript:;">更多》</a></span></p>
+                    </div>
+                    <div class="jiushilie">
+                        <ul>
+                            <li><a href="javascript:;">查阅开放档案</a></li>
+                            <li><a href="javascript:;">咨询档案岗位培训班</a></li>
+                            <li><a href="javascript:;">去档案馆查找依据</a></li>
+                            <li><a href="javascript:;">复制档案</a></li>
+                            <li><a href="javascript:;">查找辛亥革命刘公义（或名刘公毅）相关履历及文书资料</a></li>
+                            <li><a href="javascript:;">五六十年代新修志书情况</a></li>
+                            <li><a href="javascript:;">查询1955年3月28日广东省府颂发的房屋契证档案资料</a></li>
+                            <li><a href="javascript:;">找人 王克明</a></li>
+                        </ul>
+                    </div>
+                    <div class="wanyi">
+                        <ul>
+                            <li style="margin-left: 110px;"><a href="javascript:;"><img src="portal_home/templates/default/images/wanyi_07.jpg" alt=""></a></li>
+                            <!--<li style="margin-left: 110px;"><a href="/portal_home/guestbook/69"><img src="/portal_home/templates/default/images/wanyi_07.jpg" alt=""/></a></li>-->
+                            <!--<li style="float: right"><a href="/portal_home/guestbook/65"><img src="/portal_home/templates/default/images/more_question.png" alt=""/></a></li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+</div>
+
+
+<script>
+    $(".iframeId").load(function () {
+        var mainheight = $(this).contents().find("body").height() + 80;
+        $(this).height(mainheight);
+    });
+</script>
+<!--导航 结束-->
+<style>
+    .employee_nav_ul
+    {
+        overflow: hidden;
+    }
+    .employee_nav_ul a
+    {
+        cursor: pointer;
+    }
+    .employee_nav_li
+    {
+        float: left;
+    }
+    .employee_nav_li img
+    {
+        width: 110px;
+        height:auto;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+    .employee_nav_name
+    {
+        text-align: center;
+    }
+    .wzdt .zwleft .title1 li.liNow a
+    {
+        color: #ff0000;
+    }
+</style>
+<!--banner-->
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        jQuery('#myRoundabout').roundabout({
+            shape: 'figure8',
+            btnNext: '#bt-next',
+            btnPrev: '#bt-previous',
+            minScale:0.7,
+            autoplay: true,
+            autoplayDuration:5000,
+            minOpacity:0.1
+        });
+    });
+</script>
+<div class="banner-botton"></div>
+<div class="Mcontent">
+    <div class="main" style="width: 996px;margin: 0 auto;height: 412px;padding-top: 3px;position: relative;left: -43px;">
+        <ul id="myRoundabout" class="roundabout-holder" style="width: 1050px; height: 397px; overflow: hidden; padding: 0px; position: absolute;margin:0;">
+            <!--<li id="ch_1" class="roundabout-moveable-item" > <a href="" target="_blank"><img class="alignnone size-full wp-image-35" src="/portal_home/templates/default/images/banner1.jpg"></a> </li>-->
+            <!--<li id="ch_2" class="roundabout-moveable-item" > <a href="" target="_blank"><img class="alignnone size-full wp-image-35" src="/portal_home/templates/default/images/banner2.jpg"></a> </li>-->
+            <!--<li id="ch_3" class="roundabout-moveable-item" > <a href="" target="_blank"><img class="alignnone size-full wp-image-35" src="/portal_home/templates/default/images/banner3.jpg"></a> </li>-->
+                <li class="roundabout-moveable-item"> <a href="" target="_blank"><img class="alignnone size-full wp-image-35" alt="" src="portal_home/file/getById-206341.jpg"></a> </li>
+                <li class="roundabout-moveable-item"> <a href="javascript:;" target="_blank"><img class="alignnone size-full wp-image-35" alt="" src="portal_home/file/getById-206281.jpg"></a> </li>
+                <li class="roundabout-moveable-item"> <a href="" target="_blank"><img class="alignnone size-full wp-image-35" alt="" src="portal_home/file/getById-206226.jpg"></a> </li>
+                <li class="roundabout-moveable-item"> <a href="" target="_blank"><img class="alignnone size-full wp-image-35" alt="" src="portal_home/file/getById-13741.jpg"></a> </li>
+                <li class="roundabout-moveable-item"> <a href="javascript:;" target="_blank"><img class="alignnone size-full wp-image-35" alt="" src="portal_home/file/getById-206246.jpg"></a> </li>
+                <li class="roundabout-moveable-item"> <a href="" target="_blank"><img class="alignnone size-full wp-image-35" alt="" src="portal_home/file/getById-206245.jpg"></a> </li>
+        </ul>
+    </div>
+    <script language="javascript" type="text/javascript" src="portal_home/templates/default/js/jquery.roundabout.js"></script>
+</div>
+<!--banner 结束-->
+    <!--切换-->
+    <div class="content">
+        <div class="left">
+            <ul id="att_nav">
+                        <li class="hov"><a href="javascript:;">新闻动态</a></li>
+                        <li><a href="javascript:;">新闻图片</a></li>
+                        <li><a href="javascript:;">通知公告</a></li>
+                        <li><a href="javascript:;">政声传递</a></li>
+            </ul>
+        </div>
+        <script type="text/javascript"></script>
+        <div class="c back_right_content">
+
+                    <div class="right">
+
+                            <div class="back_right_title"><a href="javascript:;">兰亭村迎来美院师生 艺术墙绘助力美丽乡村建设</a></div>
+                            <p class="back_right_big_desc">为深入学习贯彻习近平新时代中国特色社会主义思想和党的十九大精神，贯彻落实习近平总书记关于脱贫攻坚的系列重要讲话和指示批示精神，巩固脱贫攻坚成果，引领乡村振兴，推进美丽新农村建设，广东省档案馆驻兰亭村扶贫工作队在积极协助村委进行“三清三拆三整治”工作的基础上，以村文化广场和主要村道等点为靓丽工程建设重点，于10月23-25日，联系广州美术学院团委组织师生24人前来大坪镇兰亭村开展新农村墙绘活动。经… <a href="javascript:;">[详细内容]</a></p>
+
+                        <ul class="list">
+                            <li><a href="javascript:;"> 广东省档案馆公布一批民国时期农田水利建设专题档案目录</a><font>2020-11-04</font></li>
+                            <li><a href="javascript:;"> 广东省档案馆集中学习研讨《习近平谈治国理政》</a><font>2020-10-21</font></li>
+                            <li><a href="javascript:;"> 让历史档案活起来，为广东经济高质量发展提供新动力</a><font>2020-09-10</font></li>
+                            <li><a href="javascript:;"> 广东省档案馆举办民法典专题培训</a><font>2020-08-20</font></li>
+                            <li><a href="javascript:;"> 省档案馆举办“红十字送健康行动”应急救护知识技能培训暨第二十五期学习论坛</a><font>2020-07-13</font></li>
+                            <li><a href="javascript:;"> 省档案馆举办“学王烁、战疫情、强自信、建功业”青年干部座谈会</a><font>2020-06-24</font></li>
+                            <li><a href="javascript:;"> 广东省档案馆关于巡视整改进展情况的通报</a><font>2020-06-10</font></li>
+                            <li><a href="javascript:;"> 档案见证广东扶贫路！广东省档案馆“6·9国际档案日主题活动”启幕</a><font>2020-06-09</font></li>
+                        </ul>
+                    </div>
+
+                    <div class="right" style="display:none">
+
+                        <div class="back_right_title"><a href="javascript:;">2019年1月17日下午，中共广东省委统战部举行机构改革档案交接仪式，图为省委统战部常务副部长郭汉</a></div>
+                        <p class="back_right_big_desc">… <a href="javascript:;">[详细内容]</a></p>
+
+                        <ul class="list">
+                            <li><a href="javascript:;">2019年1月17日下午，中共广东省委统战部举行机构改革档案交接仪式，图为交接仪式现场。（张城 摄）</a><font>2019-01-23</font></li>
+                            <li><a href="javascript:;">从1到10——一图读懂习近平总书记在庆祝改革开放40周年大会上的重要讲话</a><font>2018-12-19</font></li>
+                            <li><a href="javascript:;">11月23日上午，省档案馆举办习近平总书记视察广东重要讲话精神宣讲会暨第十二期学习论坛，邀请中共广</a><font>2018-12-04</font></li>
+                            <li><a href="javascript:;">10月11日至12日，省档案局（馆）迎来国家档案局组织开展的副省级以上综合档案馆业务建设评价检查专</a><font>2018-10-19</font></li>
+                            <li><a href="javascript:;">9月19日上午，省档案局（馆）举办宪法专题学习会暨第十一期学习论坛，邀请广东财经大学副校长杜承铭教</a><font>2018-10-11</font></li>
+                            <li><a href="javascript:;">为增强全省各级档案行政管理部门依法行政意识，提高档案行政执法水平，9月12日至13日，省档案局（馆</a><font>2018-09-28</font></li>
+                            <li><a href="javascript:;">省档案局（馆）举办第十期学习论坛 分享全省数字档案馆建设情况调研成果</a><font>2018-09-14</font></li>
+                            <li><a href="javascript:;">8月8日上午，省委宣讲团成员、华南农业大学马克思主义学院院长张丰清教授到省档案局（馆）作《习近平谈</a><font>2018-08-16</font></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="right" style="display:none">
+
+                        <div class="back_right_title"><a href="javascript:;">广东省档案馆电位滴定仪、酸度计（pH计）采购公告</a></div>
+                        <p class="back_right_big_desc">    广东省档案馆因工作需要，拟采购电位滴定仪、酸度计（pH计）设备，现按有关规定进行公告，欢迎符合资质条件的供应商前来报价。 一、采购主要设备：       名称 数量 单位 技术参数要求 备注   1 电位滴定仪 1 台 型号：禾工CT-1Plus型全自动滴定仪稳定性：（±0.3mV±1个字）/3h重复性：0.3％分辨率：0.001pH测量范围：(0.00～14.00)pH滴定体积精度：0… <a href="javascript:;">[详细内容]</a></p>
+
+                        <ul class="list">
+                            <li><a href="javascript:;">“广东省档案馆馆史展”项目公告</a><font>2020-09-21</font></li>
+                            <li><a href="javascript:;">广东省档案馆电位滴定仪、pH计（酸度计）设备采购公告</a><font>2020-09-09</font></li>
+                            <li><a href="javascript:;">广东省档案馆省级公共机构节水型单位建设项目公告</a><font>2020-08-10</font></li>
+                            <li><a href="javascript:;">广东省档案馆关于采购备份设备的公告</a><font>2020-06-18</font></li>
+                            <li><a href="javascript:;">广东省档案馆洁净屏设备采购公告</a><font>2020-06-19</font></li>
+                            <li><a href="javascript:;">6·9国际档案日主题活动：图说脱贫攻坚好故事（共10期）</a><font>2020-06-09</font></li>
+                            <li><a href="javascript:;">6·9国际档案日主题活动：聆听《我的扶贫日记》（共12期）</a><font>2020-06-09</font></li>
+                            <li><a href="javascript:;">广东省档案馆中央空调系统升级改造可行性研究报告编制项目公告</a><font>2020-05-25</font></li>
+                        </ul>
+
+                    </div>
+
+                <div class="right" style="display:none">
+                    <ul class="list" id="zscd_list"></ul>
+                </div>
+
+
+
+
+        </div>
+    </div>
+    <!--切换 结束-->
+
+
+    <!--滚动-->
+    <div id="swap_pic" class="index">
+        <div id="prev_zt" class="scroll"><</div>
+        <div class="swiper-container zt" style="width: 1000px;margin-top: 3px;">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"><a href="javascript:;"><img alt="" src="portal_home/file/getById-206247.jpg"></a></div>
+                <div class="swiper-slide"><a href="javascript:;"><img alt="" src="portal_home/file/getById-5205.jpg"></a></div>
+                <div class="swiper-slide"><a href="javascript:;"><img alt="" src="portal_home/file/getById-663.jpg"></a></div>
+                <div class="swiper-slide"><a href="javascript:;"><img alt="" src="portal_home/file/getById-661.jpg"></a></div>
+
+            </div>
+        </div>
+        <div id="next_zt" class="scroll">></div>
+    </div>
+
+    <!--滚动结束-->
+    <script>
+       $(function () {
+           var swiper = new Swiper('.zt.swiper-container', {
+               slidesPerView: 5,
+               spaceBetween: 30,
+//               nextButton: '#next_zt',
+//               prevButton: '#prev_zt',
+               loop : true,
+               autoplay : 3000,
+           });
+           $('#prev_zt').on('click', function(e){
+               e.preventDefault();
+               swiper.swipePrev();
+           });
+           $('#next_zt').on('click', function(e){
+               e.preventDefault();
+               swiper.swipeNext();
+           });
+
+
+       });
+    </script>
+    <!--三个板块-->
+    <div class="san" style="height: 230px;">
+        <div class="sanleft">
+            <div class="biao">信息公开</div>
+            <ul>
+                <!--<li>-->
+                    <!---->
+                    <!--<a href="http://zwgk.gd.gov.cn/00694108X/">-->
+                        <!--<img src="/portal_home/file/getById?fileId=614" alt=""/>-->
+                        <!--<p>政府信息<br/>公开目录</p>-->
+                    <!--</a>-->
+                    <!---->
+                <!--</li>-->
+                <li>
+                    <a href="javascript:;">
+                        <img src="portal_home/file/getById-616.jpg" alt="">
+                        <p>本馆介绍</p>
+                    </a>
+                </li>
+
+                <!--<li>-->
+                    <!---->
+                    <!--<a href="/portal_home/special/41">-->
+                        <!--<img src="/portal_home/file/getById?fileId=2244" alt=""/>-->
+                        <!--<p>数据发布</p>-->
+                    <!--</a>-->
+                    <!---->
+                <!--</li>-->
+                <li>
+                    <a href="javascript:;">
+                        <img src="portal_home/file/getById-624.jpg" alt="">
+                        <p>机构职能</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="portal_home/file/getById-615.jpg" alt="">
+                        <p>领导信息</p>
+                    </a>
+                </li>
+
+
+                <!--<li>-->
+                    <!---->
+                    <!--<a href="/portal_home/channel/54">-->
+                        <!--<img src="/portal_home/file/getById?fileId=625" alt=""/>-->
+                        <!--<p>政策解读</p>-->
+                    <!--</a>-->
+                    <!---->
+                <!--</li>-->
+            </ul>
+        </div>
+        <div class="sancenter" style="margin-left: 10px;">
+            <div class="biao1">公共服务</div>
+            <ul>
+                <li>
+                    <a href="javascript:;">
+                        <img src="portal_home/file/getById-628.jpg" alt="">
+                        <p>查档服务</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="portal_home/file/getById-206264.jpg" alt="">
+                        <p style="width: 70px;margin: 0 auto;">开放档案查阅系统</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="portal_home/file/getById-1181.jpg" alt="">
+                        <p>公共下载</p>
+                    </a>
+                </li>
+                <!--<li>-->
+                    <!---->
+                    <!--<a href="http://www.gddata.gov.cn/">-->
+                        <!--<img src="/portal_home/file/getById?fileId=621" alt=""/>-->
+                        <!--<p>开放广东</p>-->
+                    <!--</a>-->
+                    <!---->
+                <!--</li>-->
+
+
+                <!--<li>-->
+                    <!---->
+                    <!--<a href="/portal_home/channel/142">-->
+                        <!--<img src="/portal_home/file/getById?fileId=630" alt=""/>-->
+                        <!--<p>科研申报</p>-->
+                    <!--</a>-->
+                    <!---->
+                <!--</li>-->
+                <!--<li>-->
+                    <!---->
+                    <!--<a href="http://www.da.gd.gov.cn/daj_home">-->
+                        <!--<img src="/portal_home/file/getById?fileId=629" alt=""/>-->
+                        <!--<p>教育培训</p>-->
+                    <!--</a>-->
+                    <!---->
+                <!--</li>-->
+                <!--<li>-->
+                    <!---->
+                    <!--<a href="/portal_home/channel/55">-->
+                        <!--<img src="/portal_home/file/getById?fileId=626" alt=""/>-->
+                        <!--<p>法规标准</p>-->
+                    <!--</a>-->
+                    <!---->
+                <!--</li>-->
+
+
+
+
+
+            </ul>
+        </div>
+        <div class="sanright" style="float: right">
+            <div class="biao2">公众参与</div>
+            <!--<div class="dabiao">-->
+                <!--<p style="margin-top: 10px;"><a href="http://www.gdbs.gov.cn/portal/zwgk/fwsx.do?orgId=00694108X"><img src="/portal_home/templates/default/images/dabiao.png" alt=""/></a></p>-->
+                <!--<p><a href="http://www.gdzwfw.gov.cn/portal/branch-hall?orgCode=00694108X"><img src="/portal_home/templates/default/images/dabiao_07.png" alt=""/></a></p>-->
+            <!--</div>-->
+            <ul>
+                <li>
+                    <a href="javascript:;">
+                        <img src="portal_home/file/getById-206263.jpg" alt="">
+                        <p>网上咨询</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="portal_home/file/getById-206262.jpg" alt="">
+                        <p>征集调查</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="portal_home/file/getById-206261.jpg" alt="">
+                        <p>智能互动</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--三个板块 结束-->
+
+    <!--jiubiaoa-->
+    <div class="jiubiaoa" style="padding-top: 2px;"></div>
+    <!--jiubiaoa-->
+    <!--di-->
+    <div class="di" style="margin-top: -10px;">
+        <ul>
+            <li style="width: 292px;">
+                <a href="javascript:;">
+                    <div style="z-index: 1;position: relative"><img src="portal_home/file/getById-619.jpg" alt=""></div>
+                    <div class="dibj">声像档案</div>
+                </a>
+            </li>
+            <li style="width: 549px;">
+                <a href="javascript:;">
+                <div style="z-index: 1;position: relative"><img src="portal_home/file/getById-1773.jpg" alt=""></div>
+                <div class="dibj">网上展厅</div>
+                </a>
+            </li>
+            <li style="width: 231px;margin-right: 0">
+                <a href="javascript:;">
+                <div style="z-index: 1;position: relative"><img src="portal_home/file/getById-613.jpg" alt=""></div>
+                <div class="dibj">名人档案</div>
+                </a>
+            </li>
+            <li style="width: 376px;height: 170px;">
+                <a href="javascript:;">
+                <div style="z-index: 1;position: relative"><img src="portal_home/templates/default/images/di_20.png" alt=""></div>
+                <div class="dibj" style="margin-top: -153px;">编研成果</div>
+                </a>
+            </li>
+            <li style="width: 710px;margin-right: 0; height: 170px;">
+                <div style="z-index: 1;position: relative"><a href="javascript:;"><img src="portal_home/templates/default/images/di_22.png" alt=""></a></div>
+            </li>
+        </ul>
+    </div>
+    <!--di 结束-->
+
+<!--foot-->
+<div class="foot">
+        <div style="width: 1100px;margin: 0 auto;">
+        <div class="youlian">
+            <div class="youlianleft">友情链接</div>
+            <div class="youlianright">
+                <p>
+                        <a target="_blank" href="javascript:;">中国政府网</a>
+                        <a target="_blank" href="javascript:;">国家档案局</a>
+                        <a target="_blank" href="javascript:;">中国档案资讯网</a>
+                        <a target="_blank" href="javascript:;">广东省人民政府门户网站</a>
+                        <a target="_blank" href="javascript:;">南方网</a>
+                </p>
+                <!--<p><span style="padding-left: 25px;padding-right: 15px;">国外档案网站：</span>-->
+                    <!---->
+                <!--</p>-->
+            </div>
+
+        </div>
+        <div class="banquan">
+            <div class="banquanleft">
+                <div style="width:90px;float:left;">
+                    <a href="javascript:;"><img src="portal_home/templates/default/images/shi.png"></a>
+                </div>
+                <div style="float:left;">
+                    <p>广东省数字档案馆&nbsp;互联网信息门户系统</p>
+                    <p>版权所有：广东省档案馆</p>
+                    <p>信息产业部网站信息备案序号：粤ICP备05069506号&nbsp;&nbsp;&nbsp;&nbsp;<!--网站标识码：4400000063--><br>制作维护：<a href="">东软集团股份有限公司</a></p>
+
+                </div>
+            </div>
+            <div class="banquanright">
+                <!--<p style="padding-top: 3px;float: left;padding-right: 15px;"><script id="_jiucuo_" sitecode='4400000063' src='http://pucha.kaipuyun.cn/exposure/jiucuo.js'></script></p>-->
+                <p style="float: left">
+                    <a target="_blank" href="javascript:;">联系我们</a>|
+                    <a target="_blank" href="javascript:;">公共下载</a>|
+                    <a target="_blank" href="javascript:;">网站地图</a>
+
+                    <!--<a href="" style="padding-right: 0"> 常见问题</a>-->
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--foot 结束-->
+
+
+<script>
+    $('a').click(function(){
+        $a = $(this).hasClass('skip');
+        if($a != true){
+            var val = $(this).attr('target','_blank');
+        }
+    });
+    $('.banner-botton').on('click',function(){
+        var that = this;
+        if($(this).hasClass('zk')){
+            $('.Mcontent').slideDown(function(){
+                $(that).removeClass('zk');
+            });
+
+        }else{
+            $('.Mcontent').slideUp(function(){
+                $(that).addClass('zk');
+            });
+
+        }
+    });
+</script>
+
+
+<!--客服-->
+<div class="floating_ck">
+    <dl>
+        <dt></dt>
+        <dd class="consult">
+            <div class="floating_left floating_ewm">
+                <i></i>
+                <span>微信公众号</span>
+            </div>
+        </dd>
+        <dd class="words">
+            <div class="floating_left floating_ewm">
+                <i></i>
+                <span>手机网站</span>
+            </div>
+        </dd>
+        <a href="javascript:;" target="_blank"><dd class="quote"></dd></a>
+        <a href="" data-reveal-id="myModal" style="display: none"><dd class="qrcord"></dd></a>
+    </dl>
+</div>
+<!--客服end-->
+
+ </body>
+</html>
+

@@ -1,0 +1,745 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>广东省科技业务管理阳光政务平台|科技管理系统(IRISaaS)</title>
+
+<link href="../egrantres_app/css/common-20201208.css" rel="stylesheet" type="text/css">
+<link href="../egrantres/css/home-20201208.css" rel="stylesheet" type="text/css">
+<link href="../egrantres_app/css/index-20201208.css" rel="stylesheet" type="text/css">
+<link href="../egrantres/css/thickbox-20201208.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../egrantres/css/public-20201208.css">
+<link href="../egrantres_app/css/index-20201208.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">var ctx="/egrantweb";var res="/egrantres";var res_app="/egrantres_app";</script>
+<script type="text/javascript" src="../egrantres/js/jquery/jquery-20201208.js"></script>
+<script type="text/javascript" src="../egrantres/js/thickboxpopup-20201208.js"></script>
+<script type="text/javascript" src="../egrantres_app/js/home/home-20201208.js"></script>
+<script type="text/javascript" src="../egrantres/js/plugins/nth_tabs/nth.tabs-20201208.js"></script>
+<style type="text/css">
+.left_scroll {
+    float: left;
+    height:29px;
+    width:48px;
+    padding:5px 0px 0px 14px;
+    background: url("../egrantres/images/home/tab_titbg.gif");
+}
+.middle_iconlist {
+    float: left;
+    height: 34px;
+    overflow: hidden;
+    position: relative;
+    width: 870px;
+}
+.middle_iconlist2 {
+    float: left;
+    height: 34px;
+    overflow: hidden;
+    position: relative;
+    width: 860px;
+}
+.right_scroll {
+    float: left;
+    height:29px;
+    width:48px;
+    padding:5px 0px 0px 0px;
+    background: url("../egrantres/images/home/tab_titbg.gif");
+}
+.right_scroll2 {
+    float: left;
+    height:29px;
+    width:48px;
+    padding:5px 0px 0px 10px;
+    background: url("../egrantres/images/home/tab_titbg.gif");
+}
+.text_hidden{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	var t=0;
+	$(".Menubox li").each(function(){
+		t=t+$(this).width()+20;
+	});
+	t = t>870 ? t : 870;
+	$(".Menubox").width(t);
+	if(t>870){
+		$(".prev").click(function(){scrollA('left',t)});
+		$(".next").click(function(){scrollA('right',t)});
+	}
+	showGrantListAll();
+
+	//隔行换色
+	/* $("table.index-table02").each(function(){
+		$(this).find("tr:even").addClass("li_1");
+		$(this).find("tr:odd").addClass("li_2");
+	}); */
+});
+
+
+function bindSecButton(id){
+	var t2=0;
+	$("#"+id).find(".Menubox2 li").each(function(i,k){
+		t2=t2+$(this).width()+20;
+	});
+	t2 = t2 + 95;
+	t2 = t2>820 ? t2 : 820;
+	$("#"+id).find(".Menubox2").width(t2);
+	if(t2>820){
+		$("#"+id).find(".prev2").click(function(){scrollA2('left',t2,id)});
+		$("#"+id).find(".next2").click(function(){scrollA2('right',t2,id)});
+	}
+}
+
+//业务类别选择
+function scrollA(flag,width){
+	var scr = parseInt($(".Menubox").css("margin-left"));
+	if(flag=='left'){
+		if(scr > -100){
+			scr = 0;
+		}else{
+			scr+=100;
+		}
+	}else if(flag=='right'){
+		if(scr+width-870 > 100){ //870是显示出来的div的宽度
+			scr-=100;
+		}else{
+			scr = 870-width;
+		}
+	}
+	$(".Menubox").css("margin-left",scr);
+}
+
+function scrollA2(flag,width,id){
+	var scr = parseInt($("#"+id).find(".Menubox2").css("margin-left"));
+	if(flag=='left'){
+		if(scr > -100){
+			scr = 0;
+		}else{
+			scr+=100;
+		}
+	}else if(flag=='right'){
+		if(scr+width-860 > 100){ //860是显示出来的div的宽度
+			scr-=100;
+		}else{
+			scr = 860-width;
+		}
+	}
+	$("#"+id).find(".Menubox2").css("margin-left",scr);
+}
+
+function showGrantListAll(){
+	$("#two2").click(function(){
+		var systemCode = "o3atKosKaMs%3D"; //加密处理
+		$("#allGrantData").load("/egrantweb/show-grant-list-allType?systemCode="+systemCode);
+	});
+}
+
+/* function changeHeight(){
+	var cHeight=parseInt(window.parent.document.getElementById('show-grant-list').height)+2000;
+	window.parent.document.getElementById('show-grant-list').height = cHeight;
+} */
+
+
+function submitProposal(type, systemCode, code)
+{	
+	window.parent.document.getElementById("login_iframe").src="";
+	var url = 'main?bstd='+type+"&systemCode="+systemCode;
+	if(!!code){
+		url += "&subGrantCode="+code;
+	}
+	if(!!url){
+		noLoginRequest(url+'&roleId=XAvjlooU%2BnE%3D');
+	}
+	return false; 
+}
+
+
+function submitCg(type, systemCode, code)
+{	debugger;
+	window.parent.document.getElementById("login_iframe").src="";
+	var url = 'main?bstd='+type+"&systemCode="+systemCode;
+	if(!!code){
+		url += "&subGrantCode="+code;
+	}
+	if(!!url){
+		noLoginRequest(url+'&roleId=XAvjlooU%2BnE%3D');
+	}
+	return false; 
+}
+
+function noLoginRequest(url){
+ 	url= ctx + "/" + url;
+ 	$.ajax({
+ 		url:url,
+ 		type: 'post',
+ 		dataType : 'json',
+ 		data : '',
+ 		success : function (data) {
+ 			ajaxSessionTimeoutHandler(data, url);
+ 		},
+ 		error : function(){
+ 		}
+ 	});
+ }
+
+function ajaxSessionTimeoutHandler(data, url){
+	loadSubPage('login_window','/egrantweb/index-login-window',url,data);
+}
+
+function loadSubPage(divId,url,targetUrl,data){
+	var systemCode = data['systemCode'];
+	//window.frames["login_iframe"].src="/egrantweb/index-login-window?systemCode="+systemCode+"&f_page=logindlg&targetUrl="+encodeURIComponent(targetUrl);
+
+	window.parent.document.getElementById("login_iframe").src="http://pro.gdstc.gd.gov.cn:80/egrantweb/index-login-window?systemCode="+systemCode+"&f_page=logindlg&targetUrl="+encodeURIComponent(targetUrl);
+
+	var top = ($(parent).height() - $(parent.document.getElementById(divId)).height())/2;   
+    var left = ($(parent).width() - $(parent.document.getElementById(divId)).width())/2;   
+    var scrollTop = $(parent.document).scrollTop();   
+    var scrollLeft = $(parent.document).scrollLeft();
+
+    $(parent.document.getElementById("shelter_div")).addClass("shelter");    
+    $(parent.document.getElementById(divId)).css( { position :'fixed', 'top' : '30%', left : left + scrollLeft } ).css("display","");
+
+}
+
+function forwardToAuth(){
+	var redirectUrl = "";//业务系统回调地址
+	//对url进行编码，否则如果使用反向代理则会无法重定向
+	redirectUrl = escape(redirectUrl);
+	window.top.location.href= ""+redirectUrl;
+}
+
+$(function(){
+   $(".apply_nav").nthTabs();
+});
+
+</script>
+</head>
+<body>
+	<div id="Tab1">
+		
+		<div class="Menubox-declare">
+			<h2 id="nr_tit">申报服务</h2>
+			<ul>
+				
+				
+					
+						<li id="two1" onclick="showHidenSecondMenu('2');setTab('two',1,2,false,'show-grant-list','0','2');" class="hover">专项资金类</li>
+					
+					
+				
+					
+						<li id="two2" onclick="showHidenSecondMenu('4');setTab('two',2,2,false,'show-grant-list','1','4');">所有业务类型</li>
+					
+					
+				
+			</ul>			
+		</div>
+		
+		<div class="Contentbox-declare">
+			
+			
+				
+					<!-- 显示二级导航栏 -->
+	     			<div id="second_menu_2" name="second_menu" class="Menubox-declare-second">
+	                    <!-- <a href="###" class="icon_arrowLeft"></a> -->
+	                    <div class="apply_nav">
+	                        <ul>
+	                            
+	                            
+	                            	
+	                            		<li id="three_1006" onclick="setSecTab('three',1,2,false,'show-grant-list',1006,'2');" class="hover">基础与应用基础研究</li>
+	                            		
+	                            	
+	                            
+	                            	
+	                            		<li id="three_20181008" onclick="setSecTab('three',1,2,false,'show-grant-list',20181008,'2');" class="hover">重点领域研发计划</li>
+	                            		
+	                            	
+	                            
+	                            	
+	                            		<li id="three_1016" onclick="setSecTab('three',1,2,false,'show-grant-list',1016,'2');" class="hover">省实验室建设</li>
+	                            		
+	                            	
+	                            
+	                            	
+	                            		<li id="three_1017" onclick="setSecTab('three',1,2,false,'show-grant-list',1017,'2');" class="hover">粤港澳大湾区国际科技创新中心建设</li>
+	                            		
+	                            	
+	                            
+	                        </ul>
+	                    </div>
+	                    <!-- <a href="###" class="icon_arrowRight"></a> -->
+	                </div>
+					
+					
+						
+							<div class="Contentbox-declare-second">
+							<div id="con_three_2_1006" style="display: none">
+				            	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="index-table02 mt-1">
+				                    <tr>
+				                        <th width="18%" align="left">业务类型</th>
+				                        <th width="10%">年度/批次</th>
+				                        <th width="14%">单位申报截止时间</th>
+				                        <th width="10%">联系方式</th>
+				                        <!-- <th width="10%">申报书样本</th> -->
+				                        <th width="8%">申报指南</th>
+				                        <!-- <th width="10%">报告提纲<br>(可行性报告)</th> -->
+				                        <th width="10%">业务咨询</th>
+				                        <th width="10%">我要申报</th>
+				                    </tr>				                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+										
+											<tr>
+				              					<td><div title="粤桂联合基金-重点项目" class="text_hidden">粤桂联合基金-重点项目</div></td>
+				              					<td align="center">
+				              						2020/1
+				              						
+				              					</td>
+							              		<td align="center">
+								             		
+								              			
+								              			
+								              				2020-12-08 <!-- change by yh 20121203 只显示到天 -->
+								              			
+							              			
+							              		</td>
+							              		<td align="center">
+								                	
+								              			
+								              				<a href="###" onclick="viewOrgEdit('20201104','100272419','2020','1');return false;" class="uibtn contact_icon" title="联系方式"></a>
+								              			
+								              			
+								              		
+							              		</td>
+							              		
+							              		<td align="center">
+								              		
+								              			
+								              			
+								              			
+								              				
+								              					
+										              				-
+										              			
+								              					
+								              				
+								              			
+								              		
+							              		</td>
+							              		
+							              		<td align="center">
+								              		
+									              		
+									              		
+										              		<a href="javascript:;" class="consulting_icon" title="业务咨询" target="_blank"></a>
+									              		
+									              	
+							              		</td>
+							              		<td align="center">
+								              		
+								              			
+								              			
+								              				<a href="###" onclick="submitProposal('MTSjulAknm0%3D','o3atKosKaMs=', 'AiI6zB%2FhytfLIQclEzLSaw%3D%3D');return false;" title="进入申报" class="blue">进入申报</a>
+								              			
+								              		
+							              		</td>
+						            		</tr>
+															                    
+				                    
+										
+											<tr>
+				              					<td><div title="粤桂联合基金-面上项目" class="text_hidden">粤桂联合基金-面上项目</div></td>
+				              					<td align="center">
+				              						2020/1
+				              						
+				              					</td>
+							              		<td align="center">
+								             		
+								              			
+								              			
+								              				2020-12-08 <!-- change by yh 20121203 只显示到天 -->
+								              			
+							              			
+							              		</td>
+							              		<td align="center">
+								                	
+								              			
+								              				<a href="###" onclick="viewOrgEdit('20201105','100272419','2020','1');return false;" class="uibtn contact_icon" title="联系方式"></a>
+								              			
+								              			
+								              		
+							              		</td>
+							              		
+							              		<td align="center">
+								              		
+								              			
+								              			
+								              			
+								              				
+								              					
+										              				-
+										              			
+								              					
+								              				
+								              			
+								              		
+							              		</td>
+							              		
+							              		<td align="center">
+								              		
+									              		
+									              		
+										              		<a href="javascript:;" class="consulting_icon" title="业务咨询" target="_blank"></a>
+									              		
+									              	
+							              		</td>
+							              		<td align="center">
+								              		
+								              			
+								              			
+								              				<a href="###" onclick="submitProposal('MTSjulAknm0%3D','o3atKosKaMs=', 'et8yAfPSP4fLIQclEzLSaw%3D%3D');return false;" title="进入申报" class="blue">进入申报</a>
+								              			
+								              		
+							              		</td>
+						            		</tr>
+															                    
+				                    
+				                </table>
+				            </div>
+				            
+				            </div>
+			            
+		            
+						
+							<div class="Contentbox-declare-second">
+							<div id="con_three_2_20181008" style="display: none">
+				            	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="index-table02 mt-1">
+				                    <tr>
+				                        <th width="18%" align="left">业务类型</th>
+				                        <th width="10%">年度/批次</th>
+				                        <th width="14%">单位申报截止时间</th>
+				                        <th width="10%">联系方式</th>
+				                        <!-- <th width="10%">申报书样本</th> -->
+				                        <th width="8%">申报指南</th>
+				                        <!-- <th width="10%">报告提纲<br>(可行性报告)</th> -->
+				                        <th width="10%">业务咨询</th>
+				                        <th width="10%">我要申报</th>
+				                    </tr>				                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+										
+											<tr>
+				              					<td><div title="新一代人工智能" class="text_hidden">新一代人工智能</div></td>
+				              					<td align="center">
+				              						2020/2
+				              						
+				              					</td>
+							              		<td align="center">
+								             		
+								              			
+								              			
+								              				2020-12-04 <!-- change by yh 20121203 只显示到天 -->
+								              			
+							              			
+							              		</td>
+							              		<td align="center">
+								                	
+								              			
+								              				<a href="###" onclick="viewOrgEdit('339','135903','2020','2');return false;" class="uibtn contact_icon" title="联系方式"></a>
+								              			
+								              			
+								              		
+							              		</td>
+							              		
+							              		<td align="center">
+								              		
+								              			
+								              			
+								              			
+								              				
+								              					
+										              				-
+										              			
+								              					
+								              				
+								              			
+								              		
+							              		</td>
+							              		
+							              		<td align="center">
+								              		
+									              		
+									              		
+										              		<a href="javascript:;" class="consulting_icon" title="业务咨询" target="_blank"></a>
+									              		
+									              	
+							              		</td>
+							              		<td align="center">
+								              		
+								              			
+								              			
+								              				<a href="###" onclick="submitProposal('MTSjulAknm0%3D','o3atKosKaMs=', 'u7YjHKVWyPM%3D');return false;" title="进入申报" class="blue">进入申报</a>
+								              			
+								              		
+							              		</td>
+						            		</tr>
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+				                </table>
+				            </div>
+				            
+				            </div>
+			            
+		            
+						
+							<div class="Contentbox-declare-second">
+							<div id="con_three_2_1016" style="display: none">
+				            	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="index-table02 mt-1">
+				                    <tr>
+				                        <th width="18%" align="left">业务类型</th>
+				                        <th width="10%">年度/批次</th>
+				                        <th width="14%">单位申报截止时间</th>
+				                        <th width="10%">联系方式</th>
+				                        <!-- <th width="10%">申报书样本</th> -->
+				                        <th width="8%">申报指南</th>
+				                        <!-- <th width="10%">报告提纲<br>(可行性报告)</th> -->
+				                        <th width="10%">业务咨询</th>
+				                        <th width="10%">我要申报</th>
+				                    </tr>				                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+				                </table>
+				            </div>
+				            
+				            </div>
+			            
+		            
+						
+							<div class="Contentbox-declare-second">
+							<div id="con_three_2_1017" style="display: none">
+				            	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="index-table02 mt-1">
+				                    <tr>
+				                        <th width="18%" align="left">业务类型</th>
+				                        <th width="10%">年度/批次</th>
+				                        <th width="14%">单位申报截止时间</th>
+				                        <th width="10%">联系方式</th>
+				                        <!-- <th width="10%">申报书样本</th> -->
+				                        <th width="8%">申报指南</th>
+				                        <!-- <th width="10%">报告提纲<br>(可行性报告)</th> -->
+				                        <th width="10%">业务咨询</th>
+				                        <th width="10%">我要申报</th>
+				                    </tr>				                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+										
+											<tr>
+				              					<td><div title="国际科技合作领域" class="text_hidden">国际科技合作领域</div></td>
+				              					<td align="center">
+				              						2020/2
+				              						
+				              					</td>
+							              		<td align="center">
+								             		
+								              			
+								              			
+								              				2020-12-09 <!-- change by yh 20121203 只显示到天 -->
+								              			
+							              			
+							              		</td>
+							              		<td align="center">
+								                	
+								              			
+								              				<a href="###" onclick="viewOrgEdit('315','211040','2020','2');return false;" class="uibtn contact_icon" title="联系方式"></a>
+								              			
+								              			
+								              		
+							              		</td>
+							              		
+							              		<td align="center">
+								              		
+								              			
+								              			
+								              			
+								              				
+								              					
+										              				-
+										              			
+								              					
+								              				
+								              			
+								              		
+							              		</td>
+							              		
+							              		<td align="center">
+								              		
+									              		
+									              		
+										              		<a href="javascript:;" class="consulting_icon" title="业务咨询" target="_blank"></a>
+									              		
+									              	
+							              		</td>
+							              		<td align="center">
+								              		
+								              			
+								              			
+								              				<a href="###" onclick="submitProposal('MTSjulAknm0%3D','o3atKosKaMs=', 'vETkpCEG%2BFQ%3D');return false;" title="进入申报" class="blue">进入申报</a>
+								              			
+								              		
+							              		</td>
+						            		</tr>
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+															                    
+				                    
+				                </table>
+				            </div>
+				            
+				            </div>
+			            
+		            
+		            
+	            
+
+	            
+            
+				
+
+	            
+	            	<div id="con_two_2">
+	            		
+			      			
+			      				<div align="center" id="allGrantData">数据加载中.....</div>
+			      				<!-- 所有业务类型SEQ_NO为4，单独加载 -->
+			      			
+			      			
+			      			
+			      		
+	            	</div>
+	            	
+	            
+            
+		</div>	 	
+	 </div>
+				
+</body>
+</html>

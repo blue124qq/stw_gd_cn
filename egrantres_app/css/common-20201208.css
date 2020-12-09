@@ -1,0 +1,21 @@
+
+/* CSS comment */
+
+body,div,p,form,ul,img,input,span,dd,dl,dt {font-size:14px; margin:0px; padding:0px;}
+body {font-family:"Microsoft YaHei",Arial;  font-size:14px; line-height:150%;margin:0 auto; color:#333;}
+a {	color:#333;	text-decoration:none;}
+a:hover {color:#ff3030;	text-decoration:none;}
+ul,li,dl,dd,ol {list-style-type:none;}
+img {border:none; display:inline;}
+/*table {	border-collapse:collapse; table-layout:fixe}*/
+.clearfix:after { content:"."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+.clear { clear: both; font-size: 0; visibility: hidden; width: 0; line-height: 0; }
+p{ margin:0px;	}
+h1,h2,h3,h4,h5,h6,h7{font-size:14px; font-weight:normal; margin: 0;}
+.f666{ color:#666;}
+.fleft{ float:left;}
+.fright{ float:right;}
+.f999{ color:#999;}

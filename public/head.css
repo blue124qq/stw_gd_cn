@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.top {
+    width: 100%;
+    background: url(http://gdjyj.gd.gov.cn/public/bg_head.jpg) no-repeat center top #fff;
+    height: 800px;
+    margin-bottom: -365px;
+}
+
+.topTool{
+    width: 100%;
+    height: 50px;
+    background: url("bg_topTool.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.topTool .con{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.topTool .con .ipv6{
+    float: left;
+    margin-top: 7px;
+    margin-right: 325px;
+}
+
+.topTool .con .itm{
+    margin-top: 13px;
+    margin-right: 10px;
+}
+
+.wechatIcon{
+    display: inline-block;
+    position: relative;
+}
+
+#wechatIcon{
+    width:150px;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    top:44px;
+    display: none;
+}
+
+.wechatIcon:hover #wechatIcon{
+    display: block
+}
+
+#tool_znhd {
+    float: right;
+    margin-top: 14px;
+}
+
+#tool_znhd img{
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#tool_znhd span{
+    font-size: 16px;
+    color: #fff;
+}
+
+.head{
+    width: 1200px;
+    height: 435px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.search{
+    width: 532px;
+    height: 71px;
+    background: url("http://gdjyj.gd.gov.cn/public/bg_search.png") no-repeat center top;
+    margin: 157px 0 0 603px;
+}
+
+.search input[type=text]{
+    width: 380px;
+    height: 36px;
+    line-height: 36px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #111111;
+    margin: 18px 0 0 25px;
+    float: left;
+}
+
+.search button[type=submit]{
+    width: 102px;
+    height: 47px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    margin: 12px 0 0 15px;
+}
+
+.dh{
+    width: 100%;
+    height: 61px;
+    margin-top: 376px;
+    background: url("bg_dh.png") no-repeat center top;
+}
+
+.dh .itm{
+    width: 171px;
+    height: 61px;
+    line-height: 61px;
+    float: left;
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.dh .itm a{
+    color: #ffffff;
+}

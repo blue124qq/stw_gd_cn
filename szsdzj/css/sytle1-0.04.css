@@ -1,0 +1,496 @@
+    body {
+        /* background: linear-gradient(to bottom, #e8f3fe 10%, #ffffff 40%); */
+        font-family: '微软雅黑';
+    }
+    .MainDiv{
+        /* background: #ffffff url(../img/biaotitu7.jpg) center top repeat-x; */
+        background: #d2edff;
+    } 
+    .container{
+        background: #ffffff;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .list-group {
+        margin-bottom: 0px;
+    }
+    .list-group-item {
+        border: 0;
+        margin: 0;
+        /* background-color: #f3f6f9; */
+        /* border-bottom: 1px #c0c2c4 dashed; */
+    }
+
+    .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+    a {
+        color: #326ddc;
+        text-decoration: none;
+    }
+    a:hover{
+        color: #ff0000;
+        text-decoration: none;
+    }
+
+    .tit {
+        color: #000000;
+        /* display: inline-block; */
+        display: inline;
+    }
+
+    #TitleDiv{
+        text-align: left;
+        padding-top: 30px;
+    }
+
+    .title1{
+        width: 99%;
+        text-align: center;
+    }
+    .tit1{
+        color: #000000;
+        /* display: inline-block; */
+        display: inline;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .menu0{
+        text-align: center;
+        height: 150px;
+        background: transparent;
+    }
+
+    .menu0>h1 {
+        color: #ffffff;
+        font: bold 52px "黑体";
+        text-shadow: 0 0 5px #000000;
+    }
+
+    .menu0>h4 {
+        color: #ffffff;
+        text-shadow: 0 0 5px #000000;
+    }
+
+    .menu0search {
+        text-align: center;
+        padding: 15px;
+        color: #ffffff;
+        font: 18px/24px "黑体";
+    }
+
+    .menu1 {
+        text-align: center;
+        padding: 15px 0;
+        color: #ffffff;
+        cursor: pointer;
+        font: bold 20px/28px "微软雅黑";
+    }
+
+    .menu1:hover {
+        color: #ffffff;
+        background: #2ba341;
+    }
+
+    .menu1 > div{
+        border-right: 1px #0850a6 solid;
+    }
+
+    .content1 {
+    }
+
+    .content1_title {
+        cursor: pointer;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .content1_title a {
+        font: bold 28px "微软雅黑";
+        color: #da0000;
+    }
+
+    .content1_info {
+        text-align: center;
+        border: 1px solid #ffffff;
+        background-color: #ffffff;
+        padding: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        color: #000000;
+        padding-top: 20px;
+    }
+
+    .menu2 {
+        margin-top: 10px;
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+
+    .menu2 li {
+        /* transition: all 0.3s ease 0s; */
+    }
+
+    .menu2 li:hover {
+        /* background-color: #d3e7f8; */
+    }
+
+    .menu2_title {
+        font-size: 16px;
+        text-align: left;
+        /* background-color: #d3e7f8; */
+        /* background: #f0f3f6; */
+        /* background: linear-gradient(to right, #ffb6b6, #fff0f0); */
+        /* background: linear-gradient(to right, #00a1ff, #ffffff);
+        opacity: 0.9; */
+        background: url(http://dzj.gd.gov.cn/szsdzj/img/bt1.png) left top no-repeat;
+        padding: 0;
+        border: 1px #e4e4e4 solid;
+    }
+
+    .menu2_title div {
+        display: inline-block;
+        padding: 10px;
+        /* background-color: #f0f3f6; */
+        font: 24px/28px "微软雅黑";
+    }
+
+    .menu2_active {
+        border-top: 2px solid #0079da;
+        border-right: 1px solid #e4e4e4;
+        border-left: 1px solid #e4e4e4;
+        border-bottom: 1px solid #ffffff;
+        margin-bottom: -1px;
+        background: #ffffff !important;
+    }
+
+    .menu2_title a {
+        color: #5a5a5a;
+    }
+
+    .menu2_active a {
+        /* color: #000000; */
+        /* font-weight: 600; */
+    }
+
+    .menu2_intro1 a{
+        font-weight: bold;
+        color: #e26819;
+        padding-left: 10px;
+    }
+
+    .menu2_intro2{
+        color: #000000;
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    
+    .menu2_backgroupdiv{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index:-1;
+        opacity: 0.8;
+        background: url(../img/lanmutu1.png) left top;
+        display: none;
+    }
+
+    .menu3_title {
+        background-color: #5292c6;
+        padding: 5px;
+        border-bottom: 5px solid #ffffff;
+        color: #ffffff;
+        cursor: pointer;
+        font: bold 18px "黑体";
+    }
+
+    .menu3 {
+        text-align: center;
+        border-left: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        background: #5194c9;
+        font-size: 24px;
+        height: 100px;
+        line-height: 100px;
+        color: #ffffff;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+
+    .menu3:hover {
+        background: #0079da;
+    }
+
+    .menu4 {
+        text-align: center;
+        /* background-color: #0079da; */
+        font-size: 18px;
+        /* height: 40px;
+        line-height: 40px; */
+        color: #000000;
+        cursor: pointer;
+        font-weight: 600;
+        padding:20px 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    .menu4 > div{
+        border-right: 1px solid #e4e4e4;
+    }
+
+    .menu4:hover {
+        /* font-weight: 600; */
+        /* background: #006ad3; */
+    }
+
+    .menu4 .glyphicon {
+        font-size: 30px;
+        /* top: 8px; */
+        padding-right: 5px;
+    }
+
+    .menu4 span{
+        vertical-align: middle;
+    }
+
+    .date {
+        /* margin-left: 10px; */
+        white-space: nowrap;
+        color: #999999;
+    }
+
+    .tt-swiper {
+        width: 571px;
+        height: 311px;
+        overflow: hidden;
+        position: relative;
+        float: left;
+    }
+
+    .tt-itm {
+        width: 571px;
+        height: 311px;
+        overflow: hidden;
+        position: absolute;
+    }
+
+    .tt-itm img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .tt-itm .tt-til {
+        width: 100%;
+        height: 42px;
+        padding-left: 10px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    }
+
+    .tt-itm .tt-til a {
+        display: block;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        width: 950px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        line-height: 42px;
+    }
+
+    .tt-swiper .pagination {
+        position: absolute;
+        bottom: -15px;
+        right: 5px;
+        overflow: hidden;
+    }
+
+    .tt-swiper .swiper-pagination-switch {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        float: left;
+        margin-left: 8px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    .tt-swiper .swiper-active-switch {
+        width: 30px;
+        background-color: #0079da;
+    }
+
+    .text-before{
+        font-size: 8px;
+        padding-right: 4px;
+    }
+
+    .list-group-item-style1{
+        background: #0079da;
+        font: 28px/60px "微软雅黑";
+        text-align: center;
+        border-top: 1px solid #0055a8;
+        border-left: 1px solid #0055a8;
+        border-right: 1px solid #0055a8;
+    }
+    
+    .list-group-item-style1:hover{
+        background: #006ad3;
+    }
+
+    .list-group-item-style1 a{
+        color: #ffffff;
+    }
+
+    .list-group-item-style1 .glyphicon{
+        font-size: 36px;
+        /* padding-right: 20px; */
+        color: #ffffff;
+        top: 8px;
+    }
+
+    .imgpanel{
+        cursor: pointer;
+        display: inline-block;
+        background: #5194c9;
+        color: #ffffff;
+        /* border-bottom: 1px solid; */
+        width: 100%;
+        text-align: center;
+        height: 120px;
+        font-size: 24px;
+        padding-top: 20px;
+        margin-bottom: 4px;
+        transition: all 0.3s ease 0s;
+    }
+    .imgpanel img{
+        width: 90px;
+    }
+    .imgpanel:hover{
+        box-shadow: 0px 0px 5px 2px #a0a0a0;
+    }
+
+    #XiaShuBuMenLinkDiv{
+        width:100%;
+        background: #ffffff;
+        box-shadow: 0 0 5px 0px #999999;
+        height: 0;
+        display: none;
+    }
+
+    #XiaShuBuMenLinkDiv td{
+        width: 33%;
+        vertical-align: top;
+    }
+
+    .MenLinkUl{
+        list-style: none;
+        text-align: center;
+        line-height: 30px;
+        padding:0;
+        margin: 30px 0;
+    }
+
+    .MenLinkUl a{
+        color: #000;
+        font-size: 18px;
+        transition: all 0.3s ease 0s;
+    }
+
+    .MenLinkUl a:hover{
+        color: #f00;
+    }
+
+    .list-group-transtion li{
+        /* background: transparent; */
+    }
+    
+    .footdiv > div{
+        padding-bottom: 5px;
+    }
+
+    .titleicon{
+        display: inline-block; 
+        width:90px; 
+        height:90px;
+        vertical-align: middle;
+        box-shadow: 0px 0px 20px 2px #ffffff;border-radius: 60px;
+        background-image: url(http://dzj.gd.gov.cn/szsdzj/img/gdsdzj.png);
+        background-size: 90px 90px;
+    }
+
+    .searchinput{
+        width: 300px;
+        float: right;
+    }
+
+    .iconsearch{
+        background: url(../img/iconsearch.png) no-repeat;
+        width: 22px;
+        height: 22px;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+    }
+    #biaotiMain{
+        color: #0c3f90;
+        font-size: 34px;
+        font-weight: 600;
+    }
+    .spot1{
+        color:#0079da;
+    } 
+
+    /* 手机版显示样式 */
+    @media screen and (min-width: 0px) and (max-width: 992px){
+        #TitleDiv{
+            padding-top: 0;
+            text-align: center;
+        }
+        #biaotiMain{
+            font-size: 40px;
+        }
+        .titleicon{
+            display: none;
+        }
+        #biaotiSubMain{
+            display: none;
+        }
+        .menu0{
+            height: 150px;
+        }
+        .searchinput{
+            width: 100%;
+        }
+        .content1_title{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .content1_title a{
+            font: bold 18px "微软雅黑";
+        }
+        .menu1{
+            font: bold 18px/24px "微软雅黑";
+        }
+        /* 隐藏轮播的横条 */
+        .pagination{
+            display: none;
+        }
+        .menu2_title div{
+            font: 20px/24px "微软雅黑";
+        }
+        .imgpanel img{
+            width: 70px;
+        }
+    }
